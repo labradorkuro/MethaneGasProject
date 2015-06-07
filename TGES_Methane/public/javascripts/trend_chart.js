@@ -98,6 +98,7 @@ trend_chart.onTimer = function() {
 		trend_chart.chart_init(trend_chart.data1);
 		trend_chart.count = 1;
 	} else if (trend_chart.count == 1) {
+		// 表示データのリクエストを送信する
 		trend_chart.requestTrendData();
 		trend_chart.count = 2;
 	} else {
@@ -107,7 +108,6 @@ trend_chart.onTimer = function() {
 
 // サーバへデータを要求する
 trend_chart.requestTrendData = function() {
-
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', '/trend_get/', true);
 	xhr.responseType = 'json';

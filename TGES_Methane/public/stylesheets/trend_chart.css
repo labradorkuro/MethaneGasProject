@@ -1,17 +1,17 @@
-ï»¿/* ãƒ¡ã‚¿ãƒ³æ¿ƒåº¦è¨ˆæ¸¬ã‚·ã‚¹ãƒ†ãƒ  */
+/* ƒƒ^ƒ“”Z“xŒv‘ªƒVƒXƒeƒ€ */
 div#trend_base {
     width:100%;
     height:900px;
     overflow:auto;
 }
-/* ãƒ¡ã‚¿ãƒ³æ¿ƒåº¦ã€æ¸©åº¦è¡¨ç¤ºç”¨ */
+/* ƒƒ^ƒ“”Z“xA‰·“x•\Ž¦—p */
 div#trend_a {
     float:left;
     border:solid 1px red;
     padding-left:4px;
     font-size:48px;
 }
-/* å­æ©Ÿæƒ…å ±è¡¨ç¤ºç”¨ */
+/* Žq‹@î•ñ•\Ž¦—p */
 div#trend_b {
     float:left;
     position:relative;
@@ -20,11 +20,11 @@ div#trend_b {
     padding-left:4px;
     font-size:24px;
 }
-/* ãƒãƒ£ãƒ¼ãƒˆè¡¨ç¤ºã‚¨ãƒªã‚¢ */
+/* ƒ`ƒƒ[ƒg•\Ž¦ƒGƒŠƒA */
 div#chart {
     float:left;
     position:absolute;
-    top:300px;
+    top:350px;
     left:10px;
     border:solid 1px red;
     padding-left:4px;
@@ -36,7 +36,7 @@ span#last_measure_time {
     font-size:32px;
 }
 
-/* ãƒ¡ã‚¿ãƒ³æ¿ƒåº¦ã€æ¸©åº¦è¡¨ç¤ºç”¨ */
+/* ƒƒ^ƒ“”Z“xA‰·“x•\Ž¦—p */
 table.trend_table td.trend_title {
     text-align:center;
     width:250px;
@@ -54,7 +54,7 @@ table.trend_table td.trend_unit {
     text-align: left;
 }
 
-/* ãƒãƒ£ãƒ¼ãƒˆã®å‡¡ä¾‹è¡¨ç¤ºç”¨ */
+/* ƒ`ƒƒ[ƒg‚Ì–}—á•\Ž¦—p */
 div#chart_legend {
     top:400px;
     left:1000px;
@@ -65,7 +65,7 @@ div#chart_legend {
     position:absolute;
 }
 
-/* ãƒãƒ£ãƒ¼ãƒˆã®å‡¡ä¾‹è¡¨ç¤ºç”¨ */
+/* ƒ`ƒƒ[ƒg‚Ì–}—á•\Ž¦—p */
 ul.line-legend {
     list-style: none outside none;
     float: left;
@@ -74,7 +74,7 @@ ul.line-legend {
     position: relative;
     left: 50%;
 }
-/* ãƒãƒ£ãƒ¼ãƒˆã®å‡¡ä¾‹è¡¨ç¤ºç”¨ */
+/* ƒ`ƒƒ[ƒg‚Ì–}—á•\Ž¦—p */
 ul.line-legend > li {
     float: left;
     margin-right: 5px;
