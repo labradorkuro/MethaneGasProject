@@ -1,0 +1,84 @@
+﻿/* メタン濃度計測システム */
+div#trend_base {
+    width:100%;
+    height:900px;
+    overflow:auto;
+}
+/* メタン濃度、温度表示用 */
+div#trend_a {
+    float:left;
+    border:solid 1px red;
+    padding-left:4px;
+    font-size:48px;
+}
+/* 子機情報表示用 */
+div#trend_b {
+    float:left;
+    position:relative;
+    left:100px;
+    border:solid 1px red;
+    padding-left:4px;
+    font-size:24px;
+}
+/* チャート表示エリア */
+div#chart {
+    float:left;
+    position:absolute;
+    top:300px;
+    left:10px;
+    border:solid 1px red;
+    padding-left:4px;
+    font-size:24px;
+    width:1200px;
+    height:400px;
+}
+span#last_measure_time {
+    font-size:32px;
+}
+
+/* メタン濃度、温度表示用 */
+table.trend_table td.trend_title {
+    text-align:center;
+    width:250px;
+}
+table.trend_table td.trend_title_s {
+    text-align:center;
+    width:180px;
+}
+
+table.trend_table td.trend_value {
+    text-align: right;
+}
+
+table.trend_table td.trend_unit {
+    text-align: left;
+}
+
+/* チャートの凡例表示用 */
+div#chart_legend {
+    top:400px;
+    left:1000px;
+    width:200px;
+    height:200px;
+    padding: 10px;
+    overflow: hidden;
+    position:absolute;
+}
+
+/* チャートの凡例表示用 */
+ul.line-legend {
+    list-style: none outside none;
+    float: left;
+    margin: 0 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+}
+/* チャートの凡例表示用 */
+ul.line-legend > li {
+    float: left;
+    margin-right: 5px;
+    padding: 5px;
+    position: relative;
+    left: -50%;
+}

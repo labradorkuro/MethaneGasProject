@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "TGES_Methane", "TGES_Methane\TGES_Methane.njsproj", "{5545DBDC-C5AF-4213-9A32-A8C375597F22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5545DBDC-C5AF-4213-9A32-A8C375597F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5545DBDC-C5AF-4213-9A32-A8C375597F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5545DBDC-C5AF-4213-9A32-A8C375597F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5545DBDC-C5AF-4213-9A32-A8C375597F22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,50 @@
+﻿div#trend_base
+	p
+		span#last_measure_time 最終計測時間：
+	div#trend_a
+		table.trend_table
+			tr
+				td.trend_title
+					span.trend_text メタン濃度
+				td.trend_value
+					span.trend_text 60.5
+				td.trend_unit
+					span.trend_text ％
+			tr
+				td.trend_title
+					span.trend_text 温　　　度
+				td.trend_value
+					span.trend_text 25.1
+				td.trend_unit
+					span.trend_text ℃
+	div#trend_b
+		table.trend_table
+			tr
+				td.trend_title_s
+					span.trend_text 子機１（温度）
+				td.trend_title_s
+					span.trend_text 電池残量(0-5)
+				td.trend_value
+					span.trend_text
+						label#logger_1_bat
+				td.trend_title_s
+					span.trend_text 電波強度(0-5)
+				td.trend_value
+					span.trend_text
+						label#logger_1_wav
+			tr
+				td.trend_title_s
+					span.trend_text 子機２（電流）
+				td.trend_title_s
+					span.trend_text 電池残量(0-5)
+				td.trend_value
+					span.trend_text
+						label#logger_2_bat
+				td.trend_title_s
+					span.trend_text 電波強度(0-5)
+				td.trend_value
+					span.trend_text
+						label#logger_2_wav
+	div#chart
+		canvas#trend_chart(width="1000px" height="400px")
+	div#chart_legend

@@ -1,0 +1,26 @@
+﻿// 
+// メタン濃度計測メイン画面
+//
+doctype html
+html
+	head
+		title
+		link(rel="stylesheet",href="javascripts/jquery-ui-1.11.4.custom/jquery-ui.css")
+		script(src="javascripts/jquery-2.1.4.js")
+		script(src="javascripts/jquery-ui-1.11.4.custom/jquery-ui.min.js")
+		script(src="javascripts/chartjs/Chart.min.js")
+		script(src="javascripts/trend_chart.js")
+		link(rel="stylesheet",href="stylesheets/trend_chart.css")
+	body
+		div#tabs
+			ul
+				li
+					a(href="#tabs-1") トレンド表示
+				li
+					a(href="#tabs-2") 期間表示
+			div#tabs-1
+				div#trend_div
+					include trend_form
+			div#tabs-2
+				div#priod_div
+					include priod_form
