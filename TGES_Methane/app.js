@@ -1,14 +1,21 @@
-﻿var express = require('express');
+﻿var __dirname = "../../TGES_Methane_data";
+
+var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var fs = require('fs');
+var xml2js = require('xml2js');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var trend_chart = require('./routes/trend_chart');
 var trend_get = require('./api/trend_get');
+var model = require('./model');
+var Post = model.Post;	
+
 
 var app = express();
 
@@ -68,8 +75,74 @@ module.exports = app;
 
 // 現在値ファイルチェックスタート
 function trendFileCheckStart() {
-	var timer = setInterval(trendFileCheck,5000);
+	fileSearch();
+	var timer = setInterval(fileSearch, (1000 * 60 * 5));
 }
-function trendFileCheck() {
+
+// ディレクトリ内のXMLファイル検索
+function fileSearch() {
+		var dir = __dirname;
+		fs.readdir(dir,  function(err, files) {
+			if (err) {
+				console.log(err);
+			}
+			files.filter(function(file) {
+				// XMLファイルのみ検索する
+				file = dir + path.sep + file;
+				console.log(file);
+				return fs.statSync(file).isFile() && /.*\.xml$/.test(file); //絞り込み
+			}).forEach(function (file) {
+				// 検索されたファイルを解析する
+				file = dir + path.sep + file;
+				trendFileCheck(file);
+			});
+		});
+}
+
+// XMLファイルを読み込んでJSONに変換
+function trendFileCheck(filename) {
 	console.log("trendFileCheck");
+	// XMLパーサ生成
+	var parser = new xml2js.Parser();
+	// ファイル読み込み
+	fs.readFile(filename, function (err, data) {
+		// 解析処理
+		console.log("trendFileCheck( " + filename + " )");
+	    parser.parseString(data, function (err, result) {
+	    		if (err) {
+	    			console.log(err);
+	    		} else {
+	    	        // 解析結果を処理
+	    			if (result.file.group) {
+			    		var trend = {
+			    				time_str : result.file.group[0].remote[0].ch[0].current[0].time_str,
+			    				model : result.file.group[0].remote[0].model,
+			    				num : result.file.group[0].remote[0].num,
+			    				unit_name : result.file.group[0].remote[0].name,
+			    				value : result.file.group[0].remote[0].ch[0].current[0].value[0]._,
+			    				value_unit : result.file.group[0].remote[0].ch[0].current[0].unit,
+			    				battery : result.file.group[0].remote[0].ch[0].current[0].batt,
+			    				rssi : result.file.group[0].remote[0].rssi
+			    		};
+			    		// mongoDBへ追加する
+			    		dbPost(trend,filename);
+	    			}
+	    		}
+	    });
+	});
+}
+
+// mongoDBに追加
+function dbPost(json,filename) {
+	var new_post = new Post(json);
+	new_post.save(function(err) {
+		if (err) {
+			console.log(err)
+		} else {
+			fs.unlink(filename,function(err){
+				if (err) console.log(err);
+			});
+			console.log('** dbPost OK **');
+		}
+	})
 }
