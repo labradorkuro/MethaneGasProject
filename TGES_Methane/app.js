@@ -1,4 +1,5 @@
 ﻿var __dirname = "../../TGES_Methane_data";
+var __backup_dir = "../../TGES_Methane_data_backup";
 
 var express = require('express');
 var path = require('path');
@@ -93,39 +94,54 @@ function fileSearch() {
 				return fs.statSync(file).isFile() && /.*\.xml$/.test(file); //絞り込み
 			}).forEach(function (file) {
 				// 検索されたファイルを解析する
-				file = dir + path.sep + file;
-				trendFileCheck(file);
+				var org_file = dir + path.sep + file;							// ファイルパス
+				var bk_file = __backup_dir + path.sep + file;		// バックアップファイルパス
+				// ファイルをバックアップしてから解析処理を実行
+				copyFile(org_file, bk_file,function(){
+					// データファイルの解析処理
+					trendFileCheck(org_file);
+				})
 			});
 		});
 }
 
 // XMLファイルを読み込んでJSONに変換
-function trendFileCheck(filename) {
+function trendFileCheck(filepath) {
 	console.log("trendFileCheck");
+	//var filepath = dir + path.sep + filename;
 	// XMLパーサ生成
 	var parser = new xml2js.Parser();
 	// ファイル読み込み
-	fs.readFile(filename, function (err, data) {
+	fs.readFile(filepath, function (err, data) {
 		// 解析処理
-		console.log("trendFileCheck( " + filename + " )");
+		console.log("trendFileCheck( " + filepath + " )");
 	    parser.parseString(data, function (err, result) {
 	    		if (err) {
 	    			console.log(err);
 	    		} else {
 	    	        // 解析結果を処理
+	    			console.dir(JSON.stringify(result));
 	    			if (result.file.group) {
-			    		var trend = {
-			    				time_str : result.file.group[0].remote[0].ch[0].current[0].time_str,
-			    				model : result.file.group[0].remote[0].model,
-			    				num : result.file.group[0].remote[0].num,
-			    				unit_name : result.file.group[0].remote[0].name,
-			    				value : result.file.group[0].remote[0].ch[0].current[0].value[0]._,
-			    				value_unit : result.file.group[0].remote[0].ch[0].current[0].unit,
-			    				battery : result.file.group[0].remote[0].ch[0].current[0].batt,
-			    				rssi : result.file.group[0].remote[0].rssi
-			    		};
+	    				// mongDBのmodelに合わせてjsonを作成し、データを格納する
+	    				var trend = {base:result.file.base[0].model[0],
+	    								trends: []};
+	    				console.log("len = " + result.file.group[0].remote.length);
+	    				// 子機の数分ループ
+	    				for(var i in result.file.group[0].remote) {
+				    		var tr = {
+				    				time_str : result.file.group[0].remote[i].ch[0].current[0].time_str,
+				    				model : result.file.group[0].remote[i].model,
+				    				num : result.file.group[0].remote[i].num,
+				    				unit_name : result.file.group[0].remote[i].name,
+				    				value : result.file.group[0].remote[i].ch[0].current[0].value[0]._,
+				    				value_unit : result.file.group[0].remote[i].ch[0].current[0].unit,
+				    				battery : result.file.group[0].remote[i].ch[0].current[0].batt,
+				    				rssi : result.file.group[0].remote[i].rssi
+				    		};
+				    		trend.trends.push(tr);
+	    				}
 			    		// mongoDBへ追加する
-			    		dbPost(trend,filename);
+			    		dbPost(trend, filepath);
 	    			}
 	    		}
 	    });
@@ -134,15 +150,43 @@ function trendFileCheck(filename) {
 
 // mongoDBに追加
 function dbPost(json,filename) {
+	console.dir(JSON.stringify(json));
 	var new_post = new Post(json);
 	new_post.save(function(err) {
 		if (err) {
 			console.log(err)
 		} else {
+			// 処理したファイルは削除する
 			fs.unlink(filename,function(err){
 				if (err) console.log(err);
 			});
+			// ファイル名（拡張子）を変更する
 			console.log('** dbPost OK **');
 		}
 	})
+}
+
+// ファイルコピー
+function copyFile(source, target, cb) {
+	var cbCalled = false;
+
+	var rd = fs.createReadStream(source);
+	rd.on("error", function(err) {
+		done(err);
+	});
+	var wr = fs.createWriteStream(target);
+	wr.on("error", function(err) {
+		done(err);
+	});
+	wr.on("close", function(ex) {
+		done();
+	});
+	rd.pipe(wr);
+
+	function done(err) {
+		if (!cbCalled) {
+			cb(err);
+			cbCalled = true;
+		}
+	}
 }
