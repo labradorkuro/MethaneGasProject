@@ -2,7 +2,7 @@
  * New node file
  */
 var mongoose = require('mongoose');
-var db = mongoose.connect('mongodb://localhost/mongodb');
+var db = mongoose.connect('mongodb://localhost/RTR_Trend');
 
 function validator(v) {
 	return v.length > 0;
@@ -19,9 +19,9 @@ var Trend = new mongoose.Schema({
 	rssi :			{type: String, validate: [validator, "Empty Error"] }		// 電波強度
 });
 
-var Post = new mongoose.Schema({
+var RTR_Trend = new mongoose.Schema({
 	base : String,
 	trends:[Trend]
 });
 
-exports.Post = db.model('Post', Post);
+exports.RTR_Trend = db.model('RTR_Trend', RTR_Trend);

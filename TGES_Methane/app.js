@@ -15,7 +15,7 @@ var users = require('./routes/users');
 var trend_chart = require('./routes/trend_chart');
 var trend_get = require('./api/trend_get');
 var model = require('./model');
-var Post = model.Post;	
+var RTR_Trend = model.RTR_Trend;	
 
 
 var app = express();
@@ -151,8 +151,8 @@ function trendFileCheck(filepath) {
 // mongoDBに追加
 function dbPost(json,filename) {
 	console.dir(JSON.stringify(json));
-	var new_post = new Post(json);
-	new_post.save(function(err) {
+	var new_RTR_Trend = new RTR_Trend(json);
+	new_RTR_Trend.save(function(err) {
 		if (err) {
 			console.log(err)
 		} else {
@@ -163,7 +163,7 @@ function dbPost(json,filename) {
 			// ファイル名（拡張子）を変更する
 			console.log('** dbPost OK **');
 		}
-	})
+	});
 }
 
 // ファイルコピー
@@ -190,3 +190,4 @@ function copyFile(source, target, cb) {
 		}
 	}
 }
+
