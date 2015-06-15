@@ -1,4 +1,4 @@
-﻿var __dirname = "../../TGES_Methane_data";
+﻿var __data_dir = "../../TGES_Methane_data";
 var __backup_dir = "../../TGES_Methane_data_backup";
 
 var express = require('express');
@@ -82,7 +82,7 @@ function trendFileCheckStart() {
 
 // ディレクトリ内のXMLファイル検索
 function fileSearch() {
-		var dir = __dirname;
+		var dir = __data_dir;
 		fs.readdir(dir,  function(err, files) {
 			if (err) {
 				console.log(err);
@@ -115,36 +115,42 @@ function trendFileCheck(filepath) {
 	fs.readFile(filepath, function (err, data) {
 		// 解析処理
 		console.log("trendFileCheck( " + filepath + " )");
-	    parser.parseString(data, function (err, result) {
-	    		if (err) {
-	    			console.log(err);
-	    		} else {
-	    	        // 解析結果を処理
-	    			console.dir(JSON.stringify(result));
-	    			if (result.file.group) {
-	    				// mongDBのmodelに合わせてjsonを作成し、データを格納する
-	    				var trend = {base:result.file.base[0].model[0],
-	    								trends: []};
-	    				console.log("len = " + result.file.group[0].remote.length);
-	    				// 子機の数分ループ
-	    				for(var i in result.file.group[0].remote) {
-				    		var tr = {
-				    				time_str : result.file.group[0].remote[i].ch[0].current[0].time_str,
-				    				model : result.file.group[0].remote[i].model,
-				    				num : result.file.group[0].remote[i].num,
-				    				unit_name : result.file.group[0].remote[i].name,
-				    				value : result.file.group[0].remote[i].ch[0].current[0].value[0]._,
-				    				value_unit : result.file.group[0].remote[i].ch[0].current[0].unit,
-				    				battery : result.file.group[0].remote[i].ch[0].current[0].batt,
-				    				rssi : result.file.group[0].remote[i].rssi
-				    		};
-				    		trend.trends.push(tr);
-	    				}
-			    		// mongoDBへ追加する
-			    		dbPost(trend, filepath);
-	    			}
-	    		}
-	    });
+		try {
+		    parser.parseString(data, function (err, result) {
+		    		if (err) {
+		    			console.log(err);
+		    		} else {
+		    	        // 解析結果を処理
+		    			console.dir(JSON.stringify(result));
+		    			if (result.file.group) {
+		    				// mongDBのmodelに合わせてjsonを作成し、データを格納する
+		    				var trend = {base:result.file.base[0].model[0],
+		    								trends: []};
+		    				console.log("len = " + result.file.group[0].remote.length);
+		    				// 子機の数分ループ
+		    				for(var i in result.file.group[0].remote) {
+					    		var tr = {
+					    				time_str : result.file.group[0].remote[i].ch[0].current[0].time_str,
+					    				model : result.file.group[0].remote[i].model,
+					    				num : result.file.group[0].remote[i].num,
+					    				unit_name : result.file.group[0].remote[i].name,
+					    				value : result.file.group[0].remote[i].ch[0].current[0].value[0]._,
+					    				value_unit : result.file.group[0].remote[i].ch[0].current[0].unit,
+					    				battery : result.file.group[0].remote[i].ch[0].current[0].batt,
+					    				rssi : result.file.group[0].remote[i].rssi
+					    		};
+					    		trend.trends.push(tr);
+		    				}
+				    		// mongoDBへ追加する
+				    		dbPost(trend, filepath);
+		    			}
+		    		}
+		    });
+			
+		} catch(ex) {
+			console.error(ex);
+			
+		}
 	});
 }
 
