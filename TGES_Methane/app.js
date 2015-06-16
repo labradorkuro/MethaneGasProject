@@ -107,7 +107,6 @@ function fileSearch() {
 
 // XMLファイルを読み込んでJSONに変換
 function trendFileCheck(filepath) {
-	console.log("trendFileCheck");
 	//var filepath = dir + path.sep + filename;
 	// XMLパーサ生成
 	var parser = new xml2js.Parser();
@@ -115,7 +114,9 @@ function trendFileCheck(filepath) {
 	fs.readFile(filepath, function (err, data) {
 		// 解析処理
 		console.log("trendFileCheck( " + filepath + " )");
+		if (err) console.error(err);
 		try {
+			
 		    parser.parseString(data, function (err, result) {
 		    		if (err) {
 		    			console.log(err);
