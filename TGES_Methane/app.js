@@ -82,31 +82,37 @@ function trendFileCheckStart() {
 
 // ディレクトリ内のXMLファイル検索
 function fileSearch() {
+		var rc = false;
 		var dir = __data_dir;
 		fs.readdir(dir,  function(err, files) {
-			if (err) {
-				console.log(err);
-			}
-			files.filter(function(file) {
-				// XMLファイルのみ検索する
-				file = dir + path.sep + file;
-				console.log(file);
-				return fs.statSync(file).isFile() && /.*\.xml$/.test(file); //絞り込み
-			}).forEach(function (file) {
-				// 検索されたファイルを解析する
-				var org_file = dir + path.sep + file;							// ファイルパス
-				var bk_file = __backup_dir + path.sep + file;		// バックアップファイルパス
-				// ファイルをバックアップしてから解析処理を実行
-				copyFile(org_file, bk_file,function(){
-					// データファイルの解析処理
-					trendFileCheck(org_file);
-				})
-			});
+				if (err) {
+						console.log(err);
+						return;
+				}
+				files.filter(function(file) {
+						// XMLファイルのみ検索する
+						file = dir + path.sep + file;
+						console.log(file);
+						return fs.statSync(file).isFile() && /.*\.xml$/.test(file); //絞り込み
+				}).forEach(function (file) {
+						// 検索されたファイルを解析する
+						var org_file = dir + path.sep + file;							// ファイルパス
+						var bk_file = __backup_dir + path.sep + file;		// バックアップファイルパス
+						// ファイルをバックアップしてから解析処理を実行
+						copyFile(org_file, bk_file,function(){
+							// データファイルの解析処理
+							rc = trendFileCheck(org_file);
+							if (! rc) {
+								return rc;
+							}
+						})
+				});
 		});
 }
 
 // XMLファイルを読み込んでJSONに変換
 function trendFileCheck(filepath) {
+	var rc = false;
 	//var filepath = dir + path.sep + filename;
 	// XMLパーサ生成
 	var parser = new xml2js.Parser();
@@ -114,12 +120,16 @@ function trendFileCheck(filepath) {
 	fs.readFile(filepath, function (err, data) {
 		// 解析処理
 		console.log("trendFileCheck( " + filepath + " )");
-		if (err) console.error(err);
+		if (err) {
+			console.error(err);
+			return rc;
+		}
 		try {
 			
 		    parser.parseString(data, function (err, result) {
 		    		if (err) {
 		    			console.log(err);
+		    			return rc;
 		    		} else {
 		    	        // 解析結果を処理
 		    			console.dir(JSON.stringify(result));
@@ -143,14 +153,17 @@ function trendFileCheck(filepath) {
 					    		trend.trends.push(tr);
 		    				}
 				    		// mongoDBへ追加する
-				    		dbPost(trend, filepath);
+				    		rc = dbPost(trend, filepath);
+				    		if (! rc) {
+				    			return rc;
+				    		}
 		    			}
 		    		}
 		    });
 			
 		} catch(ex) {
 			console.error(ex);
-			
+			return rc;
 		}
 	});
 }
@@ -161,7 +174,8 @@ function dbPost(json,filename) {
 	var new_RTR_Trend = new RTR_Trend(json);
 	new_RTR_Trend.save(function(err) {
 		if (err) {
-			console.log(err)
+			console.log(err);
+			return false;
 		} else {
 			// 処理したファイルは削除する
 			fs.unlink(filename,function(err){
@@ -169,6 +183,7 @@ function dbPost(json,filename) {
 			});
 			// ファイル名（拡張子）を変更する
 			console.log('** dbPost OK **');
+			return true;
 		}
 	});
 }
