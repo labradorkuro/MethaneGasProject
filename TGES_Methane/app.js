@@ -135,8 +135,13 @@ function trendFileCheck(filepath) {
 		    			console.dir(JSON.stringify(result));
 		    			if (result.file.group) {
 		    				// mongDBのmodelに合わせてjsonを作成し、データを格納する
-		    				var trend = {base:result.file.base[0].model[0],
-		    								trends: []};
+		    				// ファイル名から時間を取り出す
+		    				var name = result.file.$.name;
+		    				var serial = result.file.base[0].serial[0];
+		    				var model = result.file.base[0].model[0];
+		    				var time_str = getTimeString(model, serial,name);
+		    				var date_str = getDateString(model, serial,name);
+		    				var trend = {base: model, date_str: date_str, time_str: time_str, trends: [ ] };
 		    				console.log("len = " + result.file.group[0].remote.length);
 		    				// 子機の数分ループ
 		    				for(var i in result.file.group[0].remote) {
@@ -167,6 +172,19 @@ function trendFileCheck(filepath) {
 		}
 	});
 }
+
+//ファイル名から日付文字列を取り出す
+function getDateString(model, serial, name) {
+		var idx_a = model.length + serial.length + 2;
+		var date = name.substring(idx_a, idx_a + 8);
+		return date;
+};
+//ファイル名から時間文字列を取り出す
+function getTimeString(model, serial, name) {
+		var idx_a = model.length + serial.length + 2 + 9;
+		var time = name.substring(idx_a, idx_a + 6);
+		return time;
+};
 
 // mongoDBに追加
 function dbPost(json,filename) {

@@ -21,6 +21,8 @@ var Trend = new mongoose.Schema({
 
 var RTR_Trend = new mongoose.Schema({
 	base : String,
+	date_str: String,
+	time_str: String,
 	trends:[Trend]
 });
 

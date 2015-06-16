@@ -3,6 +3,7 @@
 //
 $(function() {
 	Chart.defaults.global.animation = false;
+	/**
 	trend_chart.data1 = {
 		labels: ["January", "February", "March", "April", "May", "June", "July"],
 		datasets: [
@@ -52,20 +53,22 @@ $(function() {
 				data: [24, 20, 21, 22, 25, 24, 23]
 			}
 		]
-	};
+	};**/
 	$.datepicker.setDefaults($.datepicker.regional[ "ja" ]); // 日本語化
 	// タブの初期化
 	trend_chart.initTabs();
-	//trend_chart.chart_init(trend_chart.data1);
+	// データ表示
 	trend_chart.dispLogger_info(["3","3"],["4","5"]);
-	trend_chart.timer = setInterval(trend_chart.onTimer,5000);
+	// データリクエスト用のタイマーセット
+	trend_chart.timer = setInterval(trend_chart.onTimer, 10000);
 });
 
-
+// チャートデータの処理
 var trend_chart = trend_chart || {}
 trend_chart.myLineChart = null;
 trend_chart.timer = null;
 trend_chart.count = 0;
+
 // タブ初期化
 trend_chart.initTabs = function() {
 	// タブを生成
@@ -94,35 +97,55 @@ trend_chart.dispLogger_info = function(battery_info, wave_info) {
 };
 
 trend_chart.onTimer = function() {
-	if (trend_chart.count == 0) {
-		trend_chart.chart_init(trend_chart.data1);
-		trend_chart.count = 1;
-	} else if (trend_chart.count == 1) {
-		// 表示データのリクエストを送信する
-		trend_chart.requestTrendData();
-		trend_chart.count = 2;
-	} else {
-		clearInterval(trend_chart.timer);
-	}
+	// 表示データのリクエストをサーバへ送信する
+	trend_chart.requestTrendData();
 };
 
-// サーバへデータを要求する
+// サーバへデータ要求する
 trend_chart.requestTrendData = function() {
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', '/trend_get/', true);
-	xhr.responseType = 'json';
-	xhr.onload = trend_chart.onloadTrendData;
-	xhr.send();
-};
-
-// サーバからのレスポンス処理
-trend_chart.onloadTrendData = function(e) {
-	if (this.status == 200) {
-		var data = this.response;
-		// チャートの更新
-		trend_chart.chart_init(data);
+	var enddate = trend_chart.getToday("{0}{1}{2}");
+	var today = new Date();
+	var startdate = trend_chart.getDateString(trend_chart.addDate(today,  0), "{0}{1}{2}");
+	$.get('/trend_get?startdate=' + startdate + '&enddate=' + enddate, function(data){
+		// 応答データでチャートを更新する
+		trend_chart.chart_init(data.chart_data);
 		// 子機情報の更新
+		trend_chart.dispLogger_info(data.last_trend.batt, data.last_trend.rssi);
+		$("#trend_methane").text(data.last_trend.value[0]);
+		$("#trend_temp").text(data.last_trend.value[1]);
 		// 後で実装
-	}
+	});
 };
+// 今日の日付文字列を取得する
+trend_chart.getToday = function(format_str) {
+		var d = new Date();
+		return trend_chart.getDateString(d, format_str);
+}
+// 日付文字列を取得する
+trend_chart.getDateString = function(date, format_str) {
+		var date_format = trend_chart.format(format_str,
+				date.getFullYear(),
+				date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1),
+				date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
+		return date_format;
+}
+// フォーマット
+trend_chart.format = function(fmt , a) {
+	var rep_fn = undefined;
+	if (typeof a == "object") {
+		rep_fn = function(m, k) {return a[ k ];}
+	} else {
+		var args = arguments;
+		rep_fn = function(m, k) {return args[ parseInt(k) + 1];}
+	}
+	return fmt.replace(/\{(\w+)\}/g, rep_fn);
+}
 
+// 日付の加算
+trend_chart.addDate = function(date, count) {
+		var t = date.getTime();
+		t = t + (count * 86400000);
+		var d = new Date();
+		d.setTime(t);
+		return d;
+}
