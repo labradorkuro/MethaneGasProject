@@ -65,9 +65,9 @@ trend_chart.requestTrendData = function() {
 		// 子機情報の更新
 		trend_chart.dispLogger_info(data.last_trend.batt, data.last_trend.rssi);
 		$("#chart_title").text(trend_chart.addDateSeparator(startdate,"/") + " - " + trend_chart.addDateSeparator(enddate,"/") + "　サマリー");
-		$("#last_measure_time").text("最終計測時間：" + data.last_trend.date + " " + data.last_trend.time);
-		$("#trend_methane").text(data.last_trend.value[0]);
-		$("#trend_temp").text(data.last_trend.value[1]);
+//		$("#last_measure_time").text("最終計測時間：" + data.last_trend.date + " " + data.last_trend.time);
+//		$("#trend_methane").text(data.last_trend.value[0]);
+//		$("#trend_temp").text(data.last_trend.value[1]);
 		// 
 		$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
 			// 応答データでチャートを更新する
