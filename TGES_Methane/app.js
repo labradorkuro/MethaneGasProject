@@ -9,6 +9,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var xml2js = require('xml2js');
+var logger4 = require('./logger');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -86,13 +87,14 @@ function fileSearch() {
 		var dir = __data_dir;
 		fs.readdir(dir,  function(err, files) {
 				if (err) {
-						console.log(err);
-						return;
+					// ログ出力
+					logger4.rtr_trend.error(err);
+					return;
 				}
 				files.filter(function(file) {
 						// XMLファイルのみ検索する
 						file = dir + path.sep + file;
-						console.log(file);
+//						console.log(file);
 						return fs.statSync(file).isFile() && /.*\.xml$/.test(file); //絞り込み
 				}).forEach(function (file) {
 						// 検索されたファイルを解析する
@@ -121,18 +123,20 @@ function trendFileCheck(filepath) {
 		// 解析処理
 		console.log("trendFileCheck( " + filepath + " )");
 		if (err) {
-			console.error(err);
+			// ログ出力
+			logger4.rtr_trend.error(err);
 			return rc;
 		}
 		try {
 			
 		    parser.parseString(data, function (err, result) {
 		    		if (err) {
-		    			console.log(err);
+		    			// ログ出力
+		    			logger4.rtr_trend.error(err);
 		    			return rc;
 		    		} else {
 		    	        // 解析結果を処理
-		    			console.dir(JSON.stringify(result));
+//		    			console.dir(JSON.stringify(result));
 		    			if (result.file.group) {
 		    				// mongDBのmodelに合わせてjsonを作成し、データを格納する
 		    				// ファイル名から時間を取り出す
@@ -167,7 +171,8 @@ function trendFileCheck(filepath) {
 		    });
 			
 		} catch(ex) {
-			console.error(ex);
+			// ログ出力
+			logger4.rtr_trend.error(ex);
 			return rc;
 		}
 	});
@@ -188,19 +193,22 @@ function getTimeString(model, serial, name) {
 
 // mongoDBに追加
 function dbPost(json,filename) {
-	console.dir(JSON.stringify(json));
+	//console.dir(JSON.stringify(json));
 	var new_RTR_Trend = new RTR_Trend(json);
 	new_RTR_Trend.save(function(err) {
 		if (err) {
-			console.log(err);
+			// ログ出力
+			logger4.rtr_trend.error(err);
+			// 処理したファイルは削除する
+			fs.unlink(filename,function(err){
+				if (err)  logger4.rtr_trend.error(err);
+			});
 			return false;
 		} else {
 			// 処理したファイルは削除する
 			fs.unlink(filename,function(err){
-				if (err) console.log(err);
+				if (err)  logger4.rtr_trend.error(err);
 			});
-			// ファイル名（拡張子）を変更する
-			console.log('** dbPost OK **');
 			return true;
 		}
 	});
@@ -212,10 +220,12 @@ function copyFile(source, target, cb) {
 
 	var rd = fs.createReadStream(source);
 	rd.on("error", function(err) {
+		logger4.rtr_trend.error(err);
 		done(err);
 	});
 	var wr = fs.createWriteStream(target);
 	wr.on("error", function(err) {
+		logger4.rtr_trend.error(err);
 		done(err);
 	});
 	wr.on("close", function(ex) {

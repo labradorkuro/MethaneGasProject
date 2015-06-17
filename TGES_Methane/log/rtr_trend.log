@@ -1,0 +1,132 @@
+[2015-06-17 14:44:46.736] [ERROR] rtr_trend - { [ValidationError: RTR_Trend validation failed]
+  message: 'RTR_Trend validation failed',
+  name: 'ValidationError',
+  errors: 
+   { 'trends.1.battery': 
+      { [ValidatorError: Empty Error]
+        properties: [Object],
+        message: 'Empty Error',
+        name: 'ValidatorError',
+        kind: 'user defined',
+        path: 'battery',
+        value: '' } } }
+ValidationError: RTR_Trend validation failed
+    at model.Document.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1162:32)
+    at EmbeddedDocument.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/types/embedded.js:177:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1037:16
+    at validate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:651:7)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:679:9
+    at Array.forEach (native)
+    at SchemaString.SchemaType.doValidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:656:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1035:9
+    at process._tickCallback (node.js:355:11)
+[2015-06-17 14:52:10.016] [ERROR] rtr_trend - { [ValidationError: RTR_Trend validation failed]
+  message: 'RTR_Trend validation failed',
+  name: 'ValidationError',
+  errors: 
+   { 'trends.1.battery': 
+      { [ValidatorError: Empty Error]
+        properties: [Object],
+        message: 'Empty Error',
+        name: 'ValidatorError',
+        kind: 'user defined',
+        path: 'battery',
+        value: '' } } }
+ValidationError: RTR_Trend validation failed
+    at model.Document.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1162:32)
+    at EmbeddedDocument.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/types/embedded.js:177:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1037:16
+    at validate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:651:7)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:679:9
+    at Array.forEach (native)
+    at SchemaString.SchemaType.doValidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:656:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1035:9
+    at process._tickCallback (node.js:355:11)
+[2015-06-17 14:57:09.995] [ERROR] rtr_trend - { [ValidationError: RTR_Trend validation failed]
+  message: 'RTR_Trend validation failed',
+  name: 'ValidationError',
+  errors: 
+   { 'trends.1.battery': 
+      { [ValidatorError: Empty Error]
+        properties: [Object],
+        message: 'Empty Error',
+        name: 'ValidatorError',
+        kind: 'user defined',
+        path: 'battery',
+        value: '' } } }
+ValidationError: RTR_Trend validation failed
+    at model.Document.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1162:32)
+    at EmbeddedDocument.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/types/embedded.js:177:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1037:16
+    at validate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:651:7)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:679:9
+    at Array.forEach (native)
+    at SchemaString.SchemaType.doValidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:656:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1035:9
+    at process._tickCallback (node.js:355:11)
+[2015-06-17 15:02:09.995] [ERROR] rtr_trend - { [ValidationError: RTR_Trend validation failed]
+  message: 'RTR_Trend validation failed',
+  name: 'ValidationError',
+  errors: 
+   { 'trends.1.battery': 
+      { [ValidatorError: Empty Error]
+        properties: [Object],
+        message: 'Empty Error',
+        name: 'ValidatorError',
+        kind: 'user defined',
+        path: 'battery',
+        value: '' } } }
+ValidationError: RTR_Trend validation failed
+    at model.Document.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1162:32)
+    at EmbeddedDocument.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/types/embedded.js:177:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1037:16
+    at validate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:651:7)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:679:9
+    at Array.forEach (native)
+    at SchemaString.SchemaType.doValidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:656:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1035:9
+    at process._tickCallback (node.js:355:11)
+[2015-06-17 15:07:10.014] [ERROR] rtr_trend - { [ValidationError: RTR_Trend validation failed]
+  message: 'RTR_Trend validation failed',
+  name: 'ValidationError',
+  errors: 
+   { 'trends.1.battery': 
+      { [ValidatorError: Empty Error]
+        properties: [Object],
+        message: 'Empty Error',
+        name: 'ValidatorError',
+        kind: 'user defined',
+        path: 'battery',
+        value: '' } } }
+ValidationError: RTR_Trend validation failed
+    at model.Document.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1162:32)
+    at EmbeddedDocument.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/types/embedded.js:177:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1037:16
+    at validate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:651:7)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:679:9
+    at Array.forEach (native)
+    at SchemaString.SchemaType.doValidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:656:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1035:9
+    at process._tickCallback (node.js:355:11)
+[2015-06-17 15:12:10.043] [ERROR] rtr_trend - { [ValidationError: RTR_Trend validation failed]
+  message: 'RTR_Trend validation failed',
+  name: 'ValidationError',
+  errors: 
+   { 'trends.1.battery': 
+      { [ValidatorError: Empty Error]
+        properties: [Object],
+        message: 'Empty Error',
+        name: 'ValidatorError',
+        kind: 'user defined',
+        path: 'battery',
+        value: '' } } }
+ValidationError: RTR_Trend validation failed
+    at model.Document.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1162:32)
+    at EmbeddedDocument.invalidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/types/embedded.js:177:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1037:16
+    at validate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:651:7)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:679:9
+    at Array.forEach (native)
+    at SchemaString.SchemaType.doValidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:656:19)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1035:9
+    at process._tickCallback (node.js:355:11)

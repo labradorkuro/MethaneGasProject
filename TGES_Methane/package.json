@@ -20,6 +20,7 @@
     "jade": "~1.6.0",
     "stylus": "0.42.3",
     "xml2js":"",
-    "mongoose":""
+    "mongoose":"",
+    "log4js":""
   }
 }
