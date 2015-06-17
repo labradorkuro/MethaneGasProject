@@ -69,20 +69,20 @@ trend_chart.requestTrendData = function() {
 		$("#trend_methane").text(data.last_trend.value[0]);
 		$("#trend_temp").text(data.last_trend.value[1]);
 		// 
+		$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
+			// 応答データでチャートを更新する
+			trend_chart.chart_init("trend_chart_1" , "chart_legend_1", data.chart_data);
+			$("#chart_title_1" ).text(data.last_trend.date);
+			$("#last_measure_time").text("最終計測時間：" + data.last_trend.date + " " + data.last_trend.time);
+			$("#trend_methane").text(data.last_trend.value[0]);
+			$("#trend_temp").text(data.last_trend.value[1]);
+		});
 		
 	});
 };
 trend_chart.requestWeeklyData = function() {
 	var enddate = trend_chart.getToday("{0}{1}{2}");
 	var today = new Date();
-	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
-		// 応答データでチャートを更新する
-		trend_chart.chart_init("trend_chart_1" , "chart_legend_1", data.chart_data);
-		$("#chart_title_1" ).text(data.last_trend.date);
-		$("#last_measure_time").text("最終計測時間：" + data.last_trend.date + " " + data.last_trend.time);
-		$("#trend_methane").text(data.last_trend.value[0]);
-		$("#trend_temp").text(data.last_trend.value[1]);
-	});
 	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -1), "{0}{1}{2}");
 	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
 		// 応答データでチャートを更新する
