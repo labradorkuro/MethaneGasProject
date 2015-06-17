@@ -2,7 +2,7 @@
 
 div#trend_base {
     width:100%;
-   overflow:scroll;
+   overflow:auto;
 }
 
 /* メタン濃度、温度表示用 */
