@@ -8,6 +8,7 @@ $(function() {
 		trend_chart.initTabs();
 		// 表示データのリクエストをサーバへ送信する
 		trend_chart.requestTrendData();
+		trend_chart.requestWeeklyData();
 		// データ表示
 		//trend_chart.dispLogger_info(["",""],["",""]);
 		// データリクエスト用のタイマーセット
@@ -27,16 +28,16 @@ trend_chart.initTabs = function() {
 };
 
 // トレンドグラフ表示
-trend_chart.chart_init = function(data) {
+trend_chart.chart_init = function(id,id_legend, data) {
 	 var options = {
 	        // 凡例表示用の HTML テンプレート
 	        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\">&nbsp;&nbsp;&nbsp;</span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
 	    };
-	var ctx = document.getElementById("trend_chart").getContext("2d");
+	var ctx = document.getElementById(id).getContext("2d");
 	trend_chart.myLineChart = new Chart(ctx).Line(data, options);
 	var legend = trend_chart.myLineChart.generateLegend();
-	$("#chart_legend").empty();
-	$("#chart_legend").append($(legend));
+	$("#" + id_legend).empty();
+	$("#" + id_legend).append($(legend));
 };
 
 // 子機の情報表示
@@ -58,18 +59,66 @@ trend_chart.requestTrendData = function() {
 	var enddate = trend_chart.getToday("{0}{1}{2}");
 	var today = new Date();
 	var startdate = trend_chart.getDateString(trend_chart.addDate(today,  -6), "{0}{1}{2}");
-	$.get('/trend_get?startdate=' + startdate + '&enddate=' + enddate, function(data){
+	$.get('/trend_get?startdate=' + startdate + '&enddate=' + enddate + '&interval=12', function(data){
 		// 応答データでチャートを更新する
-		trend_chart.chart_init(data.chart_data);
+		trend_chart.chart_init("trend_chart", "chart_legend",data.chart_data);
 		// 子機情報の更新
 		trend_chart.dispLogger_info(data.last_trend.batt, data.last_trend.rssi);
-		$("#chart_title").text(trend_chart.addDateSeparator(startdate,"/") + " - " + trend_chart.addDateSeparator(enddate,"/"));
+		$("#chart_title").text(trend_chart.addDateSeparator(startdate,"/") + " - " + trend_chart.addDateSeparator(enddate,"/") + "　サマリー");
 		$("#last_measure_time").text("最終計測時間：" + data.last_trend.date + " " + data.last_trend.time);
 		$("#trend_methane").text(data.last_trend.value[0]);
 		$("#trend_temp").text(data.last_trend.value[1]);
-		// 後で実装
+		// 
+		
 	});
 };
+trend_chart.requestWeeklyData = function() {
+	var enddate = trend_chart.getToday("{0}{1}{2}");
+	var today = new Date();
+	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
+		// 応答データでチャートを更新する
+		trend_chart.chart_init("trend_chart_1" , "chart_legend_1", data.chart_data);
+		$("#chart_title_1" ).text(data.last_trend.date);
+	});
+	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -1), "{0}{1}{2}");
+	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
+		// 応答データでチャートを更新する
+		trend_chart.chart_init("trend_chart_2" , "chart_legend_2", data.chart_data);
+		$("#chart_title_2" ).text(data.last_trend.date );
+	});
+	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -2), "{0}{1}{2}");
+	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
+		// 応答データでチャートを更新する
+		trend_chart.chart_init("trend_chart_3" , "chart_legend_3", data.chart_data);
+		$("#chart_title_3" ).text(data.last_trend.date );
+	})
+	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -3), "{0}{1}{2}");
+	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
+		// 応答データでチャートを更新する
+		trend_chart.chart_init("trend_chart_4" , "chart_legend_4", data.chart_data);
+		$("#chart_title_4" ).text(data.last_trend.date );
+	});
+	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -4), "{0}{1}{2}");
+	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
+		// 応答データでチャートを更新する
+		trend_chart.chart_init("trend_chart_5" , "chart_legend_5", data.chart_data);
+		$("#chart_title_5" ).text(data.last_trend.date );
+	});
+	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -5), "{0}{1}{2}");
+	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
+		// 応答データでチャートを更新する
+		trend_chart.chart_init("trend_chart_6" , "chart_legend_6", data.chart_data);
+		$("#chart_title_6" ).text(data.last_trend.date );
+	});
+	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -6), "{0}{1}{2}");
+	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
+		// 応答データでチャートを更新する
+		trend_chart.chart_init("trend_chart_7" , "chart_legend_7", data.chart_data);
+		$("#chart_title_7" ).text(data.last_trend.date );
+	});
+		
+	
+}
 // 今日の日付文字列を取得する
 trend_chart.getToday = function(format_str) {
 		var d = new Date();

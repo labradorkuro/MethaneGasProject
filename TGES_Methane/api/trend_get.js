@@ -39,7 +39,7 @@ exports.trend_get = function (req, res) {
 				// ファイル名から日付、時間を取り出してラベルに追加する
 				var prev_date = "";
 				for(var i in items) {
-						if (i % 12 ) continue;
+						if (i % req.query.interval ) continue;
 						var item = items[i];
 						if (prev_date === item.date_str) {
 							res_data.chart_data.labels.push( addTimeSeparator(item.time_str, ":") );
