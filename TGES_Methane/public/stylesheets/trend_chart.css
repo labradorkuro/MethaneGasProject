@@ -20,8 +20,7 @@ div#trend_b {
     padding-left:4px;
     font-size:24px;
 }
-/* チャート表示エリア */
-div#chart {
+div#chart_title_div {
     float:left;
     position:absolute;
     top:350px;
@@ -30,7 +29,21 @@ div#chart {
     padding-left:4px;
     font-size:24px;
     width:1200px;
-    height:400px;
+    height:450px;
+    overflow:auto;
+	
+}
+/* チャート表示エリア */
+div#chart {
+    float:left;
+    position:absolute;
+    top:400px;
+    left:10px;
+    border:none;
+    padding-left:4px;
+    font-size:24px;
+    width:1200px;
+    height:450px;
     overflow:auto;
 }
 span#last_measure_time {

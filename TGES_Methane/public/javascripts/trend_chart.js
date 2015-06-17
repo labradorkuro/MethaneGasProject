@@ -54,14 +54,16 @@ trend_chart.onTimer = function() {
 
 // サーバへデータ要求する
 trend_chart.requestTrendData = function() {
+	// 表示日付範囲
 	var enddate = trend_chart.getToday("{0}{1}{2}");
 	var today = new Date();
-	var startdate = trend_chart.getDateString(trend_chart.addDate(today,  0), "{0}{1}{2}");
+	var startdate = trend_chart.getDateString(trend_chart.addDate(today,  -6), "{0}{1}{2}");
 	$.get('/trend_get?startdate=' + startdate + '&enddate=' + enddate, function(data){
 		// 応答データでチャートを更新する
 		trend_chart.chart_init(data.chart_data);
 		// 子機情報の更新
 		trend_chart.dispLogger_info(data.last_trend.batt, data.last_trend.rssi);
+		$("#chart_title").text(trend_chart.addDateSeparator(startdate,"/") + " - " + trend_chart.addDateSeparator(enddate,"/"));
 		$("#last_measure_time").text("最終計測時間：" + data.last_trend.date + " " + data.last_trend.time);
 		$("#trend_methane").text(data.last_trend.value[0]);
 		$("#trend_temp").text(data.last_trend.value[1]);
@@ -101,3 +103,7 @@ trend_chart.addDate = function(date, count) {
 		d.setTime(t);
 		return d;
 }
+trend_chart.addDateSeparator = function(date,sep) {
+	return date.substring(0,4) + sep + date.substring(4,6) + sep + date.substring(6);
+}
+

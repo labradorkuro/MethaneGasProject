@@ -34,12 +34,19 @@ exports.trend_get = function (req, res) {
 		};
 		var query = {date_str : {"$gte":req.query.startdate,"$lte":req.query.enddate}};
 		// mongoDBの検索
-		RTR_Trend.find(query, {}, {sort:{time_str:1}}, function(err, items) {
+		RTR_Trend.find(query, {}, {sort:{date_str:1,time_str:1}}, function(err, items) {
 				var count = items.length;
 				// ファイル名から日付、時間を取り出してラベルに追加する
+				var prev_date = "";
 				for(var i in items) {
+						if (i % 12 ) continue;
 						var item = items[i];
-						res_data.chart_data.labels.push( addDateSeparator(item.date_str, "/") + " " + addTimeSeparator(item.time_str, ":") );
+						if (prev_date === item.date_str) {
+							res_data.chart_data.labels.push( addTimeSeparator(item.time_str, ":") );
+						} else {
+							res_data.chart_data.labels.push( addDateSeparator(item.date_str, "/") + " " + addTimeSeparator(item.time_str, ":") );
+						}
+						prev_date = item.date_str;
 						// 子機データの処理
 						for(var j in item.trends) {
 								var model = item.trends[j].model;
