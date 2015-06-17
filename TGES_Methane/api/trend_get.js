@@ -53,28 +53,28 @@ exports.trend_get = function (req, res) {
 								if (model === "RTR-502") {
 										// 温度センサー値
 										res_data.chart_data.datasets[ 1 ].data.push(item.trends[j].value);
-										if (i == count - 1) {
+//										if (i == count - 1) {
 												// 最後のデータ
 											res_data.last_trend.value[1] = item.trends[j].value;
 											res_data.last_trend.batt[1] = item.trends[j].battery;
 											res_data.last_trend.rssi[1] = item.trends[j].rssi;
-										}
+//										}
 								}
 								else if (model === "RTR-505-mA") {
 										res_data.chart_data.datasets[ 0 ].data.push(item.trends[j].value);
-										if (i == count - 1) {
+//										if (i == count - 1) {
 												// 最後のデータ
 												res_data.last_trend.value[0] = item.trends[j].value;
 												res_data.last_trend.batt[0] = item.trends[j].battery;
 												res_data.last_trend.rssi[0] = item.trends[j].rssi;
-										}
+//										}
 								}
 						}
-						if (i == count - 1) {
+//						if (i == count - 1) {
 							// 最後のデータ
 							res_data.last_trend.date = addDateSeparator(item.date_str, "/");
 							res_data.last_trend.time = addTimeSeparator(item.time_str, ":");
-						}
+//						}
 				}
 				res.send(res_data);
 		});
