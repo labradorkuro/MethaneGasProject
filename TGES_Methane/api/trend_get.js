@@ -6,7 +6,7 @@ var RTR_Trend = model.RTR_Trend;
 
 exports.trend_get = function (req, res) {
 		var res_data = {
-				last_trend: {value:[],batt:[],rssi:[]},
+				last_trend: {date:"",time:"", value:[],batt:[],rssi:[]},
 				chart_data : {
 					labels: [],
 					datasets: [
@@ -39,7 +39,7 @@ exports.trend_get = function (req, res) {
 				// ファイル名から日付、時間を取り出してラベルに追加する
 				for(var i in items) {
 						var item = items[i];
-						res_data.chart_data.labels.push(item.time_str);
+						res_data.chart_data.labels.push( addDateSeparator(item.date_str, "/") + " " + addTimeSeparator(item.time_str, ":") );
 						// 子機データの処理
 						for(var j in item.trends) {
 								var model = item.trends[j].model;
@@ -63,36 +63,18 @@ exports.trend_get = function (req, res) {
 										}
 								}
 						}
+						if (i == count - 1) {
+							// 最後のデータ
+							res_data.last_trend.date = addDateSeparator(item.date_str, "/");
+							res_data.last_trend.time = addTimeSeparator(item.time_str, ":");
+						}
 				}
 				res.send(res_data);
 		});
-		/** for debug 
-		var data = {
-			labels: ["January", "February", "March", "April", "May", "June", "July"],
-			datasets: [
-				{
-					label: "メタン濃度",
-					fillColor: "rgba(255,255,0,0.2)",
-					strokeColor: "rgba(255,255,0,1)",
-					pointColor: "rgba(255,255,0,1)",
-					pointStrokeColor: "#fff",
-					pointHighlightFill: "#fff",
-					pointHighlightStroke: "rgba(255,255,0,1)",
-					data: [60, 50, 40, 45, 65, 60, 40]
-				},
-				{
-					label: "温度",
-					fillColor: "rgba(0,0,255,0.2)",
-					strokeColor: "rgba(0,0,255,1)",
-					pointColor: "rgba(0,0,255,1)",
-					pointStrokeColor: "#fff",
-					pointHighlightFill: "#fff",
-					pointHighlightStroke: "rgba(0,0,255,1)",
-					data: [24, 20, 21, 22, 25, 24, 23]
-				}
-			]
-		};
-		res.send(data);
-		*/
 };
-
+function addDateSeparator(date,sep) {
+	return date.substring(0,4) + sep + date.substring(4,6) + sep + date.substring(6);
+}
+function addTimeSeparator(date,sep) {
+	return date.substring(0,2) + sep + date.substring(2,4) + sep + date.substring(4);
+}

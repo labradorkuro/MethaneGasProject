@@ -2,65 +2,16 @@
 // トレンド表示、期間表示画面
 //
 $(function() {
-	Chart.defaults.global.animation = false;
-	/**
-	trend_chart.data1 = {
-		labels: ["January", "February", "March", "April", "May", "June", "July"],
-		datasets: [
-			{
-				label: "メタン濃度",
-				fillColor: "rgba(255,255,0,0.2)",
-				strokeColor: "rgba(255,255,0,1)",
-				pointColor: "rgba(255,255,0,1)",
-				pointStrokeColor: "#fff",
-				pointHighlightFill: "#fff",
-				pointHighlightStroke: "rgba(255,255,0,1)",
-				data: [65, 59, 80, 81, 56, 55, 40]
-			},
-			{
-				label: "温度",
-				fillColor: "rgba(0,0,255,0.2)",
-				strokeColor: "rgba(0,0,255,1)",
-				pointColor: "rgba(0,0,255,1)",
-				pointStrokeColor: "#fff",
-				pointHighlightFill: "#fff",
-				pointHighlightStroke: "rgba(0,0,255,1)",
-				data: [28, 48, 40, 19, 86, 27, 90]
-			}
-		]
-	};
-	trend_chart.data2 = {
-		labels: ["January", "February", "March", "April", "May", "June", "July"],
-		datasets: [
-			{
-				label: "メタン濃度",
-				fillColor: "rgba(255,255,0,0.2)",
-				strokeColor: "rgba(255,255,0,1)",
-				pointColor: "rgba(255,255,0,1)",
-				pointStrokeColor: "#fff",
-				pointHighlightFill: "#fff",
-				pointHighlightStroke: "rgba(255,255,0,1)",
-				data: [60, 50, 40, 45, 65, 60, 40]
-			},
-			{
-				label: "温度",
-				fillColor: "rgba(0,0,255,0.2)",
-				strokeColor: "rgba(0,0,255,1)",
-				pointColor: "rgba(0,0,255,1)",
-				pointStrokeColor: "#fff",
-				pointHighlightFill: "#fff",
-				pointHighlightStroke: "rgba(0,0,255,1)",
-				data: [24, 20, 21, 22, 25, 24, 23]
-			}
-		]
-	};**/
-	$.datepicker.setDefaults($.datepicker.regional[ "ja" ]); // 日本語化
-	// タブの初期化
-	trend_chart.initTabs();
-	// データ表示
-	trend_chart.dispLogger_info(["3","3"],["4","5"]);
-	// データリクエスト用のタイマーセット
-	trend_chart.timer = setInterval(trend_chart.onTimer, 10000);
+		Chart.defaults.global.animation = false;
+		$.datepicker.setDefaults($.datepicker.regional[ "ja" ]); // 日本語化
+		// タブの初期化
+		trend_chart.initTabs();
+		// 表示データのリクエストをサーバへ送信する
+		trend_chart.requestTrendData();
+		// データ表示
+		//trend_chart.dispLogger_info(["",""],["",""]);
+		// データリクエスト用のタイマーセット
+		trend_chart.timer = setInterval(trend_chart.onTimer, 60000);
 });
 
 // チャートデータの処理
@@ -71,16 +22,16 @@ trend_chart.count = 0;
 
 // タブ初期化
 trend_chart.initTabs = function() {
-	// タブを生成
-	$("#tabs").tabs();
+		// タブを生成
+		$("#tabs").tabs();
 };
 
 // トレンドグラフ表示
 trend_chart.chart_init = function(data) {
- var options = {
-        // 凡例表示用の HTML テンプレート
-        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\">&nbsp;&nbsp;&nbsp;</span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
-    };
+	 var options = {
+	        // 凡例表示用の HTML テンプレート
+	        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\">&nbsp;&nbsp;&nbsp;</span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+	    };
 	var ctx = document.getElementById("trend_chart").getContext("2d");
 	trend_chart.myLineChart = new Chart(ctx).Line(data, options);
 	var legend = trend_chart.myLineChart.generateLegend();
@@ -111,6 +62,7 @@ trend_chart.requestTrendData = function() {
 		trend_chart.chart_init(data.chart_data);
 		// 子機情報の更新
 		trend_chart.dispLogger_info(data.last_trend.batt, data.last_trend.rssi);
+		$("#last_measure_time").text("最終計測時間：" + data.last_trend.date + " " + data.last_trend.time);
 		$("#trend_methane").text(data.last_trend.value[0]);
 		$("#trend_temp").text(data.last_trend.value[1]);
 		// 後で実装
