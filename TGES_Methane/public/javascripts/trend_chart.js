@@ -30,6 +30,7 @@ trend_chart.initTabs = function() {
 // トレンドグラフ表示
 trend_chart.chart_init = function(id,id_legend, data) {
 	 var options = {
+			 pointHitDetectionRadius : 4,	// マウスでデータをポイントする範囲の大きさ指定
 	        // 凡例表示用の HTML テンプレート
 	        legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].fillColor%>\">&nbsp;&nbsp;&nbsp;</span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
 	    };
@@ -42,6 +43,36 @@ trend_chart.chart_init = function(id,id_legend, data) {
 
 // 子機の情報表示
 trend_chart.dispLogger_info = function(battery_info, wave_info) {
+	$("#td_logger_1_bat").attr("style","text-align:center;background-color:aquamarine;");
+	if (battery_info[0] < "3") {
+		$("#td_logger_1_bat").attr("style","text-align:center;background-color:yellow;");
+	} 
+	if (battery_info[0] <= "1") {
+		$("#td_logger_1_bat").attr("style","text-align:center;background-color:red;");				
+	}
+
+	$("#td_logger_1_wav").attr("style","text-align:center;background-color:aquamarine;");
+	if (wave_info[0] < "3") {
+		$("#td_logger_1_wav").attr("style","text-align:center;background-color:yellow;");
+	} 
+	if (wave_info[0] <= "1") {
+		$("#td_logger_1_wav").attr("style","text-align:center;background-color:red;");				
+	}
+	
+	$("#td_logger_2_bat").attr("style","text-align:center;background-color:lightgreen;");
+	if (battery_info[1] < "3") {
+		$("#td_logger_2_bat").attr("style","text-align:center;background-color:yellow;");
+	} 
+	if (battery_info[1] <= "1") {
+		$("#td_logger_2_bat").attr("style","text-align:center;background-color:red;");				
+	}
+	$("#td_logger_2_wav").attr("style","text-align:center;background-color:lightgreen;");
+	if (wave_info[1] < "3") {
+		$("#td_logger_2_wav").attr("style","text-align:center;background-color:yellow;");
+	} 
+	if (wave_info[1] <= "1") {
+		$("#td_logger_2_wav").attr("style","text-align:center;background-color:red;");				
+	}
 	$("#logger_1_bat").text(battery_info[0]);
 	$("#logger_2_bat").text(battery_info[1]);
 	$("#logger_1_wav").text(wave_info[0]);
@@ -76,10 +107,19 @@ trend_chart.requestTrendData = function() {
 			var ext_ps = "";
 			if (data.last_trend.ext_ps === "1") {
 				ext_ps = "通電";
+				$("#td_base_ext_ps").attr("style","text-align:center;background-color:lightgreen;");
 			} else {
 				ext_ps = "遮断";
+				$("#td_base_ext_ps").attr("style","text-align:center;background-color:red;");
 			}
 			$("#base_ext_ps").text(ext_ps);
+			$("#td_base_battery").attr("style","text-align:center;background-color:ligthgreen;");
+			if (data.last_trend.battery < "3") {
+				$("#td_base_battery").attr("style","text-align:center;background-color:yellow;");
+			} 
+			if (data.last_trend.battery <= "1") {
+				$("#td_base_battery").attr("style","text-align:center;background-color:red;");				
+			}
 			$("#base_battery").text(data.last_trend.battery);
 
 			// 過去１週間のデータを取得してグラフ表示
