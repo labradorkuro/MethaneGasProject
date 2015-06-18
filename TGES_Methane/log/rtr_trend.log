@@ -438,3 +438,1091 @@ ValidationError: RTR_Trend validation failed
     at SchemaString.SchemaType.doValidate (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/schematype.js:656:19)
     at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/mongoose/lib/document.js:1035:9
     at process._tickCallback (node.js:355:11)
+[2015-06-18 19:03:32.399] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.410] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.414] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.418] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.421] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.429] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.437] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.441] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.447] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.448] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.449] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.451] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:03:32.455] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.286] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.295] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.300] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.304] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.307] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.311] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.322] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.330] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.334] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.335] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.338] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.342] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:05:24.344] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.263] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.266] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.268] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.271] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.273] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.275] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.276] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.277] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.279] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.281] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.283] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.285] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:08:24.286] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.500] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.512] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.516] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.518] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.520] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.528] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.536] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.543] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.545] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.547] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.551] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.553] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.557] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.559] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.561] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.564] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.569] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.571] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.573] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.575] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.578] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.580] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.583] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.585] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.588] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.590] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.593] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.595] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-18 19:09:45.597] [ERROR] rtr_trend - [ReferenceError: conole is not defined]
+ReferenceError: conole is not defined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:209:2)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:177:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)

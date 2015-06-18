@@ -173,6 +173,9 @@ function trendFileCheck(filepath) {
 		    					}
 					    		trend.trends.push(tr);
 		    				}
+	    					// メタン濃度の温度補正処理
+		    				trend.trends = methaneValueAdjustment(trend.trends);
+		    				
 				    		// mongoDBへ追加する
 				    		rc = dbPost(trend, filepath);
 				    		if (! rc) {
@@ -190,6 +193,39 @@ function trendFileCheck(filepath) {
 	});
 }
 
+// 計測値からメタン濃度値を補正する
+function methaneValueAdjustment(trends) {
+	var temp = 0;
+	var mA = 0;
+	var _c = 0;
+	// 温度値と電流値を取り出す
+	if (trends[0].model == "RTR-502") {
+		temp = trends[0].value;
+		mA = trends[1].value;
+	} else {
+		temp = trends[1].value;
+		mA = trends[0].value;
+	}
+	console.log("model=" + trends[0].model + " temp=" + temp + " mA=" + mA);
+	var _temp = temp - 20;
+	if (_temp < -10) {
+		_c = -2.3;
+	} else if ((-10 <= _temp) && (_temp <= 10) ){
+		_c = _temp * 0.23;
+	} else {
+		_c = 2.3;
+	}
+	var c0 = 50 * (mA - 4) / 8;
+	var c = (c0 + _c);
+	c = Math.round(c * 100);
+	c = c / 100;
+	if (trends[0].model == "RTR-502") {
+		trends[1].value = c;
+	} else {
+		trends[0].value = c;
+	}
+	return trends;
+}
 //ファイル名から日付文字列を取り出す
 function getDateString(model, serial, name) {
 		var idx_a = model.length + serial.length + 2;
