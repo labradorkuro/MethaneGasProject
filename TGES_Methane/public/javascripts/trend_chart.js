@@ -8,7 +8,7 @@ $(function() {
 		trend_chart.initTabs();
 		// 表示データのリクエストをサーバへ送信する
 		trend_chart.requestTrendData();
-		trend_chart.requestWeeklyData();
+		//trend_chart.requestWeeklyData();
 		// データ表示
 		//trend_chart.dispLogger_info(["",""],["",""]);
 		// データリクエスト用のタイマーセット
@@ -20,7 +20,7 @@ var trend_chart = trend_chart || {}
 trend_chart.myLineChart = null;
 trend_chart.timer = null;
 trend_chart.count = 0;
-
+trend_chart.prevDate = "";	// 日付変更確認用
 // タブ初期化
 trend_chart.initTabs = function() {
 		// タブを生成
@@ -60,15 +60,12 @@ trend_chart.requestTrendData = function() {
 	var today = new Date();
 	var startdate = trend_chart.getDateString(trend_chart.addDate(today,  -6), "{0}{1}{2}");
 	$.get('/trend_get?startdate=' + startdate + '&enddate=' + enddate + '&interval=12', function(data){
-		// 応答データでチャートを更新する
+		// 応答データでチャートを更新する（サマリー）
 		trend_chart.chart_init("trend_chart", "chart_legend",data.chart_data);
 		// 子機情報の更新
 		trend_chart.dispLogger_info(data.last_trend.batt, data.last_trend.rssi);
 		$("#chart_title").text(trend_chart.addDateSeparator(startdate,"/") + " - " + trend_chart.addDateSeparator(enddate,"/") + "　サマリー");
-//		$("#last_measure_time").text("最終計測時間：" + data.last_trend.date + " " + data.last_trend.time);
-//		$("#trend_methane").text(data.last_trend.value[0]);
-//		$("#trend_temp").text(data.last_trend.value[1]);
-		// 
+		// 当日の詳細表示
 		$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
 			// 応答データでチャートを更新する
 			trend_chart.chart_init("trend_chart_1" , "chart_legend_1", data.chart_data);
@@ -76,6 +73,12 @@ trend_chart.requestTrendData = function() {
 			$("#last_measure_time").text("最終計測時間：" + data.last_trend.date + " " + data.last_trend.time);
 			$("#trend_methane").text(data.last_trend.value[0]);
 			$("#trend_temp").text(data.last_trend.value[1]);
+
+			// 過去１週間のデータを取得してグラフ表示
+			if (trend_chart.prevDate != enddate) {
+				trend_chart.prevDate = enddate;
+				trend_chart.requestWeeklyData();
+			}
 		});
 		
 	});
