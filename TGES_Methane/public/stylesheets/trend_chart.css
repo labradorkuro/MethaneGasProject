@@ -11,7 +11,7 @@ div#header {
 /* メタン濃度、温度表示用 */
 div#trend_a {
     float:left;
-    border:solid 1px red;
+    border:solid 2px red;
     padding-left:4px;
     padding-right:10px;
     font-size:48px;
