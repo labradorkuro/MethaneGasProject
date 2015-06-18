@@ -1,88 +1,89 @@
 ﻿div#trend_base
-	p
-		span#last_measure_time 最終計測時間：
-	div#trend_a
-		table.trend_table
-			tr
-				td.trend_title
-					span.trend_text メタン濃度
-				td.trend_value
-					span.trend_text#trend_methane
-				td.trend_unit
-					span.trend_text ％
-			tr
-				td.trend_title
-					span.trend_text 温　　　度
-				td.trend_value
-					span.trend_text#trend_temp
-				td.trend_unit
-					span.trend_text ℃
-	div#trend_b
-		table.trend_table
-			tr
-				td.trend_title_s
-					span.trend_text 子機１（温度）
-				td.trend_title_s
-					span.trend_text 電池残量(0-5)
-				td.trend_value
-					span.trend_text
-						label#logger_1_bat
-				td.trend_title_s
-					span.trend_text 電波強度(0-5)
-				td.trend_value
-					span.trend_text
-						label#logger_1_wav
-			tr
-				td.trend_title_s
-					span.trend_text 子機２（電流）
-				td.trend_title_s
-					span.trend_text 電池残量(0-5)
-				td.trend_value
-					span.trend_text
-						label#logger_2_bat
-				td.trend_title_s
-					span.trend_text 電波強度(0-5)
-				td.trend_value
-					span.trend_text
-						label#logger_2_wav
-	div#chart_title_div
-		span#chart_title
-	div#chart
-		canvas#trend_chart(width="1380px" height="400px")
-	div#chart_legend
-	div#chart_title_div_1
-		span#chart_title_1
-	div#chart_1
-		canvas#trend_chart_1(width="1380px" height="400px")
-	div#chart_legend_1
-	div#chart_title_div_2
-		span#chart_title_2
-	div#chart_2
-		canvas#trend_chart_2(width="1380px" height="400px")
-	div#chart_legend_2
-	div#chart_title_div_3
-		span#chart_title_3
-	div#chart_3
-		canvas#trend_chart_3(width="1380px" height="400px")
-	div#chart_legend_3
-	div#chart_title_div_4
-		span#chart_title_4
-	div#chart_4
-		canvas#trend_chart_4(width="1380px" height="400px")
-	div#chart_legend_4
-	div#chart_title_div_5
-		span#chart_title_5
-	div#chart_5
-		canvas#trend_chart_5(width="1380px" height="400px")
-	div#chart_legend_5
-	div#chart_title_div_6
-		span#chart_title_6
-	div#chart_6
-		canvas#trend_chart_6(width="1380px" height="400px")
-	div#chart_legend_6
-	div#chart_title_div_7
-		span#chart_title_7
-	div#chart_7
-		canvas#trend_chart_7(width="1380px" height="400px")
-	div#chart_legend_7
+	div#header
+		p
+			span#last_measure_time 最終計測時間：
+		div#trend_a
+			table.trend_table
+				tr
+					td.trend_title
+						span.trend_text メタン濃度
+					td.trend_value
+						span.trend_text#trend_methane
+					td.trend_unit
+						span.trend_text ％
+				tr
+					td.trend_title
+						span.trend_text 温　　　度
+					td.trend_value
+						span.trend_text#trend_temp
+					td.trend_unit
+						span.trend_text ℃
+		div#trend_b
+			table.trend_table
+				tr
+					td.trend_title_s
+						span.trend_text 子機１（温度）
+					td.trend_title_s
+						span.trend_text 電池残量(0-5)
+					td.trend_value
+						span.trend_text
+							label#logger_1_bat
+					td.trend_title_s
+						span.trend_text 電波強度(0-5)
+					td.trend_value
+						span.trend_text
+							label#logger_1_wav
+				tr
+					td.trend_title_s
+						span.trend_text 子機２（電流）
+					td.trend_title_s
+						span.trend_text 電池残量(0-5)
+					td.trend_value
+						span.trend_text
+							label#logger_2_bat
+					td.trend_title_s
+						span.trend_text 電波強度(0-5)
+					td.trend_value
+						span.trend_text
+							label#logger_2_wav
+	div#chart_area
+		div#chart_title_div
+			span#chart_title
+			canvas#trend_chart(width="1380px" height="400px")
+			div.chart_legend#chart_legend
+	div#chart_area
+		div#chart_title_div
+			span#chart_title_1
+			canvas#trend_chart_1(width="1380px" height="400px")
+			div.chart_legend#chart_legend_1
+	div#chart_area
+		div#chart_title_div
+			span#chart_title_2
+			canvas#trend_chart_2(width="1380px" height="400px")
+			div.chart_legend#chart_legend_2
+	div#chart_area
+		div#chart_title_div
+			span#chart_title_3
+			canvas#trend_chart_3(width="1380px" height="400px")
+			div.chart_legend#chart_legend_3
+	div#chart_area
+		div#chart_title_div
+			span#chart_title_4
+			canvas#trend_chart_4(width="1380px" height="400px")
+			div.chart_legend#chart_legend_4
+	div#chart_area
+		div#chart_title_div
+			span#chart_title_5
+			canvas#trend_chart_5(width="1380px" height="400px")
+			div.chart_legend#chart_legend_5
+	div#chart_area
+		div#chart_title_div
+			span#chart_title_6
+			canvas#trend_chart_6(width="1380px" height="400px")
+			div.chart_legend#chart_legend_6
+	div#chart_area
+		div#chart_title_div
+			span#chart_title_7
+			canvas#trend_chart_7(width="1380px" height="400px")
+			div.chart_legend#chart_legend_7
 	

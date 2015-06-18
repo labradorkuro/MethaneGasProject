@@ -1,10 +1,13 @@
 /* メタン濃度計測システム */
 
 div#trend_base {
-    width:100%;
+	width:100%;
    overflow:auto;
 }
-
+div#header {
+	width:100%;
+	height:300px;
+}
 /* メタン濃度、温度表示用 */
 div#trend_a {
     float:left;
@@ -16,36 +19,41 @@ div#trend_a {
 /* 子機情報表示用 */
 div#trend_b {
     float:left;
-    position:relative;
-    left:100px;
     border:solid 1px red;
     padding-left:4px;
     padding-right:4px;
     font-size:24px;
 }
-div#chart_title_div {
+div#chart_area {
     float:left;
     position:relative;
-    top:50px;
-    left:10px;
+    top: 0px;
     border:solid 1px red;
-    padding-left:4px;
-    font-size:24px;
     width:1400px;
     height:450px;
-	
+    padding-top:10px;
+    margin-top:10px;
 }
-/* チャート表示エリア */
-div#chart {
+div#chart_title_div {
     float:left;
-    position:relative;
-    top:-350px;
+    top:50px;
     left:10px;
     border:none;
     padding-left:4px;
     font-size:24px;
-    width:1400px;
-    height:450px;
+    width:600px;
+    height:50px;
+	
+}
+/* チャート表示エリア */
+div#chart {
+    top:150px;
+    left:10px;
+    border:none;
+    padding-left:4px;
+    font-size:24px;
+    width:1000px;
+    height:500px;
 }
 span#last_measure_time {
     font-size:32px;
@@ -70,15 +78,14 @@ table.trend_table td.trend_unit {
 }
 
 /* チャートの凡例表示用 */
-div#chart_legend {
-    float:left;
-    position:relative;
-    top:-850px;
-    left:600px;
-    width:200px;
-    height:200px;
-    padding: 10px;
-    overflow: hidden;
+.chart_legend {
+	position:relative;
+	top:-450px;
+	left:600px;
+ 	width:400px;
+	height:50px;
+	padding: 10px;
+	overflow: hidden;
 }
 
 /* チャートの凡例表示用 */
@@ -87,7 +94,6 @@ ul.line-legend {
     float: left;
     margin: 0 0 0 0;
     padding: 0;
-    position: relative;
     left: 50%;
 }
 /* チャートの凡例表示用 */
@@ -95,253 +101,6 @@ ul.line-legend > li {
     float: left;
     margin-right: 5px;
     padding: 5px;
-    position: relative;
     left: -50%;
 }
 
-div#chart_title_div_1 {
-    float:left;
-    position:relative;
-    top:-600px;
-    left:10px;
-    border:solid 1px red;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-	
-}
-/* チャート表示エリア */
-div#chart_1 {
-    float:left;
-    position:relative;
-    top:-1000px;
-    left:10px;
-    border:none;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-}
-/* チャートの凡例表示用 */
-div#chart_legend_1 {
-    float:left;
-    position:relative;
-    top:-1500px;
-    left:600px;
-    width:200px;
-    height:200px;
-    padding: 10px;
-    overflow: hidden;
-}
-div#chart_title_div_2 {
-    float:left;
-    position:relative;
-    top:-1250px;
-    left:10px;
-    border:solid 1px red;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-	
-}
-/* チャート表示エリア */
-div#chart_2 {
-    float:left;
-    position:relative;
-    top:-1650px;
-    left:10px;
-    border:none;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-}
-/* チャートの凡例表示用 */
-div#chart_legend_2 {
-    float:left;
-    position:relative;
-    top:-2150px;
-    left:600px;
-    width:200px;
-    height:200px;
-    padding: 10px;
-    overflow: hidden;
-
-}
-div#chart_title_div_3 {
-    float:left;
-    position:relative;
-    top:-1900px;
-    left:10px;
-    border:solid 1px red;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-	
-}
-/* チャート表示エリア */
-div#chart_3 {
-    float:left;
-    position:relative;
-    top:-2300px;
-    left:10px;
-    border:none;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-}
-/* チャートの凡例表示用 */
-div#chart_legend_3 {
-    float:left;
-    position:relative;
-    top:-2800px;
-    left:600px;
-    width:200px;
-    height:200px;
-    padding: 10px;
-    overflow: hidden;
-}
-div#chart_title_div_4 {
-    float:left;
-    position:relative;
-    top:-2550px;
-    left:10px;
-    border:solid 1px red;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-	
-}
-/* チャート表示エリア */
-div#chart_4 {
-    float:left;
-    position:relative;
-    top:-2950px;
-    left:10px;
-    border:none;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-}
-/* チャートの凡例表示用 */
-div#chart_legend_4 {
-    float:left;
-    position:relative;
-    top:-3450px;
-    left:600px;
-    width:200px;
-    height:200px;
-    padding: 10px;
-    overflow: hidden;
-}
-div#chart_title_div_5 {
-    float:left;
-    position:relative;
-    top:-3200px;
-    left:10px;
-    border:solid 1px red;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-	
-}
-/* チャート表示エリア */
-div#chart_5 {
-    float:left;
-    position:relative;
-    top:-3600px;
-    left:10px;
-    border:none;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-}
-/* チャートの凡例表示用 */
-div#chart_legend_5 {
-    float:left;
-    position:relative;
-    top:-4100px;
-    left:600px;
-    width:200px;
-    height:200px;
-    padding: 10px;
-    overflow: hidden;
-}
-div#chart_title_div_6 {
-    float:left;
-    position:relative;
-    top:-3850px;
-    left:10px;
-    border:solid 1px red;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-	
-}
-/* チャート表示エリア */
-div#chart_6 {
-    float:left;
-    position:relative;
-    top:-4250px;
-    left:10px;
-    border:none;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-}
-/* チャートの凡例表示用 */
-div#chart_legend_6 {
-    float:left;
-    position:relative;
-    top:-4750px;
-    left:600px;
-    width:200px;
-    height:200px;
-    padding: 10px;
-    overflow: hidden;
-}
-div#chart_title_div_7 {
-    float:left;
-    position:relative;
-    top:-4500px;
-    left:10px;
-    border:solid 1px red;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-	
-}
-/* チャート表示エリア */
-div#chart_7 {
-    float:left;
-    position:relative;
-    top:-4900px;
-    left:10px;
-    border:none;
-    padding-left:4px;
-    font-size:24px;
-    width:1400px;
-    height:450px;
-}
-/* チャートの凡例表示用 */
-div#chart_legend_7 {
-    float:left;
-    position:relative;
-    top:-5400px;
-    left:600px;
-    width:200px;
-    height:200px;
-    padding: 10px;
-    overflow: hidden;
-}
