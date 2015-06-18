@@ -167,11 +167,12 @@ function trendFileCheck(filepath) {
 					    				rssi : result.file.group[0].remote[i].rssi
 		    					};
 		    					// 計測値の無効チェック
-		    					if (result.file.group[0].remote[i].ch[0].current[0].value[0].$.valid != "true") {
+		    					if (result.file.group[0].remote[i].ch[0].current[0].value[0].$.valid == "true") {
+						    		trend.trends.push(tr);
+		    					} else {
 		    						// 計測値無効
 				    				tr.battery = "-1";
 		    					}
-					    		trend.trends.push(tr);
 		    				}
 	    					// メタン濃度の温度補正処理
 		    				trend.trends = methaneValueAdjustment(trend.trends);
