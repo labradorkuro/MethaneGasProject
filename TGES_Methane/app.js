@@ -78,7 +78,7 @@ module.exports = app;
 // 現在値ファイルチェックスタート
 function trendFileCheckStart() {
 	fileSearch();
-	var timer = setInterval(fileSearch, (1000 * 60 * 5));
+	var timer = setInterval(fileSearch, (1000 * 60 * 3));
 }
 
 // ディレクトリ内のXMLファイル検索
@@ -145,20 +145,42 @@ function trendFileCheck(filepath) {
 		    				var model = result.file.base[0].model[0];
 		    				var time_str = getTimeString(model, serial,name);
 		    				var date_str = getDateString(model, serial,name);
-		    				var trend = {base: model, ext_ps: result.file.base[0].gsm[0].ext_ps, battery: result.file.base[0].gsm[0].batt,date_str: date_str, time_str: time_str, trends: [ ] };
+		    				// 親機の情報を取得して保存用のデータに入れる
+		    				var trend = {
+		    						base: model, 
+		    						ext_ps: result.file.base[0].gsm[0].ext_ps, 
+		    						battery: result.file.base[0].gsm[0].batt,
+		    						date_str: date_str, 
+		    						time_str: time_str, 
+		    						trends: [ ] };
 		    				console.log("len = " + result.file.group[0].remote.length);
 		    				// 子機の数分ループ
 		    				for(var i in result.file.group[0].remote) {
-					    		var tr = {
-					    				time_str : result.file.group[0].remote[i].ch[0].current[0].time_str,
-					    				model : result.file.group[0].remote[i].model,
-					    				num : result.file.group[0].remote[i].num,
-					    				unit_name : result.file.group[0].remote[i].name,
-					    				value : result.file.group[0].remote[i].ch[0].current[0].value[0]._,
-					    				value_unit : result.file.group[0].remote[i].ch[0].current[0].unit,
-					    				battery : result.file.group[0].remote[i].ch[0].current[0].batt,
-					    				rssi : result.file.group[0].remote[i].rssi
-					    		};
+		    					var tr = {
+					    				time_str : "",
+					    				model : "",
+					    				num : "",
+					    				unit_name : "",
+					    				value : "",
+					    				value_unit : "",
+					    				battery : "",
+					    				rssi : ""
+		    					};
+		    					// 計測値の有効無効チェック
+		    					if (result.file.group[0].remote[i].ch[0].current[0].value[0].$.valid === "true") {
+		    						// 計測値有効
+				    				tr.time_str = result.file.group[0].remote[i].ch[0].current[0].time_str,
+				    				tr.model = result.file.group[0].remote[i].model,
+				    				tr.num = result.file.group[0].remote[i].num,
+				    				tr.unit_name = result.file.group[0].remote[i].name,
+				    				tr.value = result.file.group[0].remote[i].ch[0].current[0].value[0]._,
+				    				tr.value_unit = result.file.group[0].remote[i].ch[0].current[0].unit,
+				    				tr.battery = result.file.group[0].remote[i].ch[0].current[0].batt,
+				    				tr.rssi = result.file.group[0].remote[i].rssi
+		    					} else {
+		    						// 計測値無効
+				    				tr.battery = "-1",
+		    					}
 					    		trend.trends.push(tr);
 		    				}
 				    		// mongoDBへ追加する

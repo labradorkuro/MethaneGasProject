@@ -72,6 +72,10 @@ table.trend_table td.trend_title_s {
     text-align:center;
     width:180px;
 }
+table.trend_table td.trend_title_l {
+    text-align:center;
+    width:300px;
+}
 
 table.trend_table td.trend_value {
     text-align: right;
