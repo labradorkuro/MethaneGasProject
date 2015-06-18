@@ -179,7 +179,7 @@ function trendFileCheck(filepath) {
 				    				tr.rssi = result.file.group[0].remote[i].rssi
 		    					} else {
 		    						// 計測値無効
-				    				tr.battery = "-1",
+				    				tr.battery = "-1";
 		    					}
 					    		trend.trends.push(tr);
 		    				}
