@@ -19,18 +19,31 @@
 					td.trend_unit
 						span.trend_text ℃
 		div#trend_b
-			table.trend_table
+			table.trend_table(border="1" cellspacing="0" bordercolor="red")
+				tr
+					td.trend_title_s
+						span.trend_text 親機
+					td.trend_title_s
+						span.trend_text 電池残量(0-5)
+					td.trend_value(style="text-align:center")
+						span.trend_text
+							label#base_battery
+					td.trend_title_s
+						span.trend_text 外部電源
+					td.trend_value(style="text-align:center")
+						span.trend_text
+							label#base_ext_ps
 				tr
 					td.trend_title_s
 						span.trend_text 子機１（温度）
 					td.trend_title_s
 						span.trend_text 電池残量(0-5)
-					td.trend_value
+					td.trend_value(style="text-align:center")
 						span.trend_text
 							label#logger_1_bat
 					td.trend_title_s
 						span.trend_text 電波強度(0-5)
-					td.trend_value
+					td.trend_value(style="text-align:center")
 						span.trend_text
 							label#logger_1_wav
 				tr
@@ -38,12 +51,12 @@
 						span.trend_text 子機２（電流）
 					td.trend_title_s
 						span.trend_text 電池残量(0-5)
-					td.trend_value
+					td.trend_value(style="text-align:center")
 						span.trend_text
 							label#logger_2_bat
 					td.trend_title_s
 						span.trend_text 電波強度(0-5)
-					td.trend_value
+					td.trend_value(style="text-align:center")
 						span.trend_text
 							label#logger_2_wav
 	div#chart_area

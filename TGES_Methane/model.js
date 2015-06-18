@@ -20,10 +20,12 @@ var Trend = new mongoose.Schema({
 });
 
 var RTR_Trend = new mongoose.Schema({
-	base : String,
-	date_str: String,
-	time_str: String,
-	trends:[Trend]
+	base : String,		// 親機モデル名称
+	ext_ps : String,		// 親機外部電源情報
+	battery: String,		// 親機電池残量
+	date_str: String,	// ファイル日付
+	time_str: String,	// ファイル時間
+	trends:[Trend]		// 子機情報
 });
 
 exports.RTR_Trend = db.model('RTR_Trend', RTR_Trend);

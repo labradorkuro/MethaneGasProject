@@ -145,7 +145,7 @@ function trendFileCheck(filepath) {
 		    				var model = result.file.base[0].model[0];
 		    				var time_str = getTimeString(model, serial,name);
 		    				var date_str = getDateString(model, serial,name);
-		    				var trend = {base: model, date_str: date_str, time_str: time_str, trends: [ ] };
+		    				var trend = {base: model, ext_ps: result.file.base[0].gsm[0].ext_ps, battery: result.file.base[0].gsm[0].batt,date_str: date_str, time_str: time_str, trends: [ ] };
 		    				console.log("len = " + result.file.group[0].remote.length);
 		    				// 子機の数分ループ
 		    				for(var i in result.file.group[0].remote) {

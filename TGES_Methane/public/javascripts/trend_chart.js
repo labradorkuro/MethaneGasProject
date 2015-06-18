@@ -73,6 +73,14 @@ trend_chart.requestTrendData = function() {
 			$("#last_measure_time").text("最終計測時間：" + data.last_trend.date + " " + data.last_trend.time);
 			$("#trend_methane").text(data.last_trend.value[0]);
 			$("#trend_temp").text(data.last_trend.value[1]);
+			var ext_ps = "";
+			if (data.last_trend.ext_ps === "1") {
+				ext_ps = "通電";
+			} else {
+				ext_ps = "遮断";
+			}
+			$("#base_ext_ps").text(ext_ps);
+			$("#base_battery").text(data.last_trend.battery);
 
 			// 過去１週間のデータを取得してグラフ表示
 			if (trend_chart.prevDate != enddate) {

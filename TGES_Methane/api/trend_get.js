@@ -6,7 +6,7 @@ var RTR_Trend = model.RTR_Trend;
 
 exports.trend_get = function (req, res) {
 		var res_data = {
-				last_trend: {date:"",time:"", value:[],batt:[],rssi:[]},
+				last_trend: {ext_ps:"", battery:"", date:"",time:"", value:[],batt:[],rssi:[]},
 				chart_data : {
 					labels: [],
 					datasets: [
@@ -72,6 +72,8 @@ exports.trend_get = function (req, res) {
 						}
 //						if (i == count - 1) {
 							// 最後のデータ
+							res_data.last_trend.ext_ps = item.ext_ps;		// 親機外部電源情報
+							res_data.last_trend.battery = item.battery;	// 親機電池残量
 							res_data.last_trend.date = addDateSeparator(item.date_str, "/");
 							res_data.last_trend.time = addTimeSeparator(item.time_str, ":");
 //						}
