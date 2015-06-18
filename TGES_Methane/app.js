@@ -157,27 +157,17 @@ function trendFileCheck(filepath) {
 		    				// 子機の数分ループ
 		    				for(var i in result.file.group[0].remote) {
 		    					var tr = {
-					    				time_str : "",
-					    				model : "",
-					    				num : "",
-					    				unit_name : "",
-					    				value : "",
-					    				value_unit : "",
-					    				battery : "",
-					    				rssi : ""
+					    				time_str : result.file.group[0].remote[i].ch[0].current[0].time_str,
+					    				model : result.file.group[0].remote[i].model,
+					    				num : result.file.group[0].remote[i].num,
+					    				unit_name : result.file.group[0].remote[i].name,
+					    				value : result.file.group[0].remote[i].ch[0].current[0].value[0]._,
+					    				value_unit : result.file.group[0].remote[i].ch[0].current[0].unit,
+					    				battery : result.file.group[0].remote[i].ch[0].current[0].batt,
+					    				rssi : result.file.group[0].remote[i].rssi
 		    					};
-		    					// 計測値の有効無効チェック
-		    					if (result.file.group[0].remote[i].ch[0].current[0].value[0].$.valid === "true") {
-		    						// 計測値有効
-				    				tr.time_str = result.file.group[0].remote[i].ch[0].current[0].time_str,
-				    				tr.model = result.file.group[0].remote[i].model,
-				    				tr.num = result.file.group[0].remote[i].num,
-				    				tr.unit_name = result.file.group[0].remote[i].name,
-				    				tr.value = result.file.group[0].remote[i].ch[0].current[0].value[0]._,
-				    				tr.value_unit = result.file.group[0].remote[i].ch[0].current[0].unit,
-				    				tr.battery = result.file.group[0].remote[i].ch[0].current[0].batt,
-				    				tr.rssi = result.file.group[0].remote[i].rssi
-		    					} else {
+		    					// 計測値の無効チェック
+		    					if (result.file.group[0].remote[i].ch[0].current[0].value[0].$.valid != "true") {
 		    						// 計測値無効
 				    				tr.battery = "-1";
 		    					}
