@@ -32,6 +32,7 @@ div.chart_area_base {
     float:left;
     position:relative;
     top: 20px;
+    font-size:24px;
 	
 }
 div#chart_area {
