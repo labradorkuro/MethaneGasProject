@@ -78,7 +78,7 @@ module.exports = app;
 // 現在値ファイルチェックスタート
 function trendFileCheckStart() {
 	fileSearch();
-	var timer = setInterval(fileSearch, (1000 * 60 * 3));
+	var timer = setInterval(fileSearch, (1000 * 60 * 1));		// データファイル検索１分間隔
 }
 
 // ディレクトリ内のXMLファイル検索
