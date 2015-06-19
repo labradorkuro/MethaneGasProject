@@ -44,7 +44,7 @@ trend_chart.chart_init = function(id,id_legend, data) {
 // 子機の情報表示
 trend_chart.dispLogger_info = function(battery_info, wave_info) {
 	$("#td_logger_1_bat").attr("style","text-align:center;background-color:aquamarine;");
-	if (battery_info[0] < "3") {
+	if (battery_info[0] == "2") {
 		$("#td_logger_1_bat").attr("style","text-align:center;background-color:yellow;");
 	} 
 	if (battery_info[0] <= "1") {
@@ -52,7 +52,7 @@ trend_chart.dispLogger_info = function(battery_info, wave_info) {
 	}
 
 	$("#td_logger_1_wav").attr("style","text-align:center;background-color:aquamarine;");
-	if (wave_info[0] < "3") {
+	if (wave_info[0] == "2") {
 		$("#td_logger_1_wav").attr("style","text-align:center;background-color:yellow;");
 	} 
 	if (wave_info[0] <= "1") {
@@ -60,14 +60,14 @@ trend_chart.dispLogger_info = function(battery_info, wave_info) {
 	}
 	
 	$("#td_logger_2_bat").attr("style","text-align:center;background-color:lightgreen;");
-	if (battery_info[1] < "3") {
+	if (battery_info[1] == "2") {
 		$("#td_logger_2_bat").attr("style","text-align:center;background-color:yellow;");
 	} 
 	if (battery_info[1] <= "1") {
 		$("#td_logger_2_bat").attr("style","text-align:center;background-color:red;");				
 	}
 	$("#td_logger_2_wav").attr("style","text-align:center;background-color:lightgreen;");
-	if (wave_info[1] < "3") {
+	if (wave_info[1] == "2") {
 		$("#td_logger_2_wav").attr("style","text-align:center;background-color:yellow;");
 	} 
 	if (wave_info[1] <= "1") {
@@ -114,7 +114,7 @@ trend_chart.requestTrendData = function() {
 			}
 			$("#base_ext_ps").text(ext_ps);
 			$("#td_base_battery").attr("style","text-align:center;background-color:ligthgreen;");
-			if (data.last_trend.battery < "3") {
+			if (data.last_trend.battery == "2") {
 				$("#td_base_battery").attr("style","text-align:center;background-color:yellow;");
 			} 
 			if (data.last_trend.battery <= "1") {

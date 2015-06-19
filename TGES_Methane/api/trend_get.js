@@ -5,6 +5,9 @@ var model = require('../model');
 var RTR_Trend = model.RTR_Trend;	
 
 exports.trend_get = function (req, res) {
+		if (req.connection) {
+			console.log("remote address:" + getIP(req));
+		}
 		var res_data = {
 				last_trend: {ext_ps:"", battery:"", date:"",time:"", value:[],batt:[],rssi:[]},
 				chart_data : {
@@ -87,3 +90,18 @@ function addDateSeparator(date,sep) {
 function addTimeSeparator(date,sep) {
 	return date.substring(0,2) + sep + date.substring(2,4) + sep + date.substring(4);
 }
+var getIP = function (req) {
+	  if (req.headers['x-forwarded-for']) {
+	    return req.headers['x-forwarded-for'];
+	  }
+	  if (req.connection && req.connection.remoteAddress) {
+	    return req.connection.remoteAddress;
+	  }
+	  if (req.connection.socket && req.connection.socket.remoteAddress) {
+	    return req.connection.socket.remoteAddress;
+	  }
+	  if (req.socket && req.socket.remoteAddress) {
+	    return req.socket.remoteAddress;
+	  }
+	  return '0.0.0.0';
+};
