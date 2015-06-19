@@ -3,7 +3,10 @@
 		p
 			span#last_measure_time 最終計測時間：
 		div#trend_a
-			table.trend_table
+			table.trend_table(style="border:2px solid red;" cellspacing="0")
+				tr(style="color:white;background-color: darkgreen;")
+					td.trend_title_l(colspan="3")
+						span.trend_text 最新データ
 				tr
 					td.trend_title
 						span.trend_text メタン濃度
@@ -20,6 +23,9 @@
 						span.trend_text ℃
 		div#trend_b
 			table.trend_table(border="1" cellspacing="0" bordercolor="red")
+				tr(style="color:white;background-color: darkgreen;")
+					td.trend_title_l(colspan="3")
+						span.trend_text 機器ステータス
 				tr(style="background-color: lightgreen;")
 					td.trend_title_s(style="background-color: limegreen;")
 						span.trend_text 機器名
@@ -54,44 +60,46 @@
 					td.trend_value#td_logger_2_wav(style="text-align:center")
 						span.trend_text
 							label#logger_2_wav
-	div#chart_area
-		div#chart_title_div
-			span#chart_title
-			canvas#trend_chart(width="1380px" height="400px")
-			div.chart_legend#chart_legend
-	div#chart_area
-		div#chart_title_div
-			span#chart_title_1
-			canvas#trend_chart_1(width="1380px" height="400px")
-			div.chart_legend#chart_legend_1
-	div#chart_area
-		div#chart_title_div
-			span#chart_title_2
-			canvas#trend_chart_2(width="1380px" height="400px")
-			div.chart_legend#chart_legend_2
-	div#chart_area
-		div#chart_title_div
-			span#chart_title_3
-			canvas#trend_chart_3(width="1380px" height="400px")
-			div.chart_legend#chart_legend_3
-	div#chart_area
-		div#chart_title_div
-			span#chart_title_4
-			canvas#trend_chart_4(width="1380px" height="400px")
-			div.chart_legend#chart_legend_4
-	div#chart_area
-		div#chart_title_div
-			span#chart_title_5
-			canvas#trend_chart_5(width="1380px" height="400px")
-			div.chart_legend#chart_legend_5
-	div#chart_area
-		div#chart_title_div
-			span#chart_title_6
-			canvas#trend_chart_6(width="1380px" height="400px")
-			div.chart_legend#chart_legend_6
-	div#chart_area
-		div#chart_title_div
-			span#chart_title_7
-			canvas#trend_chart_7(width="1380px" height="400px")
-			div.chart_legend#chart_legend_7
-	
+	div.chart_area_base
+			span 計測データの推移グラフ	
+		div#chart_area
+			div#chart_title_div
+				span#chart_title
+				canvas#trend_chart(width="1380px" height="400px")
+				div.chart_legend#chart_legend
+		div#chart_area
+			div#chart_title_div
+				span#chart_title_1
+				canvas#trend_chart_1(width="1380px" height="400px")
+				div.chart_legend#chart_legend_1
+		div#chart_area
+			div#chart_title_div
+				span#chart_title_2
+				canvas#trend_chart_2(width="1380px" height="400px")
+				div.chart_legend#chart_legend_2
+		div#chart_area
+			div#chart_title_div
+				span#chart_title_3
+				canvas#trend_chart_3(width="1380px" height="400px")
+				div.chart_legend#chart_legend_3
+		div#chart_area
+			div#chart_title_div
+				span#chart_title_4
+				canvas#trend_chart_4(width="1380px" height="400px")
+				div.chart_legend#chart_legend_4
+		div#chart_area
+			div#chart_title_div
+				span#chart_title_5
+				canvas#trend_chart_5(width="1380px" height="400px")
+				div.chart_legend#chart_legend_5
+		div#chart_area
+			div#chart_title_div
+				span#chart_title_6
+				canvas#trend_chart_6(width="1380px" height="400px")
+				div.chart_legend#chart_legend_6
+		div#chart_area
+			div#chart_title_div
+				span#chart_title_7
+				canvas#trend_chart_7(width="1380px" height="400px")
+				div.chart_legend#chart_legend_7
+		

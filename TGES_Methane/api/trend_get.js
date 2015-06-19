@@ -50,7 +50,7 @@ exports.trend_get = function (req, res) {
 						// 子機データの処理
 						for(var j in item.trends) {
 								var model = item.trends[j].model;
-								if (model === "RTR-502") {
+								if (model == "RTR-502") {
 										// 温度センサー値
 										res_data.chart_data.datasets[ 1 ].data.push(item.trends[j].value);
 //										if (i == count - 1) {
@@ -60,7 +60,7 @@ exports.trend_get = function (req, res) {
 											res_data.last_trend.rssi[1] = item.trends[j].rssi;
 //										}
 								}
-								else if (model === "RTR-505-mA") {
+								else if (model == "RTR-505-mA") {
 										res_data.chart_data.datasets[ 0 ].data.push(item.trends[j].value);
 //										if (i == count - 1) {
 												// 最後のデータ
