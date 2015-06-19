@@ -3,10 +3,11 @@
 //
 var model = require('../model');
 var RTR_Trend = model.RTR_Trend;	
+var logger4 = require('../logger');
 
 exports.trend_get = function (req, res) {
 		if (req.connection) {
-			console.log("remote address:" + getIP(req));
+			logger4.access.info("remote address:" + getIP(req));
 		}
 		var res_data = {
 				last_trend: {ext_ps:"", battery:"", date:"",time:"", value:[],batt:[],rssi:[]},
