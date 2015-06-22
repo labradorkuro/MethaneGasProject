@@ -35,6 +35,11 @@ div.chart_area_base {
     font-size:24px;
 	
 }
+div.chart_area_title {
+	float:left;
+	position:relative;
+	width:1400px;
+}
 div#chart_area {
     float:left;
     position:relative;
