@@ -39,7 +39,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/trend_chart',trend_chart);	// トレンド表示、期間表示
 app.get('/trend_get',trend_get.trend_get);		// トレンドデータの取得
-app.get('/download',download,download);		// データのcsvを取得
+app.get('/download',download.download);		// データのcsvを取得
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     var err = new Error('Not Found');
