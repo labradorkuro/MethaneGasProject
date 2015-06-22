@@ -40,7 +40,7 @@ div.chart_area_title {
 	position:relative;
 	width:1400px;
 }
-div#chart_area {
+div.chart_area {
     float:left;
     position:relative;
     top: 10px;
@@ -50,7 +50,7 @@ div#chart_area {
     padding-top:10px;
     margin-top:10px;
 }
-div#chart_title_div {
+div.chart_title_div {
     float:left;
     top:50px;
     left:10px;
