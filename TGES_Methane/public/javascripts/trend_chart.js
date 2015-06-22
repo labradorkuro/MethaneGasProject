@@ -6,6 +6,7 @@ $(function() {
 		$.datepicker.setDefaults($.datepicker.regional[ "ja" ]); // 日本語化
 		// タブの初期化
 		trend_chart.initTabs();
+		$(".datepicker").datepicker({dateFormat:"yy/mm/dd"});
 		// 表示データのリクエストをサーバへ送信する
 		trend_chart.requestTrendData();
 		//trend_chart.requestWeeklyData();
