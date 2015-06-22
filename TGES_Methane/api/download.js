@@ -13,7 +13,7 @@ exports.download = function (req, res) {
 		// mongoDBの検索
 		RTR_Trend.find(query, {}, {sort:{date_str:1,time_str:1}}, function(err, items) {
 				var count = items.length;
-				var date = {date:"",time:"", temp:"",methane:""};
+				var data = {date:"",time:"", temp:"",methane:""};
 				var csv = "";
 				for(var i in items) {
 						var item = items[i];

@@ -14,6 +14,7 @@ $(function() {
 		//trend_chart.dispLogger_info(["",""],["",""]);
 		// データリクエスト用のタイマーセット
 		trend_chart.timer = setInterval(trend_chart.onTimer, 60000);
+		$("#download_button").bind('click', trend_chart.downloadFile);
 });
 
 // チャートデータの処理
@@ -174,6 +175,15 @@ trend_chart.requestWeeklyData = function() {
 		
 	
 }
+
+// csvファイルのダウンロード
+trend_chart.downloadFile = function() {
+	var startdate = $("#start_date").val();
+	var enddate = $("#end_date").val();
+	$.get('/download?startdate=' + trend_chart.dateSeparatorChange(startdate,"") + "&enddate=" + trend_chart.dateSeparatorChange(enddate,""), function(data) {
+		$("#result_text").text(data);
+	});
+}
 // 今日の日付文字列を取得する
 trend_chart.getToday = function(format_str) {
 		var d = new Date();
@@ -186,6 +196,10 @@ trend_chart.getDateString = function(date, format_str) {
 				date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1),
 				date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
 		return date_format;
+}
+// 区切り文字変更
+trend_chart.dateSeparatorChange = function(dateString, separator) {
+	return dateString.replace(/[/]/g, separator);
 }
 // フォーマット
 trend_chart.format = function(fmt , a) {
