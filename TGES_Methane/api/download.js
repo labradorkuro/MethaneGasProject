@@ -31,7 +31,8 @@ exports.download = function (req, res) {
 								}
 						}
 						if (csv.length === 0) {
-							csv = "Date,Time,Methane,Temperature\n"
+//							csv = "Date,Time,Methane,Temperature\n"
+							csv = "日付,時刻,メタン濃度,温度\n"
 							csv += data.date + "," + data.time + "," + data.temp + "," + data.methane;
 						} else {
 							csv += "\n" + data.date + "," + data.time + "," + data.temp + "," + data.methane;
