@@ -15,6 +15,9 @@ $(function() {
 		// データリクエスト用のタイマーセット
 		trend_chart.timer = setInterval(trend_chart.onTimer, 60000);
 		$("#download_button").bind('click', trend_chart.downloadFile);
+		$("#clear_button").bind('click', trend_chart.clearDownloadData);
+		$("#clear_button").attr("disabled",true);
+		
 });
 
 // チャートデータの処理
@@ -133,6 +136,7 @@ trend_chart.requestTrendData = function() {
 		
 	});
 };
+// １週間前からのデータを取得してグラフ表示する
 trend_chart.requestWeeklyData = function() {
 	var enddate = trend_chart.getToday("{0}{1}{2}");
 	var today = new Date();
@@ -181,8 +185,20 @@ trend_chart.downloadFile = function() {
 	var startdate = $("#start_date").val();
 	var enddate = $("#end_date").val();
 	$.get('/download?startdate=' + trend_chart.dateSeparatorChange(startdate,"") + "&enddate=" + trend_chart.dateSeparatorChange(enddate,""), function(data) {
-		$("#result_text").text(data);
+		$("#result_text").val(data);
+		$("#clear_button").attr("disabled",false);
+		var content = $("#result_text").val();
+		var blob = new Blob([ content ], { "type" : "text/plain" });
+		window.URL = window.URL || window.webkitURL;
+		$("#download").attr("href", window.URL.createObjectURL(blob));
 	});
+}
+// ダウンロードデータの表示クリア
+trend_chart.clearDownloadData = function() {
+	$("#result_text").val("");
+	$("#start_date").val("");
+	$("#end_date").val("");
+	$("#clear_button").attr("disabled",true);
 }
 // 今日の日付文字列を取得する
 trend_chart.getToday = function(format_str) {
