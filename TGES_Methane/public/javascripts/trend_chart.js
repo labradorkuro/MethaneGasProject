@@ -188,9 +188,10 @@ trend_chart.downloadFile = function() {
 		$("#result_text").val(data);
 		$("#clear_button").attr("disabled",false);
 		var content = $("#result_text").val();
-		var blob = new Blob([ content ], { "type" : "text/plain" });
+		var blob = new Blob([ content ], { "type" : "application/x-msdownload" });
 		window.URL = window.URL || window.webkitURL;
 		$("#download").attr("href", window.URL.createObjectURL(blob));
+		$("#download").attr("download", "RTR_DATA.csv");
 	});
 }
 // ダウンロードデータの表示クリア
