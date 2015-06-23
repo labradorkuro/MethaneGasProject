@@ -17,7 +17,7 @@ $(function() {
 		$("#download_button").bind('click', trend_chart.downloadFile);
 		$("#clear_button").bind('click', trend_chart.clearDownloadData);
 		$("#clear_button").attr("disabled",true);
-		
+		$("#savefile").css("display","none");
 });
 
 // チャートデータの処理
@@ -192,6 +192,8 @@ trend_chart.downloadFile = function() {
 		window.URL = window.URL || window.webkitURL;
 		$("#download").attr("href", window.URL.createObjectURL(blob));
 		$("#download").attr("download", "RTR_DATA.csv");
+		$("#savefile").css("display","block");
+		
 	});
 }
 // ダウンロードデータの表示クリア
@@ -200,6 +202,8 @@ trend_chart.clearDownloadData = function() {
 	$("#start_date").val("");
 	$("#end_date").val("");
 	$("#clear_button").attr("disabled",true);
+	$("#download").removeAttr("href");
+	$("#savefile").css("display","none");
 }
 // 今日の日付文字列を取得する
 trend_chart.getToday = function(format_str) {
