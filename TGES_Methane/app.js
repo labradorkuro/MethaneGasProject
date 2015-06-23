@@ -18,7 +18,7 @@ var trend_get = require('./api/trend_get');
 var download = require('./api/download');
 var model = require('./model');
 var RTR_Trend = model.RTR_Trend;	
-
+var error_info = require('./error_info');
 
 var app = express();
 
@@ -85,6 +85,7 @@ function trendFileCheckStart() {
 // ディレクトリ内のXMLファイル検索
 function fileSearch() {
 		var rc = false;
+		error_info.error_msg = "";	// エラー情報クリア
 		var dir = __data_dir;
 		fs.readdir(dir,  function(err, files) {
 				if (err) {
@@ -134,6 +135,9 @@ function trendFileCheck(filepath) {
 		    		if (err) {
 		    			// ログ出力
 		    			logger4.rtr_trend.error(err);
+    					error_info.error_msg = "データファイル解析エラー\n" + err;
+    					// 処理したファイルは削除する
+    					deleteFile(filename);
 		    			return rc;
 		    		} else {
 		    	        // 解析結果を処理
@@ -154,25 +158,37 @@ function trendFileCheck(filepath) {
 		    						date_str: date_str, 
 		    						time_str: time_str, 
 		    						trends: [ ] };
-		    				console.log("len = " + result.file.group[0].remote.length);
+		    				var remote_count = result.file.group[0].remote.length;
+		    				if (remote_count != 2) {
+		    					// remoteの数が２でなかったらエラー
+		    					logger4.rtr_trend.error("remote_count error: " + remote_count);
+		    					error_info.error_msg = "子機データが取得できませんでした。 \n子機データ数[" + remote_count + "]";
+		    					// 処理したファイルは削除する
+		    					deleteFile(filename);
+		    					return rc;
+		    				}
 		    				// 子機の数分ループ
 		    				for(var i in result.file.group[0].remote) {
-		    					var tr = {
-					    				time_str : result.file.group[0].remote[i].ch[0].current[0].time_str,
-					    				model : result.file.group[0].remote[i].model,
-					    				num : result.file.group[0].remote[i].num,
-					    				unit_name : result.file.group[0].remote[i].name,
-					    				value : result.file.group[0].remote[i].ch[0].current[0].value[0]._,
-					    				value_unit : result.file.group[0].remote[i].ch[0].current[0].unit,
-					    				battery : result.file.group[0].remote[i].ch[0].current[0].batt,
-					    				rssi : result.file.group[0].remote[i].rssi
-		    					};
 		    					// 計測値の無効チェック
 		    					if (result.file.group[0].remote[i].ch[0].current[0].value[0].$.valid == "true") {
+			    					var tr = {
+						    				time_str : result.file.group[0].remote[i].ch[0].current[0].time_str,
+						    				model : result.file.group[0].remote[i].model,
+						    				num : result.file.group[0].remote[i].num,
+						    				unit_name : result.file.group[0].remote[i].name,
+						    				value : result.file.group[0].remote[i].ch[0].current[0].value[0]._,
+						    				value_unit : result.file.group[0].remote[i].ch[0].current[0].unit,
+						    				battery : result.file.group[0].remote[i].ch[0].current[0].batt,
+						    				rssi : result.file.group[0].remote[i].rssi
+			    					};
 						    		trend.trends.push(tr);
 		    					} else {
 		    						// 計測値無効
-				    				tr.battery = "-1";
+				    				//tr.battery = "-1";
+				    				error_info.error_msg = "子機データエラー[" + result.file.group[0].remote[i].model + "]\n" + result.file.group[0].remote[i].ch[0].current[0].value[0]._;
+				    				// 処理したファイルは削除する
+				    				deleteFile(filepath);
+				    				return rc;
 		    					}
 		    				}
 	    					// メタン濃度の温度補正処理
@@ -190,6 +206,9 @@ function trendFileCheck(filepath) {
 		} catch(ex) {
 			// ログ出力
 			logger4.rtr_trend.error(ex);
+			error_info.error_msg = "子機データ処理エラー\n" + ex;
+			// 処理したファイルは削除する
+			deleteFile(filepath);
 			return rc;
 		}
 	});
@@ -249,21 +268,23 @@ function dbPost(json,filename) {
 		if (err) {
 			// ログ出力
 			logger4.rtr_trend.error(err);
+			error_info.error_msg = "子機データ保存エラー";
 			// 処理したファイルは削除する
-			fs.unlink(filename,function(err){
-				if (err)  logger4.rtr_trend.error(err);
-			});
+			deleteFile(filename);
 			return false;
 		} else {
 			// 処理したファイルは削除する
-			fs.unlink(filename,function(err){
-				if (err)  logger4.rtr_trend.error(err);
-			});
+			deleteFile(filename);
 			return true;
 		}
 	});
 }
-
+// ファイル削除
+function deleteFile(filepath) {
+	fs.unlink(filepath,function(err){
+		if (err)  logger4.rtr_trend.error(err);
+	});
+}
 // ファイルコピー
 function copyFile(source, target, cb) {
 	var cbCalled = false;
@@ -290,4 +311,3 @@ function copyFile(source, target, cb) {
 		}
 	}
 }
-

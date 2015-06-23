@@ -123,4 +123,6 @@ ul.line-legend > li {
     padding: 5px;
     left: -50%;
 }
-
+#message {
+	background-color:red;
+}

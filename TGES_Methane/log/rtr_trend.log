@@ -1526,3 +1526,516 @@ ReferenceError: conole is not defined
     at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:132:14
     at fs.js:336:14
     at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 16:13:58.183] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 16:13:58.185] [ERROR] rtr_trend - [ReferenceError: target is not defined]
+ReferenceError: target is not defined
+    at createErrorInfoFile (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:301:32)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:161:12
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:133:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 16:30:30.299] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 16:55:35.575] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 16:56:35.563] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:39:54.502] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:40:54.490] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:41:30.878] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:42:08.693] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:43:12.580] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:46:56.636] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:47:32.988] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:48:10.578] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:49:10.572] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:50:10.564] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:51:10.583] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:51:45.187] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:55:34.730] [ERROR] rtr_trend - remote_count error: 1
+[2015-06-23 17:57:35.376] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:217:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:190:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 17:57:35.380] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:217:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:190:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 17:58:34.741] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:217:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:190:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 17:58:34.743] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:217:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:190:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:07:56.769] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:07:56.777] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:08:56.753] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:08:56.758] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:09:56.756] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:09:56.761] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:10:56.762] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:10:56.775] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:11:42.325] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:11:42.335] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:12:42.310] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:12:42.314] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:13:42.314] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:13:42.319] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:14:42.320] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:14:42.322] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:15:21.501] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:15:21.510] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:16:21.479] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:16:21.485] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:17:21.485] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:17:21.490] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:218:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:18:22.579] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:221:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:20:06.830] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:221:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:20:47.213] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:221:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-23 18:20:47.221] [ERROR] rtr_trend - [TypeError: Cannot read property 'value' of undefined]
+TypeError: Cannot read property 'value' of undefined
+    at methaneValueAdjustment (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:221:17)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:191:26
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Object.onclosetag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:420:26)
+    at emit (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:615:33)
+    at emitNode (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:620:3)
+    at closeTag (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:861:5)
+    at Object.write (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/node_modules/sax/lib/sax.js:1294:29)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:478:31)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)

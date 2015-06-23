@@ -4,6 +4,7 @@
 var model = require('../model');
 var RTR_Trend = model.RTR_Trend;	
 var logger4 = require('../logger');
+var error_info = require('../error_info');
 
 exports.trend_get = function (req, res) {
 		if (req.connection) {
@@ -11,6 +12,7 @@ exports.trend_get = function (req, res) {
 		}
 		var res_data = {
 				last_trend: {ext_ps:"", battery:"", date:"",time:"", value:[],batt:[],rssi:[]},
+				error_info:{error_msg: error_info.error_msg},
 				chart_data : {
 					labels: [],
 					datasets: [

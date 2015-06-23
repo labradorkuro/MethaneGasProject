@@ -18,6 +18,7 @@ $(function() {
 		$("#clear_button").bind('click', trend_chart.clearDownloadData);
 		$("#clear_button").attr("disabled",true);
 		$("#savefile").css("display","none");
+		trend_chart.createMessageDialog();
 });
 
 // チャートデータの処理
@@ -26,6 +27,23 @@ trend_chart.myLineChart = null;
 trend_chart.timer = null;
 trend_chart.count = 0;
 trend_chart.prevDate = "";	// 日付変更確認用
+
+// メッセージダイアログの初期化
+trend_chart.createMessageDialog = function() {
+	$("#message_dialog").dialog({
+		autoOpen:false,
+		width:460,
+		height:400,
+		title:'エラーメッセージ',
+		closeOnEscape:false,
+		modal:true,
+		buttons:{
+			'閉じる': function () {
+				$(this).dialog('close');
+			}
+		}
+	});
+}
 // タブ初期化
 trend_chart.initTabs = function() {
 		// タブを生成
@@ -96,6 +114,10 @@ trend_chart.requestTrendData = function() {
 	var today = new Date();
 	var startdate = trend_chart.getDateString(trend_chart.addDate(today,  -6), "{0}{1}{2}");
 	$.get('/trend_get?startdate=' + startdate + '&enddate=' + enddate + '&interval=12', function(data){
+		if (data.error_info.error_msg != "") {
+			$("#message").text(data.error_info.error_msg);
+			$("#message_dialog").dialog("open");
+		}
 		// 応答データでチャートを更新する（サマリー）
 		trend_chart.chart_init("trend_chart", "chart_legend",data.chart_data);
 		// 子機情報の更新
@@ -180,16 +202,19 @@ trend_chart.requestWeeklyData = function() {
 	
 }
 
-// csvファイルのダウンロード
+// csvファイルのダウンロードのためのデータ取得
 trend_chart.downloadFile = function() {
 	var startdate = $("#start_date").val();
 	var enddate = $("#end_date").val();
+	// データ取得リクエスト
 	$.get('/download?startdate=' + trend_chart.dateSeparatorChange(startdate,"") + "&enddate=" + trend_chart.dateSeparatorChange(enddate,""), function(data) {
 		$("#result_text").val(data);
 		$("#clear_button").attr("disabled",false);
 		var content = $("#result_text").val();
+		// ファイルに保存するための処理
 		var blob = new Blob([ content ], { "type" : "application/x-msdownload" });
 		window.URL = window.URL || window.webkitURL;
+		// ダウンロード用のリンク設定
 		$("#download").attr("href", window.URL.createObjectURL(blob));
 		$("#download").attr("download", "RTR_DATA.csv");
 		$("#savefile").css("display","block");
