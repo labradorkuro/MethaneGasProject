@@ -14,10 +14,16 @@ $(function() {
 		//trend_chart.dispLogger_info(["",""],["",""]);
 		// データリクエスト用のタイマーセット
 		trend_chart.timer = setInterval(trend_chart.onTimer, 60000);
+		// データのダウンロード画面用のボタンイベント登録
 		$("#download_button").bind('click', trend_chart.downloadFile);
 		$("#clear_button").bind('click', trend_chart.clearDownloadData);
 		$("#clear_button").attr("disabled",true);
 		$("#savefile").css("display","none");
+
+		// 期間表示画面用のボタンイベント登録
+		$("#priod_search_button").bind('click', trend_chart.searchPriodData);
+		$("#priod_clear_button").bind('click', trend_chart.clearPriodData);
+		// エラー表示用ダイアログの生成
 		trend_chart.createMessageDialog();
 });
 
@@ -66,6 +72,7 @@ trend_chart.chart_init = function(id,id_legend, data) {
 
 // 子機の情報表示
 trend_chart.dispLogger_info = function(battery_info, wave_info) {
+	// 電池残量によって背景色を変更する
 	$("#td_logger_1_bat").attr("style","text-align:center;background-color:aquamarine;");
 	if (battery_info[0] == "2") {
 		$("#td_logger_1_bat").attr("style","text-align:center;background-color:yellow;");
@@ -74,6 +81,7 @@ trend_chart.dispLogger_info = function(battery_info, wave_info) {
 		$("#td_logger_1_bat").attr("style","text-align:center;background-color:red;");				
 	}
 
+	// 電波強度によって背景色を変更する
 	$("#td_logger_1_wav").attr("style","text-align:center;background-color:aquamarine;");
 	if (wave_info[0] == "2") {
 		$("#td_logger_1_wav").attr("style","text-align:center;background-color:yellow;");
@@ -82,6 +90,7 @@ trend_chart.dispLogger_info = function(battery_info, wave_info) {
 		$("#td_logger_1_wav").attr("style","text-align:center;background-color:red;");				
 	}
 	
+	// 電池残量によって背景色を変更する
 	$("#td_logger_2_bat").attr("style","text-align:center;background-color:lightgreen;");
 	if (battery_info[1] == "2") {
 		$("#td_logger_2_bat").attr("style","text-align:center;background-color:yellow;");
@@ -89,6 +98,7 @@ trend_chart.dispLogger_info = function(battery_info, wave_info) {
 	if (battery_info[1] <= "1") {
 		$("#td_logger_2_bat").attr("style","text-align:center;background-color:red;");				
 	}
+	// 電波強度によって背景色を変更する
 	$("#td_logger_2_wav").attr("style","text-align:center;background-color:lightgreen;");
 	if (wave_info[1] == "2") {
 		$("#td_logger_2_wav").attr("style","text-align:center;background-color:yellow;");
@@ -96,8 +106,10 @@ trend_chart.dispLogger_info = function(battery_info, wave_info) {
 	if (wave_info[1] <= "1") {
 		$("#td_logger_2_wav").attr("style","text-align:center;background-color:red;");				
 	}
+	// 電池残量値の表示更新
 	$("#logger_1_bat").text(battery_info[0]);
 	$("#logger_2_bat").text(battery_info[1]);
+	// 電波強度値の表示更新
 	$("#logger_1_wav").text(wave_info[0]);
 	$("#logger_2_wav").text(wave_info[1]);
 };
@@ -201,6 +213,22 @@ trend_chart.requestWeeklyData = function() {
 		
 	
 }
+// 期間表示のためのデータ取得
+trend_chart.searchPriodData = function() {
+	var startdate = $("#priod_start_date").val();
+	var enddate = $("#priod_end_date").val();
+	var date_count = trend_chart.getDateCount(trend_chart.dateStringToDate(enddate), trend_chart.dateStringToDate(startdate));	
+	// データ取得リクエスト
+	$.get('/trend_get?startdate=' + trend_chart.dateSeparatorChange(startdate,"")  + '&enddate=' + trend_chart.dateSeparatorChange(enddate,"")  + '&interval=' + (date_count  * 2), function(data){
+		if (data.error_info.error_msg != "") {
+			$("#message").text(data.error_info.error_msg);
+			$("#message_dialog").dialog("open");
+		}
+		// 応答データでチャートを更新する（サマリー）
+		trend_chart.chart_init("priod_trend_chart", "priod_chart_legend",data.chart_data);
+		$("#priod_chart_title").text(startdate + " - " + enddate);
+	});
+}
 
 // csvファイルのダウンロードのためのデータ取得
 trend_chart.downloadFile = function() {
@@ -242,6 +270,15 @@ trend_chart.getDateString = function(date, format_str) {
 				date.getMonth() + 1 < 10 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1),
 				date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
 		return date_format;
+}
+trend_chart.dateStringToDate = function(dateString) {
+	return new Date(dateString);
+}
+// 日数計算
+trend_chart.getDateCount = function(start, end) {
+	var d = end.getTime() - start.getTime();
+	d = Math.floor((d / (24 * 3600 * 1000)));
+	return d;
 }
 // 区切り文字変更
 trend_chart.dateSeparatorChange = function(dateString, separator) {

@@ -1,2 +1,25 @@
-﻿div#priod
-	div
+div.trend_base
+	table
+
+		tr
+			td
+				span 開始日付
+			td
+				input.datepicker#priod_start_date(type="text" size="10")
+			td
+				span 終了日付
+			td
+				input.datepicker#priod_end_date(type="text" size="10")
+			td
+				input#priod_search_button(type="button" value="検索")
+			td
+				input#priod_clear_button(type="button" value="クリア")
+	div.chart_area_base
+		div.chart_area_base_title
+			span.trend_text 計測データの推移グラフ	
+		div.chart_area
+			div.chart_title_div
+				span#priod_chart_title
+				canvas#priod_trend_chart(width="1380px" height="400px")
+				div.chart_legend#priod_chart_legend
+	
