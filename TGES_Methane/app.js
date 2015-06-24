@@ -91,6 +91,7 @@ function fileSearch() {
 				if (err) {
 					// ログ出力
 					logger4.rtr_trend.error(err);
+					error_info.error_msg = "データフォルダ読み込みエラー\n" + err;
 					return;
 				}
 				files.filter(function(file) {
@@ -227,7 +228,6 @@ function methaneValueAdjustment(trends) {
 		temp = trends[1].value;
 		mA = trends[0].value;
 	}
-	console.log("model=" + trends[0].model + " temp=" + temp + " mA=" + mA);
 	var _temp = temp - 20;
 	if (_temp < -10) {
 		_c = -2.3;
@@ -245,6 +245,7 @@ function methaneValueAdjustment(trends) {
 	} else {
 		trends[0].value = c;
 	}
+	logger4.rtr_trend.info(" temp=" + temp + " mA=" + mA + " Methane=" + c);
 	return trends;
 }
 //ファイル名から日付文字列を取り出す

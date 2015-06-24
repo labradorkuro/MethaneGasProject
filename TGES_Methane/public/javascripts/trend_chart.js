@@ -120,8 +120,6 @@ trend_chart.requestTrendData = function() {
 		}
 		// 応答データでチャートを更新する（サマリー）
 		trend_chart.chart_init("trend_chart", "chart_legend",data.chart_data);
-		// 子機情報の更新
-		trend_chart.dispLogger_info(data.last_trend.batt, data.last_trend.rssi);
 		$("#chart_title").text(trend_chart.addDateSeparator(startdate,"/") + " - " + trend_chart.addDateSeparator(enddate,"/") + "　サマリー");
 		// 当日の詳細表示
 		$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
@@ -148,6 +146,8 @@ trend_chart.requestTrendData = function() {
 				$("#td_base_battery").attr("style","text-align:center;background-color:red;");				
 			}
 			$("#base_battery").text(data.last_trend.battery);
+			// 子機情報の更新
+			trend_chart.dispLogger_info(data.last_trend.batt, data.last_trend.rssi);
 
 			// 過去１週間のデータを取得してグラフ表示
 			if (trend_chart.prevDate != enddate) {

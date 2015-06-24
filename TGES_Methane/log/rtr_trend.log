@@ -2039,3 +2039,220 @@ TypeError: Cannot read property 'value' of undefined
     at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:134:14
     at fs.js:336:14
     at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-24 09:47:35.033] [ERROR] rtr_trend - [TypeError: Cannot read property 'file' of null]
+TypeError: Cannot read property 'file' of null
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:146:20
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:468:14)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:135:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-24 09:47:35.035] [ERROR] rtr_trend - [TypeError: Cannot read property 'file' of null]
+TypeError: Cannot read property 'file' of null
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:146:20
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:468:14)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:135:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-06-24 09:47:35.046] [INFO] rtr_trend -  temp=23.6 mA=4.53 Methane=4.14
+[2015-06-24 09:47:35.063] [INFO] rtr_trend -  temp=23.5 mA=4.52 Methane=4.05
+[2015-06-24 09:47:35.082] [INFO] rtr_trend -  temp=23.5 mA=4.52 Methane=4.05
+[2015-06-24 09:47:35.095] [INFO] rtr_trend -  temp=23.4 mA=4.51 Methane=3.97
+[2015-06-24 09:47:35.133] [INFO] rtr_trend -  temp=23.4 mA=4.51 Methane=3.97
+[2015-06-24 09:47:35.141] [INFO] rtr_trend -  temp=23.3 mA=4.51 Methane=3.95
+[2015-06-24 09:47:35.150] [INFO] rtr_trend -  temp=23.2 mA=4.49 Methane=3.8
+[2015-06-24 09:47:35.155] [INFO] rtr_trend -  temp=23.6 mA=4.53 Methane=4.14
+[2015-06-24 09:47:35.172] [INFO] rtr_trend -  temp=23.6 mA=4.54 Methane=4.2
+[2015-06-24 09:47:35.181] [INFO] rtr_trend -  temp=23.3 mA=4.50 Methane=3.88
+[2015-06-24 09:47:35.188] [INFO] rtr_trend -  temp=23.2 mA=4.48 Methane=3.74
+[2015-06-24 09:47:35.197] [INFO] rtr_trend -  temp=23.1 mA=4.48 Methane=3.71
+[2015-06-24 09:47:35.200] [INFO] rtr_trend -  temp=23.3 mA=4.50 Methane=3.88
+[2015-06-24 09:47:35.204] [INFO] rtr_trend -  temp=23.2 mA=4.49 Methane=3.8
+[2015-06-24 09:47:35.208] [INFO] rtr_trend -  temp=23.1 mA=4.48 Methane=3.71
+[2015-06-24 09:47:35.213] [INFO] rtr_trend -  temp=23.1 mA=4.47 Methane=3.65
+[2015-06-24 09:47:35.220] [INFO] rtr_trend -  temp=22.9 mA=4.46 Methane=3.54
+[2015-06-24 09:47:35.225] [INFO] rtr_trend -  temp=23.0 mA=4.47 Methane=3.63
+[2015-06-24 09:47:35.233] [INFO] rtr_trend -  temp=22.9 mA=4.45 Methane=3.48
+[2015-06-24 09:47:35.237] [INFO] rtr_trend -  temp=22.8 mA=4.45 Methane=3.46
+[2015-06-24 09:47:35.242] [INFO] rtr_trend -  temp=23.0 mA=4.46 Methane=3.57
+[2015-06-24 09:47:35.249] [INFO] rtr_trend -  temp=22.7 mA=4.44 Methane=3.37
+[2015-06-24 09:47:35.254] [INFO] rtr_trend -  temp=22.7 mA=4.43 Methane=3.31
+[2015-06-24 09:47:35.260] [INFO] rtr_trend -  temp=23.0 mA=4.46 Methane=3.57
+[2015-06-24 09:47:35.264] [INFO] rtr_trend -  temp=22.8 mA=4.45 Methane=3.46
+[2015-06-24 09:47:35.268] [INFO] rtr_trend -  temp=22.8 mA=4.44 Methane=3.39
+[2015-06-24 09:47:35.271] [INFO] rtr_trend -  temp=22.6 mA=4.42 Methane=3.22
+[2015-06-24 09:47:35.274] [INFO] rtr_trend -  temp=22.6 mA=4.42 Methane=3.22
+[2015-06-24 09:47:35.279] [INFO] rtr_trend -  temp=22.7 mA=4.43 Methane=3.31
+[2015-06-24 09:47:35.282] [INFO] rtr_trend -  temp=22.6 mA=4.41 Methane=3.16
+[2015-06-24 09:47:35.289] [INFO] rtr_trend -  temp=22.5 mA=4.41 Methane=3.14
+[2015-06-24 09:47:35.293] [INFO] rtr_trend -  temp=22.7 mA=4.43 Methane=3.31
+[2015-06-24 09:47:35.298] [INFO] rtr_trend -  temp=22.5 mA=4.40 Methane=3.08
+[2015-06-24 09:47:35.302] [INFO] rtr_trend -  temp=22.5 mA=4.40 Methane=3.08
+[2015-06-24 09:47:35.305] [INFO] rtr_trend -  temp=22.5 mA=4.39 Methane=3.01
+[2015-06-24 09:47:35.308] [INFO] rtr_trend -  temp=22.5 mA=4.39 Methane=3.01
+[2015-06-24 09:47:35.312] [INFO] rtr_trend -  temp=22.5 mA=4.39 Methane=3.01
+[2015-06-24 09:47:35.314] [INFO] rtr_trend -  temp=22.5 mA=4.38 Methane=2.95
+[2015-06-24 09:47:35.317] [INFO] rtr_trend -  temp=22.5 mA=4.40 Methane=3.08
+[2015-06-24 09:47:35.320] [INFO] rtr_trend -  temp=22.5 mA=4.41 Methane=3.14
+[2015-06-24 09:47:35.322] [INFO] rtr_trend -  temp=22.6 mA=4.38 Methane=2.97
+[2015-06-24 09:47:35.325] [INFO] rtr_trend -  temp=22.6 mA=4.38 Methane=2.97
+[2015-06-24 09:47:35.329] [INFO] rtr_trend -  temp=22.5 mA=4.38 Methane=2.95
+[2015-06-24 09:47:35.332] [INFO] rtr_trend -  temp=22.7 mA=4.38 Methane=3
+[2015-06-24 09:47:35.336] [INFO] rtr_trend -  temp=22.5 mA=4.38 Methane=2.95
+[2015-06-24 09:47:35.339] [INFO] rtr_trend -  temp=22.8 mA=4.38 Methane=3.02
+[2015-06-24 09:47:35.344] [INFO] rtr_trend -  temp=22.9 mA=4.38 Methane=3.04
+[2015-06-24 09:47:35.348] [INFO] rtr_trend -  temp=22.9 mA=4.38 Methane=3.04
+[2015-06-24 09:47:35.351] [INFO] rtr_trend -  temp=23.0 mA=4.38 Methane=3.06
+[2015-06-24 09:47:35.354] [INFO] rtr_trend -  temp=23.1 mA=4.38 Methane=3.09
+[2015-06-24 09:47:35.358] [INFO] rtr_trend -  temp=23.2 mA=4.38 Methane=3.11
+[2015-06-24 09:47:35.361] [INFO] rtr_trend -  temp=22.8 mA=4.38 Methane=3.02
+[2015-06-24 09:47:35.364] [INFO] rtr_trend -  temp=23.6 mA=4.39 Methane=3.27
+[2015-06-24 09:47:35.367] [INFO] rtr_trend -  temp=23.7 mA=4.39 Methane=3.29
+[2015-06-24 09:47:35.371] [INFO] rtr_trend -  temp=24.2 mA=4.41 Methane=3.53
+[2015-06-24 09:47:35.374] [INFO] rtr_trend -  temp=24.5 mA=4.42 Methane=3.66
+[2015-06-24 09:47:35.376] [INFO] rtr_trend -  temp=23.0 mA=4.38 Methane=3.06
+[2015-06-24 09:47:35.385] [INFO] rtr_trend -  temp=24.5 mA=4.43 Methane=3.72
+[2015-06-24 09:47:35.388] [INFO] rtr_trend -  temp=24.7 mA=4.44 Methane=3.83
+[2015-06-24 09:47:35.393] [INFO] rtr_trend -  temp=23.9 mA=4.40 Methane=3.4
+[2015-06-24 09:47:35.397] [INFO] rtr_trend -  temp=23.3 mA=4.38 Methane=3.13
+[2015-06-24 09:47:35.399] [INFO] rtr_trend -  temp=24.5 mA=4.43 Methane=3.72
+[2015-06-24 09:47:35.402] [INFO] rtr_trend -  temp=25.3 mA=4.45 Methane=4.03
+[2015-06-24 09:47:35.405] [INFO] rtr_trend -  temp=25.3 mA=4.42 Methane=3.84
+[2015-06-24 09:47:35.408] [INFO] rtr_trend -  temp=25.5 mA=4.43 Methane=3.95
+[2015-06-24 09:47:35.410] [INFO] rtr_trend -  temp=24.8 mA=4.44 Methane=3.85
+[2015-06-24 09:47:35.417] [INFO] rtr_trend -  temp=25.7 mA=4.44 Methane=4.06
+[2015-06-24 09:47:35.420] [INFO] rtr_trend -  temp=25.1 mA=4.44 Methane=3.92
+[2015-06-24 09:47:35.423] [INFO] rtr_trend -  temp=25.5 mA=4.34 Methane=3.39
+[2015-06-24 09:47:35.425] [INFO] rtr_trend -  temp=25.6 mA=4.34 Methane=3.41
+[2015-06-24 09:47:35.428] [INFO] rtr_trend -  temp=25.7 mA=4.44 Methane=4.06
+[2015-06-24 09:47:35.431] [INFO] rtr_trend -  temp=25.6 mA=4.39 Methane=3.73
+[2015-06-24 09:47:35.435] [INFO] rtr_trend -  temp=25.6 mA=4.39 Methane=3.73
+[2015-06-24 09:47:35.437] [INFO] rtr_trend -  temp=25.6 mA=4.39 Methane=3.73
+[2015-06-24 09:47:35.440] [INFO] rtr_trend -  temp=25.7 mA=4.39 Methane=3.75
+[2015-06-24 09:47:35.444] [INFO] rtr_trend -  temp=25.7 mA=4.39 Methane=3.75
+[2015-06-24 09:47:35.448] [INFO] rtr_trend -  temp=26.0 mA=4.33 Methane=3.44
+[2015-06-24 09:47:35.451] [INFO] rtr_trend -  temp=26.1 mA=4.33 Methane=3.47
+[2015-06-24 09:47:35.454] [INFO] rtr_trend -  temp=26.1 mA=4.33 Methane=3.47
+[2015-06-24 09:47:35.457] [INFO] rtr_trend -  temp=26.1 mA=4.33 Methane=3.47
+[2015-06-24 09:47:35.460] [INFO] rtr_trend -  temp=25.8 mA=4.38 Methane=3.71
+[2015-06-24 09:47:35.462] [INFO] rtr_trend -  temp=25.7 mA=4.38 Methane=3.69
+[2015-06-24 09:47:35.465] [INFO] rtr_trend -  temp=26.1 mA=4.33 Methane=3.47
+[2015-06-24 09:47:35.473] [INFO] rtr_trend -  temp=26.2 mA=4.33 Methane=3.49
+[2015-06-24 09:47:35.476] [INFO] rtr_trend -  temp=26.1 mA=4.34 Methane=3.53
+[2015-06-24 09:47:35.478] [INFO] rtr_trend -  temp=26.3 mA=4.34 Methane=3.57
+[2015-06-24 09:47:35.483] [INFO] rtr_trend -  temp=26.2 mA=4.33 Methane=3.49
+[2015-06-24 09:47:35.486] [INFO] rtr_trend -  temp=26.3 mA=4.33 Methane=3.51
+[2015-06-24 09:47:35.491] [INFO] rtr_trend -  temp=26.2 mA=4.34 Methane=3.55
+[2015-06-24 09:47:35.497] [INFO] rtr_trend -  temp=26.2 mA=4.34 Methane=3.55
+[2015-06-24 09:47:35.499] [INFO] rtr_trend -  temp=26.2 mA=4.33 Methane=3.49
+[2015-06-24 09:47:35.502] [INFO] rtr_trend -  temp=26.3 mA=4.33 Methane=3.51
+[2015-06-24 09:47:35.504] [INFO] rtr_trend -  temp=26.2 mA=4.33 Methane=3.49
+[2015-06-24 09:47:35.507] [INFO] rtr_trend -  temp=26.3 mA=4.33 Methane=3.51
+[2015-06-24 09:47:35.510] [INFO] rtr_trend -  temp=26.4 mA=4.33 Methane=3.53
+[2015-06-24 09:47:35.513] [INFO] rtr_trend -  temp=26.3 mA=4.34 Methane=3.57
+[2015-06-24 09:47:35.515] [INFO] rtr_trend -  temp=26.4 mA=4.33 Methane=3.53
+[2015-06-24 09:47:35.519] [INFO] rtr_trend -  temp=26.5 mA=4.33 Methane=3.56
+[2015-06-24 09:47:35.522] [INFO] rtr_trend -  temp=26.2 mA=4.33 Methane=3.49
+[2015-06-24 09:47:35.526] [INFO] rtr_trend -  temp=26.4 mA=4.33 Methane=3.53
+[2015-06-24 09:47:35.528] [INFO] rtr_trend -  temp=26.5 mA=4.33 Methane=3.56
+[2015-06-24 09:47:35.531] [INFO] rtr_trend -  temp=26.5 mA=4.33 Methane=3.56
+[2015-06-24 09:47:35.535] [INFO] rtr_trend -  temp=26.8 mA=4.34 Methane=3.69
+[2015-06-24 09:47:35.538] [INFO] rtr_trend -  temp=26.9 mA=4.34 Methane=3.71
+[2015-06-24 09:47:35.543] [INFO] rtr_trend -  temp=26.8 mA=4.34 Methane=3.69
+[2015-06-24 09:47:35.547] [INFO] rtr_trend -  temp=26.8 mA=4.34 Methane=3.69
+[2015-06-24 09:47:35.551] [INFO] rtr_trend -  temp=26.7 mA=4.34 Methane=3.67
+[2015-06-24 09:47:35.554] [INFO] rtr_trend -  temp=26.8 mA=4.34 Methane=3.69
+[2015-06-24 09:47:35.557] [INFO] rtr_trend -  temp=26.7 mA=4.34 Methane=3.67
+[2015-06-24 09:47:35.565] [INFO] rtr_trend -  temp=26.6 mA=4.34 Methane=3.64
+[2015-06-24 09:47:35.568] [INFO] rtr_trend -  temp=26.4 mA=3.78 Methane=0.1
+[2015-06-24 09:47:35.572] [INFO] rtr_trend -  temp=26.2 mA=4.15 Methane=2.36
+[2015-06-24 09:47:35.576] [INFO] rtr_trend -  temp=26.2 mA=3.93 Methane=0.99
+[2015-06-24 09:47:35.579] [INFO] rtr_trend -  temp=26.5 mA=4.33 Methane=3.56
+[2015-06-24 09:47:35.587] [INFO] rtr_trend -  temp=26.1 mA=4.24 Methane=2.9
+[2015-06-24 09:47:35.592] [INFO] rtr_trend -  temp=26.5 mA=4.06 Methane=1.87
+[2015-06-24 09:47:35.597] [INFO] rtr_trend -  temp=26.0 mA=4.22 Methane=2.75
+[2015-06-24 09:47:35.600] [INFO] rtr_trend -  temp=26.0 mA=4.22 Methane=2.75
+[2015-06-24 09:47:35.603] [INFO] rtr_trend -  temp=25.8 mA=4.21 Methane=2.65
+[2015-06-24 09:47:35.606] [INFO] rtr_trend -  temp=25.6 mA=4.19 Methane=2.48
+[2015-06-24 09:47:35.609] [INFO] rtr_trend -  temp=25.7 mA=4.20 Methane=2.56
+[2015-06-24 09:47:35.611] [INFO] rtr_trend -  temp=25.5 mA=4.18 Methane=2.39
+[2015-06-24 09:47:35.614] [INFO] rtr_trend -  temp=25.4 mA=4.17 Methane=2.3
+[2015-06-24 09:47:35.617] [INFO] rtr_trend -  temp=25.3 mA=4.16 Methane=2.22
+[2015-06-24 09:47:35.620] [INFO] rtr_trend -  temp=25.2 mA=4.15 Methane=2.13
+[2015-06-24 09:47:35.622] [INFO] rtr_trend -  temp=25.1 mA=4.14 Methane=2.05
+[2015-06-24 09:47:35.626] [INFO] rtr_trend -  temp=25.0 mA=4.13 Methane=1.96
+[2015-06-24 09:47:35.628] [INFO] rtr_trend -  temp=24.9 mA=4.13 Methane=1.94
+[2015-06-24 09:47:35.631] [INFO] rtr_trend -  temp=24.8 mA=4.12 Methane=1.85
+[2015-06-24 09:47:35.634] [INFO] rtr_trend -  temp=24.8 mA=4.11 Methane=1.79
+[2015-06-24 09:47:35.640] [INFO] rtr_trend -  temp=24.7 mA=4.11 Methane=1.77
+[2015-06-24 09:47:35.653] [INFO] rtr_trend -  temp=24.6 mA=4.10 Methane=1.68
+[2015-06-24 09:47:35.662] [INFO] rtr_trend -  temp=24.5 mA=4.09 Methane=1.6
+[2015-06-24 09:47:35.667] [INFO] rtr_trend -  temp=24.4 mA=4.08 Methane=1.51
+[2015-06-24 09:47:35.673] [INFO] rtr_trend -  temp=24.4 mA=4.08 Methane=1.51
+[2015-06-24 09:47:35.676] [INFO] rtr_trend -  temp=24.3 mA=4.07 Methane=1.43
+[2015-06-24 09:47:35.679] [INFO] rtr_trend -  temp=24.2 mA=4.07 Methane=1.4
+[2015-06-24 09:47:35.681] [INFO] rtr_trend -  temp=24.1 mA=4.06 Methane=1.32
+[2015-06-24 09:47:35.684] [INFO] rtr_trend -  temp=24.0 mA=4.05 Methane=1.23
+[2015-06-24 09:47:35.686] [INFO] rtr_trend -  temp=23.9 mA=4.04 Methane=1.15
+[2015-06-24 09:47:35.690] [INFO] rtr_trend -  temp=23.9 mA=4.04 Methane=1.15
+[2015-06-24 09:47:35.694] [INFO] rtr_trend -  temp=23.8 mA=4.03 Methane=1.06
+[2015-06-24 09:47:35.696] [INFO] rtr_trend -  temp=23.7 mA=4.03 Methane=1.04
+[2015-06-24 09:47:35.699] [INFO] rtr_trend -  temp=23.8 mA=4.03 Methane=1.06
+[2015-06-24 09:47:35.703] [INFO] rtr_trend -  temp=23.7 mA=4.02 Methane=0.98
+[2015-06-24 09:47:35.705] [INFO] rtr_trend -  temp=23.7 mA=4.02 Methane=0.98
+[2015-06-24 09:47:35.708] [INFO] rtr_trend -  temp=23.6 mA=4.01 Methane=0.89
+[2015-06-24 09:47:35.712] [INFO] rtr_trend -  temp=23.6 mA=4.01 Methane=0.89
+[2015-06-24 09:47:35.716] [INFO] rtr_trend -  temp=23.5 mA=4.00 Methane=0.81
+[2015-06-24 09:47:35.720] [INFO] rtr_trend -  temp=23.5 mA=4.00 Methane=0.81
+[2015-06-24 09:47:35.723] [INFO] rtr_trend -  temp=23.5 mA=3.99 Methane=0.74
+[2015-06-24 09:47:35.726] [INFO] rtr_trend -  temp=23.4 mA=3.99 Methane=0.72
+[2015-06-24 09:47:35.728] [INFO] rtr_trend -  temp=23.4 mA=3.99 Methane=0.72
+[2015-06-24 09:47:35.731] [INFO] rtr_trend -  temp=23.4 mA=3.98 Methane=0.66
+[2015-06-24 09:47:35.734] [INFO] rtr_trend -  temp=23.4 mA=3.98 Methane=0.66
+[2015-06-24 09:47:35.736] [INFO] rtr_trend -  temp=23.3 mA=3.97 Methane=0.57
+[2015-06-24 09:47:35.739] [INFO] rtr_trend -  temp=23.2 mA=3.96 Methane=0.49
+[2015-06-24 09:47:35.742] [INFO] rtr_trend -  temp=23.2 mA=3.96 Methane=0.49
+[2015-06-24 09:47:35.745] [INFO] rtr_trend -  temp=23.2 mA=3.96 Methane=0.49
+[2015-06-24 09:47:35.748] [INFO] rtr_trend -  temp=23.1 mA=3.95 Methane=0.4
+[2015-06-24 09:47:35.755] [INFO] rtr_trend -  temp=23.1 mA=3.95 Methane=0.4
+[2015-06-24 09:47:35.758] [INFO] rtr_trend -  temp=23.1 mA=3.94 Methane=0.34
+[2015-06-24 09:47:35.763] [INFO] rtr_trend -  temp=23.1 mA=3.94 Methane=0.34
+[2015-06-24 09:47:35.766] [INFO] rtr_trend -  temp=23.0 mA=3.94 Methane=0.31
+[2015-06-24 09:47:35.768] [INFO] rtr_trend -  temp=23.0 mA=3.93 Methane=0.25
+[2015-06-24 09:47:35.772] [INFO] rtr_trend -  temp=23.0 mA=3.93 Methane=0.25
+[2015-06-24 09:47:35.775] [INFO] rtr_trend -  temp=23.0 mA=3.93 Methane=0.25
+[2015-06-24 09:47:35.781] [INFO] rtr_trend -  temp=23.0 mA=3.92 Methane=0.19
+[2015-06-24 09:47:35.786] [INFO] rtr_trend -  temp=22.9 mA=3.92 Methane=0.17
+[2015-06-24 09:47:35.789] [INFO] rtr_trend -  temp=22.9 mA=3.92 Methane=0.17
+[2015-06-24 09:47:35.791] [INFO] rtr_trend -  temp=24.5 mA=4.09 Methane=1.6
+[2015-06-24 09:47:35.794] [INFO] rtr_trend -  temp=23.3 mA=3.97 Methane=0.57
+[2015-06-24 09:47:35.798] [INFO] rtr_trend -  temp=23.3 mA=3.97 Methane=0.57
+[2015-06-24 09:47:35.801] [INFO] rtr_trend -  temp=22.9 mA=3.91 Methane=0.1
+[2015-06-24 09:47:35.805] [INFO] rtr_trend -  temp=22.9 mA=3.91 Methane=0.1
+[2015-06-24 09:47:35.809] [INFO] rtr_trend -  temp=22.9 mA=3.91 Methane=0.1
+[2015-06-24 09:47:35.816] [INFO] rtr_trend -  temp=23.0 mA=3.91 Methane=0.13
+[2015-06-24 09:47:35.819] [INFO] rtr_trend -  temp=23.0 mA=3.91 Methane=0.13
+[2015-06-24 09:47:35.822] [INFO] rtr_trend -  temp=23.1 mA=3.91 Methane=0.15
+[2015-06-24 09:47:35.825] [INFO] rtr_trend -  temp=23.1 mA=3.91 Methane=0.15
+[2015-06-24 09:47:35.828] [INFO] rtr_trend -  temp=22.9 mA=3.92 Methane=0.17
+[2015-06-24 09:47:35.832] [INFO] rtr_trend -  temp=23.2 mA=3.91 Methane=0.17
+[2015-06-24 09:47:35.835] [INFO] rtr_trend -  temp=23.4 mA=3.91 Methane=0.22
+[2015-06-24 09:47:35.838] [INFO] rtr_trend -  temp=23.5 mA=3.91 Methane=0.24
+[2015-06-24 09:47:35.842] [INFO] rtr_trend -  temp=23.0 mA=3.91 Methane=0.13
+[2015-06-24 09:47:35.845] [INFO] rtr_trend -  temp=23.3 mA=3.91 Methane=0.2
+[2015-06-24 09:47:35.852] [INFO] rtr_trend -  temp=23.8 mA=3.91 Methane=0.31
+[2015-06-24 09:47:35.854] [INFO] rtr_trend -  temp=23.3 mA=3.91 Methane=0.2
+[2015-06-24 09:47:35.858] [INFO] rtr_trend -  temp=23.9 mA=4.00 Methane=0.9
+[2015-06-24 09:47:35.864] [INFO] rtr_trend -  temp=24.1 mA=17.32 Methane=84.19
+[2015-06-24 09:47:35.867] [INFO] rtr_trend -  temp=24.1 mA=16.49 Methane=79.01
+[2015-06-24 09:47:35.901] [INFO] rtr_trend -  temp=23.6 mA=3.91 Methane=0.27
+[2015-06-24 09:47:35.905] [INFO] rtr_trend -  temp=24.3 mA=16.18 Methane=77.11
+[2015-06-24 10:00:34.675] [INFO] rtr_trend -  temp=24.5 mA=15.82 Methane=74.91
+[2015-06-24 10:00:34.681] [INFO] rtr_trend -  temp=24.6 mA=15.98 Methane=75.93
+[2015-06-24 10:00:34.685] [INFO] rtr_trend -  temp=24.6 mA=14.72 Methane=68.06
+[2015-06-24 10:00:34.691] [INFO] rtr_trend -  temp=24.7 mA=14.88 Methane=69.08
