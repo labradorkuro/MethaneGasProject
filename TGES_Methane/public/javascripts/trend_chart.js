@@ -33,7 +33,7 @@ trend_chart.createMessageDialog = function() {
 	$("#message_dialog").dialog({
 		autoOpen:false,
 		width:460,
-		height:400,
+		height:250,
 		title:'エラーメッセージ',
 		closeOnEscape:false,
 		modal:true,

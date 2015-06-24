@@ -75,7 +75,8 @@ app.use(function (err, req, res, next) {
 trendFileCheckStart();
 
 module.exports = app;
-
+////////////////////////////////////////////////////////////////////
+var rtr_file_check_count = 0;
 // 現在値ファイルチェックスタート
 function trendFileCheckStart() {
 	fileSearch();
@@ -84,6 +85,13 @@ function trendFileCheckStart() {
 
 // ディレクトリ内のXMLファイル検索
 function fileSearch() {
+		if (rtr_file_check_count > 10) {
+			error_info.error_msg = "データファイルが転送されていません";
+			logger4.rtr_trend.error(error_info.error_msg);
+			rtr_file_check_count = 0;
+			return;
+		}
+		rtr_file_check_count++;
 		var rc = false;
 		error_info.error_msg = "";	// エラー情報クリア
 		var dir = __data_dir;
@@ -100,6 +108,7 @@ function fileSearch() {
 //						console.log(file);
 						return fs.statSync(file).isFile() && /.*\.xml$/.test(file); //絞り込み
 				}).forEach(function (file) {
+						rtr_file_check_count = 0;
 						// 検索されたファイルを解析する
 						var org_file = dir + path.sep + file;							// ファイルパス
 						var bk_file = __backup_dir + path.sep + file;		// バックアップファイルパス
@@ -110,7 +119,7 @@ function fileSearch() {
 							if (! rc) {
 								return rc;
 							}
-						})
+						});
 				});
 		});
 }
