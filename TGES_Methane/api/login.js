@@ -7,20 +7,21 @@ exports.login = function (req, res) {
 			logger4.access.info("remote address:" + getIP(req));
 		}
 		var msg = "ユーザ名/パスワードが正しくありません";
+		var page_title = 'メタン濃度計測システム';
 		var uid = req.body.uid;
 		var pass = req.body.password;
 		req.session.login = false;
 		if ((typeof uid === "undefined") || (uid == "")) {
-		    res.render('index', { title: 'メタン濃度計測システム',msg:msg });
+		    res.render('index', { title: page_title,msg:msg });
 		} else if ((typeof pass === "undefined") || (pass == "")) {
-		    res.render('index', { title: 'メタン濃度計測システム',msg:msg });
+		    res.render('index', { title: page_title,msg:msg });
 		} else {
 			if ((uid === user_id) && (pass === password)) {
 				req.session.login = true;
 				req.session.uid = uid;
-				res.render('trend_chart', { title: 'メタン濃度計測', trend_data:  null});
+				res.render('trend_chart', { title: page_title, trend_data:  null});
 			} else {
-			    res.render('index', { title: 'メタン濃度計測システム',msg:msg });
+			    res.render('index', { title: page_title,msg:msg });
 			}
 		}
 		
