@@ -126,3 +126,12 @@ ul.line-legend > li {
 #message {
 	background-color:red;
 }
+/* login */
+table.login_table {
+	margin-left:auto;
+	margin-right:auto;
+}
+.login_title {
+	background-color:darkolivegreen;
+	color:white;
+}

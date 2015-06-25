@@ -6,6 +6,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
+var session = require('express-session')
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var xml2js = require('xml2js');
@@ -16,6 +17,8 @@ var users = require('./routes/users');
 var trend_chart = require('./routes/trend_chart');
 var trend_get = require('./api/trend_get');
 var download = require('./api/download');
+var login = require('./api/login');
+
 var model = require('./model');
 var RTR_Trend = model.RTR_Trend;	
 var error_info = require('./error_info');
@@ -34,12 +37,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({ 
+	secret: 'keyboard cat',
+	resave: false,
+	saveUninitialized: true,
+	cookie: { secure: true }}));
 
 app.use('/', routes);
 app.use('/users', users);
 app.use('/trend_chart',trend_chart);	// トレンド表示、期間表示
 app.get('/trend_get',trend_get.trend_get);		// トレンドデータの取得
 app.get('/download',download.download);		// データのcsvを取得
+app.post('/login',login.login);							// ログイン
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     var err = new Error('Not Found');

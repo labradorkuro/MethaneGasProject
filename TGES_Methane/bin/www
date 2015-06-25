@@ -6,7 +6,6 @@ var port = 80;
 app.set('port', port);
 
 var server = app.listen(app.get('port'), function() {
-	process.setuid("tges_user");
     debug('Express server listening on port ' + server.address().port);
     console.log('Express server listening on port ' + server.address().port);
 });

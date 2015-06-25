@@ -61,6 +61,4 @@ var getIP = function (req) {
 	    return req.socket.remoteAddress;
 	  }
 	  return '0.0.0.0';
-};/**
- * New node file
- */
+};
