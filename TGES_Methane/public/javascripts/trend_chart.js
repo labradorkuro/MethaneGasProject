@@ -53,7 +53,13 @@ trend_chart.createMessageDialog = function() {
 // タブ初期化
 trend_chart.initTabs = function() {
 		// タブを生成
-		$("#tabs").tabs();
+		$("#tabs").tabs({
+			activate: function(event, ui) {
+				if (ui.newTab.index() == 0) {
+					trend_chart.requestTrendData();
+				}
+			}
+		});
 };
 
 // トレンドグラフ表示
