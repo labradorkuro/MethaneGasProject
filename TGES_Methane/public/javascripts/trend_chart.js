@@ -139,11 +139,15 @@ trend_chart.requestTrendData = function() {
 		// 応答データでチャートを更新する（サマリー）
 		trend_chart.chart_init("trend_chart", "chart_legend",data.chart_data);
 		$("#chart_title").text(trend_chart.addDateSeparator(startdate,"/") + " - " + trend_chart.addDateSeparator(enddate,"/") + "　サマリー");
+		$("#chart_methane_summary").text("メタン濃度【min:" + data.summary.min[0] + " max:" + data.summary.max[0] + " ave:" + data.summary.ave[0] + "】");
+		$("#chart_temp_summary").text("温度【min:" + data.summary.min[1] + " max:" + data.summary.max[1] + " ave:" + data.summary.ave[1] + "】");
 		// 当日の詳細表示
 		$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
 			// 応答データでチャートを更新する
 			trend_chart.chart_init("trend_chart_1" , "chart_legend_1", data.chart_data);
 			$("#chart_title_1" ).text(data.last_trend.date);
+			$("#chart_methane_summary_1").text("メタン濃度【min:" + data.summary.min[0] + " max:" + data.summary.max[0] + " ave:" + data.summary.ave[0] + "】");
+			$("#chart_temp_summary_1").text("温度【min:" + data.summary.min[1] + " max:" + data.summary.max[1] + " ave:" + data.summary.ave[1] + "】");
 			$("#last_measure_time").text("最終計測時間：" + data.last_trend.date + " " + data.last_trend.time);
 			$("#trend_methane").text(data.last_trend.value[0]);
 			$("#trend_temp").text(data.last_trend.value[1]);
@@ -185,36 +189,48 @@ trend_chart.requestWeeklyData = function() {
 		// 応答データでチャートを更新する
 		trend_chart.chart_init("trend_chart_2" , "chart_legend_2", data.chart_data);
 		$("#chart_title_2" ).text(data.last_trend.date );
+		$("#chart_methane_summary_2").text("メタン濃度【min:" + data.summary.min[0] + " max:" + data.summary.max[0] + " ave:" + data.summary.ave[0] + "】");
+		$("#chart_temp_summary_2").text("温度【min:" + data.summary.min[1] + " max:" + data.summary.max[1] + " ave:" + data.summary.ave[1] + "】");
 	});
 	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -2), "{0}{1}{2}");
 	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
 		// 応答データでチャートを更新する
 		trend_chart.chart_init("trend_chart_3" , "chart_legend_3", data.chart_data);
 		$("#chart_title_3" ).text(data.last_trend.date );
+		$("#chart_methane_summary_3").text("メタン濃度【min:" + data.summary.min[0] + " max:" + data.summary.max[0] + " ave:" + data.summary.ave[0] + "】");
+		$("#chart_temp_summary_3").text("温度【min:" + data.summary.min[1] + " max:" + data.summary.max[1] + " ave:" + data.summary.ave[1] + "】");
 	})
 	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -3), "{0}{1}{2}");
 	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
 		// 応答データでチャートを更新する
 		trend_chart.chart_init("trend_chart_4" , "chart_legend_4", data.chart_data);
 		$("#chart_title_4" ).text(data.last_trend.date );
+		$("#chart_methane_summary_4").text("メタン濃度【min:" + data.summary.min[0] + " max:" + data.summary.max[0] + " ave:" + data.summary.ave[0] + "】");
+		$("#chart_temp_summary_4").text("温度【min:" + data.summary.min[1] + " max:" + data.summary.max[1] + " ave:" + data.summary.ave[1] + "】");
 	});
 	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -4), "{0}{1}{2}");
 	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
 		// 応答データでチャートを更新する
 		trend_chart.chart_init("trend_chart_5" , "chart_legend_5", data.chart_data);
 		$("#chart_title_5" ).text(data.last_trend.date );
+		$("#chart_methane_summary_5").text("メタン濃度【min:" + data.summary.min[0] + " max:" + data.summary.max[0] + " ave:" + data.summary.ave[0] + "】");
+		$("#chart_temp_summary_5").text("温度【min:" + data.summary.min[1] + " max:" + data.summary.max[1] + " ave:" + data.summary.ave[1] + "】");
 	});
 	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -5), "{0}{1}{2}");
 	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
 		// 応答データでチャートを更新する
 		trend_chart.chart_init("trend_chart_6" , "chart_legend_6", data.chart_data);
 		$("#chart_title_6" ).text(data.last_trend.date );
+		$("#chart_methane_summary_6").text("メタン濃度【min:" + data.summary.min[0] + " max:" + data.summary.max[0] + " ave:" + data.summary.ave[0] + "】");
+		$("#chart_temp_summary_6").text("温度【min:" + data.summary.min[1] + " max:" + data.summary.max[1] + " ave:" + data.summary.ave[1] + "】");
 	});
 	enddate = trend_chart.getDateString(trend_chart.addDate(today,   -6), "{0}{1}{2}");
 	$.get('/trend_get?startdate=' + enddate + '&enddate=' + enddate + '&interval=1', function(data){
 		// 応答データでチャートを更新する
 		trend_chart.chart_init("trend_chart_7" , "chart_legend_7", data.chart_data);
 		$("#chart_title_7" ).text(data.last_trend.date );
+		$("#chart_methane_summary_7").text("メタン濃度【min:" + data.summary.min[0] + " max:" + data.summary.max[0] + " ave:" + data.summary.ave[0] + "】");
+		$("#chart_temp_summary_7").text("温度【min:" + data.summary.min[1] + " max:" + data.summary.max[1] + " ave:" + data.summary.ave[1] + "】");
 	});
 		
 	
