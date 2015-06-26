@@ -91,8 +91,8 @@ exports.trend_get = function (req, res) {
 		});
 };
 function calcSummary(items, res_data) {
-	var temp = [100,-100,0];
-	var methane = [100,-100,0];
+	var temp = [200,-200,0];
+	var methane = [200,-200,0];
 	var temp_count = 0;
 	var methane_count = 0;
 	for(var i in items) {
@@ -102,12 +102,12 @@ function calcSummary(items, res_data) {
 				var model = item.trends[j].model;
 				if (model == "RTR-502") {
 					// 温度センサー min検査
-					if (temp[0] > item.trends[j].value) {
-						temp[0] = item.trends[j].value;
+					if (temp[0] > Number(item.trends[j].value)) {
+						temp[0] = Number(item.trends[j].value);
 					}
 					// 温度センサー max検査
-					if (temp[1] < item.trends[j].value) {
-						temp[1] = item.trends[j].value;
+					if (temp[1] < Number(item.trends[j].value)) {
+						temp[1] = Number(item.trends[j].value);
 					}
 					// 温度センサー sum検査
 					temp[2] += Number(item.trends[j].value);
@@ -115,12 +115,12 @@ function calcSummary(items, res_data) {
 				}
 				else if (model == "RTR-505-mA") {
 					// メタン濃度 min検査
-					if (methane[0] > item.trends[j].value) {
-						methane[0] = item.trends[j].value;
+					if (methane[0] > Number(item.trends[j].value)) {
+						methane[0] = Number(item.trends[j].value);
 					}
 					// メタン濃度 max検査
-					if (methane[1] < item.trends[j].value) {
-						methane[1] = item.trends[j].value;
+					if (methane[1] < Number(item.trends[j].value)) {
+						methane[1] = Number(item.trends[j].value);
 					}
 					// メタン濃度 sum検査
 					methane[2] += Number(item.trends[j].value);
