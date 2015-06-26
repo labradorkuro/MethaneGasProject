@@ -2318,3 +2318,4 @@ TypeError: Cannot read property 'file' of null
 [2015-06-25 18:52:40.487] [ERROR] rtr_trend - データファイルが転送されていません
 [2015-06-25 19:04:40.551] [ERROR] rtr_trend - データファイルが転送されていません
 [2015-06-26 09:56:13.188] [ERROR] rtr_trend - データファイルが転送されていません
+[2015-06-26 10:32:57.921] [ERROR] rtr_trend - データファイルが転送されていません

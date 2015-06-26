@@ -91,8 +91,8 @@ exports.trend_get = function (req, res) {
 		});
 };
 function calcSummary(items, res_data) {
-	var temp = [100,0,0];
-	var methane = [100,0,0];
+	var temp = [100,-100,0];
+	var methane = [100,-100,0];
 	var temp_count = 0;
 	var methane_count = 0;
 	for(var i in items) {
