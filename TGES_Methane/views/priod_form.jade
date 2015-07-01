@@ -1,4 +1,4 @@
-div.trend_base(style="overflow:hidden;height:600px")
+div.trend_base(style="overflow:hidden;height:800px")
 	table
 		tr
 			td
@@ -19,5 +19,8 @@ div.trend_base(style="overflow:hidden;height:600px")
 		div.chart_area
 			div.chart_title_div
 				span#priod_chart_title
-				canvas#priod_trend_chart(width="1380px" height="400px")
-				div.chart_legend#priod_chart_legend
+			div.chart_summary
+				span#priod_chart_methane_summary
+				span#priod_chart_temp_summary
+			canvas#priod_trend_chart(width="1380px" height="400px")
+			div.chart_legend#priod_chart_legend

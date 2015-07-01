@@ -249,6 +249,8 @@ trend_chart.searchPriodData = function() {
 		// 応答データでチャートを更新する（サマリー）
 		trend_chart.chart_init("priod_trend_chart", "priod_chart_legend",data.chart_data);
 		$("#priod_chart_title").text(startdate + " - " + enddate);
+		$("#priod_chart_methane_summary").text("メタン濃度【最小:" + data.summary.min[0] + " 最大:" + data.summary.max[0] + " 平均:" + data.summary.ave[0] + "】");
+		$("#priod_chart_temp_summary").text("温度【最小:" + data.summary.min[1] + " 最大:" + data.summary.max[1] + " 平均:" + data.summary.ave[1] + "】");
 	});
 }
 
