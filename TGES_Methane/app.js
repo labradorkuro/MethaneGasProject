@@ -11,6 +11,7 @@ var bodyParser = require('body-parser');
 var fs = require('fs');
 var xml2js = require('xml2js');
 var logger4 = require('./logger');
+var nodemailer = require('nodemailer');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -22,6 +23,25 @@ var login = require('./api/login');
 var model = require('./model');
 var RTR_Trend = model.RTR_Trend;	
 var error_info = require('./error_info');
+
+// エラー通知メール用 
+var transporter = nodemailer.createTransport({
+	service: 'Gmail',
+	auth:{
+	      user: 'jazzsaxplayer02@gmail.com',
+	      pass: 'seaf6219gm'
+	}
+});
+var home_url = 'http://morigasaki.sensor-net.link/';
+var mailOptions = {
+		from: 'jazzsaxplayer02@gmail.com',
+		to: 'takenori_tanaka@niigata-sl.com',
+		subject: 'メタン濃度計測システムエラー通知',
+		text: '',
+		html: ''
+};
+var signature_text = '-\n メタン濃度計測システム\n' + ' ' + home_url;
+var signature_html = '-<br/> メタン濃度計測システム<br/>' + ' ' + home_url + '<br/>';
 
 var app = express();
 
@@ -98,6 +118,8 @@ function fileSearch() {
 			error_info.error_msg = "データファイルが転送されていません";
 			logger4.rtr_trend.error(error_info.error_msg);
 			rtr_file_check_count = 0;
+			// エラー通知メール送信
+			sendErrorMail(error_info.error_msg);
 			return;
 		}
 		rtr_file_check_count++;
@@ -109,6 +131,8 @@ function fileSearch() {
 					// ログ出力
 					logger4.rtr_trend.error(err);
 					error_info.error_msg = "データフォルダ読み込みエラー\n" + err;
+					// エラー通知メール送信
+					sendErrorMail(error_info.error_msg);
 					return;
 				}
 				files.filter(function(file) {
@@ -142,7 +166,7 @@ function trendFileCheck(filepath) {
 	// ファイル読み込み
 	fs.readFile(filepath, function (err, data) {
 		// 解析処理
-		console.log("trendFileCheck( " + filepath + " )");
+//		console.log("trendFileCheck( " + filepath + " )");
 		if (err) {
 			// ログ出力
 			logger4.rtr_trend.error(err);
@@ -157,7 +181,9 @@ function trendFileCheck(filepath) {
     					error_info.error_msg = "データファイル解析エラー\n" + err;
     					// 処理したファイルは削除する
     					deleteFile(filename);
-		    			return rc;
+    					// エラー通知メール送信
+    					sendErrorMail(error_info.error_msg);
+	    			return rc;
 		    		} else {
 		    	        // 解析結果を処理
 //		    			console.dir(JSON.stringify(result));
@@ -184,6 +210,8 @@ function trendFileCheck(filepath) {
 		    					error_info.error_msg = "子機データが取得できませんでした。 \n子機データ数[" + remote_count + "]";
 		    					// 処理したファイルは削除する
 		    					deleteFile(filename);
+		    					// エラー通知メール送信
+		    					sendErrorMail(error_info.error_msg);
 		    					return rc;
 		    				}
 		    				// 子機の数分ループ
@@ -207,6 +235,8 @@ function trendFileCheck(filepath) {
 				    				error_info.error_msg = "子機データエラー[" + result.file.group[0].remote[i].model + "]\n" + result.file.group[0].remote[i].ch[0].current[0].value[0]._;
 				    				// 処理したファイルは削除する
 				    				deleteFile(filepath);
+				    				// エラー通知メール送信
+				    				sendErrorMail(error_info.error_msg);
 				    				return rc;
 		    					}
 		    				}
@@ -228,6 +258,8 @@ function trendFileCheck(filepath) {
 			error_info.error_msg = "子機データ処理エラー\n" + ex;
 			// 処理したファイルは削除する
 			deleteFile(filepath);
+			// エラー通知メール送信
+			sendErrorMail(error_info.error_msg);
 			return rc;
 		}
 	});
@@ -290,6 +322,8 @@ function dbPost(json,filename) {
 			error_info.error_msg = "子機データ保存エラー";
 			// 処理したファイルは削除する
 			deleteFile(filename);
+			// エラー通知メール送信
+			sendErrorMail(error_info.error_msg);
 			return false;
 		} else {
 			// 処理したファイルは削除する
@@ -329,4 +363,21 @@ function copyFile(source, target, cb) {
 			cbCalled = true;
 		}
 	}
+}
+
+// メール送信
+function sendErrorMail(message) {
+	mailOptions.text =   'メタン濃度計測システムでエラーが発生しました。\n\n' + message + '\n\n' + home_url + '\n\n' + signature_text; 
+	mailOptions.html = 
+		'<span>メタン濃度計測システムでエラーが発生しました。</span><br/><br/>' 
+		+ '<span>エラー内容：' + message.replace("\n","<br/>") + '</span><br/><br/>' 
+		+ '<a href="' + home_url + '">メタン濃度計測システム</a><br/><br/>' 
+		+ '<p>' + signature_html + '</p>';
+	transporter.sendMail(mailOptions, function(error, info) {
+		if (error) {
+			logger4.rtr_trend.error(error);
+			return;
+		}
+		console.log("Message Send.");
+	})
 }

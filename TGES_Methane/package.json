@@ -21,6 +21,7 @@
     "stylus": "0.42.3",
     "xml2js":"",
     "mongoose":"",
-    "log4js":""
+    "log4js":"",
+    "nodemailer":"~1.4.0"
   }
 }
