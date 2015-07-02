@@ -1,8 +1,8 @@
 var logger4 = require('../logger');
 
 exports.login = function (req, res) {
-	var user_id = "tges_user";
-	var password = "szgmr";
+	var user_id = ["tges_user","morigasaki","tges_adm"];
+	var password = ["szgmr","methane","morinokuma"];
 	if (req.connection) {
 			logger4.access.info("remote address:" + getIP(req));
 		}
@@ -16,12 +16,19 @@ exports.login = function (req, res) {
 		} else if ((typeof pass === "undefined") || (pass == "")) {
 		    res.render('index', { title: page_title,msg:msg });
 		} else {
-			if ((uid === user_id) && (pass === password)) {
-				req.session.login = true;
-				req.session.uid = uid;
+			var checked = false;
+			for(var i in user_id) {
+				if ((uid === user_id[i]) && (pass === password[i])) {
+					req.session.login = true;
+					req.session.uid = uid;
+					checked = true;
+					break;
+				}
+			}
+			if (checked) {
 				res.render('trend_chart', { title: page_title, trend_data:  null});
-			} else {
-			    res.render('index', { title: page_title,msg:msg });
+			}	else  {
+				    res.render('index', { title: page_title,msg:msg });
 			}
 		}
 		
