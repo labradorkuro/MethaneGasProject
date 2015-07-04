@@ -27,7 +27,7 @@ var error_info = require('./error_info');
 // エラー通知メール用 
 var transporter = nodemailer.createTransport('SMTP',{
 	//service: 'Gmail',
-	host: 'localhost',
+	host: 'mail.sensor-net.link',
 	secureConnection: false,
 	port: 110,
 	auth:{
