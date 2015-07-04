@@ -26,18 +26,20 @@ var RTR_Trend = model.RTR_Trend;
 var error_info = require('./error_info');
 
 // エラー通知メール用 
-var transporter = nodemailer.createTransport(smtpTransport({
-	//service: 'Gmail',
-	host:"localhost.sensor-net.link",
-	port: 25,
+var transporter = nodemailer.createTransport({
+	service: 'Gmail',
+	//host:"localhost.sensor-net.link",
+	//port: 25,
 	auth:{
-	      user: 'tges_user@sensor-net.link',
-	      pass: 'gas@15'
+//	      user: 'tges_user@sensor-net.link',
+//	      pass: 'gas@15'
+		      user: 'jazzsaxplayer02@gmail.com',
+		      pass: 'seaf6219gm'
 	}
-}));
+});
 var home_url = 'http://morigasaki.sensor-net.link/';
 var mailOptions = {
-		from: 'tges_user@sensor-net.link',
+		from: 'jazzsaxplayer02@gmail.com',
 		to: 'takenori_tanaka@niigata-sl.com',
 		subject: 'メタン濃度計測システムエラー通知',
 		text: '',
