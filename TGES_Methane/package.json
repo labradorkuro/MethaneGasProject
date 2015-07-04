@@ -22,6 +22,7 @@
     "xml2js":"",
     "mongoose":"",
     "log4js":"",
-    "nodemailer":"~1.4.0"
+    "nodemailer":"~1.4.0",
+    "nodemailer-smtp-transport":""
   }
 }

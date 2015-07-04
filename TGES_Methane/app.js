@@ -12,6 +12,7 @@ var fs = require('fs');
 var xml2js = require('xml2js');
 var logger4 = require('./logger');
 var nodemailer = require('nodemailer');
+var smtpTransport = require('nodemailer-smtp-transport');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -25,13 +26,15 @@ var RTR_Trend = model.RTR_Trend;
 var error_info = require('./error_info');
 
 // エラー通知メール用 
-var transporter = nodemailer.createTransport('Pickup',{
+var transporter = nodemailer.createTransport(smtpTransport({
 	//service: 'Gmail',
+	host:"localhost",
+	port: 25,
 	auth:{
 	      user: 'vps100773683@sensor-net.link',
 	      pass: '-36eF-aR'
 	}
-});
+}));
 var home_url = 'http://morigasaki.sensor-net.link/';
 var mailOptions = {
 		from: 'jazzsaxplayer02@gmail.com',
