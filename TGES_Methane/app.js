@@ -25,11 +25,8 @@ var RTR_Trend = model.RTR_Trend;
 var error_info = require('./error_info');
 
 // エラー通知メール用 
-var transporter = nodemailer.createTransport('SMTP',{
+var transporter = nodemailer.createTransport('Pickup',{
 	//service: 'Gmail',
-	host: 'mail.sensor-net.link',
-	secureConnection: false,
-	port: 110,
 	auth:{
 	      user: 'vps100773683@sensor-net.link',
 	      pass: '-36eF-aR'
