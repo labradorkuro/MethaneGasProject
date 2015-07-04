@@ -28,16 +28,16 @@ var error_info = require('./error_info');
 // エラー通知メール用 
 var transporter = nodemailer.createTransport(smtpTransport({
 	//service: 'Gmail',
-	host:"localhost",
+	host:"localhost.sensor-net.link",
 	port: 25,
 	auth:{
-	      user: 'tges_user',
+	      user: 'tges_user@sensor-net.link',
 	      pass: 'gas@15'
 	}
 }));
 var home_url = 'http://morigasaki.sensor-net.link/';
 var mailOptions = {
-		from: 'jazzsaxplayer02@gmail.com',
+		from: 'tges_user@sensor-net.link',
 		to: 'takenori_tanaka@niigata-sl.com',
 		subject: 'メタン濃度計測システムエラー通知',
 		text: '',
