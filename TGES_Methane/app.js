@@ -31,8 +31,8 @@ var transporter = nodemailer.createTransport(smtpTransport({
 	host:"localhost",
 	port: 25,
 	auth:{
-	      user: 'vps100773683@sensor-net.link',
-	      pass: '-36eF-aR'
+	      user: 'tges_user',
+	      pass: 'gas@15'
 	}
 }));
 var home_url = 'http://morigasaki.sensor-net.link/';
