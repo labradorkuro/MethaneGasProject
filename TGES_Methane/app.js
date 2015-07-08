@@ -29,7 +29,7 @@ var error_info = require('./error_info');
 var transporter = nodemailer.createTransport(smtpTransport({
 	//service: 'Gmail',
 	host:"localhost",
-	port: 465,
+	port: 25,
 	auth:{
 	      user: 'rtr_trend',
 	      pass: 'rtr_trend2015'
