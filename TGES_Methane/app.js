@@ -243,6 +243,7 @@ function trendFileCheck(filepath) {
 		    						// 計測値無効
 				    				//tr.battery = "-1";
 				    				error_info.error_msg = "子機データエラー[" + result.file.group[0].remote[i].model + "]\n" + result.file.group[0].remote[i].ch[0].current[0].value[0]._;
+				    				logger4.rtr_trend.error( "子機データエラー[" + result.file.group[0].remote[i].model + "]\n" + result.file.group[0].remote[i].ch[0].current[0].value[0]._);
 				    				// 処理したファイルは削除する
 				    				deleteFile(filepath);
 				    				// エラー通知メール送信
