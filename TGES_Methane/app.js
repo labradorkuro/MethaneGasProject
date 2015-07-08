@@ -40,7 +40,7 @@ var transporter = nodemailer.createTransport(smtpTransport({
 var home_url = 'http://morigasaki.sensor-net.link/';
 var mailOptions = {
 		from: 'rtr_trend@morigasaki.sensor-net.link',
-		to: 'takenori_tanaka@niigata-sl.com',
+		to: 'takenori_tanaka@niigata-sl.com,takenori_tanaka@me.com',
 		subject: 'メタン濃度計測システムエラー通知',
 		text: '',
 		html: ''
@@ -379,17 +379,21 @@ function copyFile(source, target, cb) {
 
 // メール送信
 function sendErrorMail(message) {
-	mailOptions.text =   'メタン濃度計測システムでエラーが発生しました。\n\n' + message + '\n\n' + home_url + '\n\n' + signature_text; 
-	mailOptions.html = 
-		'<span>メタン濃度計測システムでエラーが発生しました。</span><br/><br/>' 
-		+ '<span>エラー内容：' + message.replace("\n","<br/>") + '</span><br/><br/>' 
-		+ '<a href="' + home_url + '">メタン濃度計測システム</a><br/><br/>' 
-		+ '<p>' + signature_html + '</p>';
-	transporter.sendMail(mailOptions, function(error, info) {
-		if (error) {
-			logger4.rtr_trend.error(error);
-			return;
-		}
-		console.log("Message Send.");
-	})
+	fs.fileRead('./mail_to.txt','utf-8',function(err, text){
+		mailOptions.text =   'メタン濃度計測システムでエラーが発生しました。\n\n' + message + '\n\n' + home_url + '\n\n' + signature_text; 
+		mailOptions.html = 
+			'<span>メタン濃度計測システムでエラーが発生しました。</span><br/><br/>' 
+			+ '<span>エラー内容：' + message.replace("\n","<br/>") + '</span><br/><br/>' 
+			+ '<a href="' + home_url + '">メタン濃度計測システム</a><br/><br/>' 
+			+ '<p>' + signature_html + '</p>';
+		mailOptions.to = text;
+		transporter.sendMail(mailOptions, function(error, info) {
+			if (error) {
+				logger4.rtr_trend.error(error);
+				return;
+			}
+			console.log("Message Send.");
+		})
+		
+	});
 }
