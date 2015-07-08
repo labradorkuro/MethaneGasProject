@@ -26,17 +26,19 @@ var RTR_Trend = model.RTR_Trend;
 var error_info = require('./error_info');
 
 // エラー通知メール用 
-var transporter = nodemailer.createTransport(smtpTransport({
+var transporter = nodemailer.createTransport("SMTP",{
 	//service: 'Gmail',
 	host:"localhost",
-	port: 465,
+	port: 25,
 	auth:{
-	      user: 'root',
-	      pass: 'Dso#60a14'
+	      user: 'rtr_trend',
+	      pass: 'gas@15'
+//		      user: 'root',
+//		      pass: 'Dso#60a14'
 //		      user: 'jazzsaxplayer02@gmail.com',
 //		      pass: 'seaf6219gm'
 	}
-}));
+});
 var home_url = 'http://morigasaki.sensor-net.link/';
 var mailOptions = {
 		from: 'rtr_trend@morigasaki.sensor-net.link',
