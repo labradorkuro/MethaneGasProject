@@ -28,7 +28,7 @@ var error_info = require('./error_info');
 // エラー通知メール用 
 var transporter = nodemailer.createTransport(smtpTransport({
 	//service: 'Gmail',
-	host:"morigasaki.sensor-net.link",
+	host:"localhost",
 	port: 465,
 	auth:{
 	      user: 'root',
