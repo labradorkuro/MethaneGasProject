@@ -40,7 +40,7 @@ var transporter = nodemailer.createTransport(smtpTransport({
 var home_url = 'http://morigasaki.sensor-net.link/';
 var mailOptions = {
 		from: 'rtr_trend@morigasaki.sensor-net.link',
-		to: 'takenori_tanaka@niigata-sl.com,takenori_tanaka@me.com',
+		to: '',
 		subject: 'メタン濃度計測システムエラー通知',
 		text: '',
 		html: ''
@@ -379,7 +379,10 @@ function copyFile(source, target, cb) {
 
 // メール送信
 function sendErrorMail(message) {
-	fs.fileRead('./mail_to.txt','utf-8',function(err, text){
+	fs.readFile('./mail_to.txt','utf-8',function(err, text){
+		if (err) {
+			text = 'takenori_tanaka@niigata-sl.com';
+		}
 		mailOptions.text =   'メタン濃度計測システムでエラーが発生しました。\n\n' + message + '\n\n' + home_url + '\n\n' + signature_text; 
 		mailOptions.html = 
 			'<span>メタン濃度計測システムでエラーが発生しました。</span><br/><br/>' 
