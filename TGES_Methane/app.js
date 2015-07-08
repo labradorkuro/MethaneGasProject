@@ -39,7 +39,7 @@ var transporter = nodemailer.createTransport(smtpTransport({
 }));
 var home_url = 'http://morigasaki.sensor-net.link/';
 var mailOptions = {
-		from: 'jazzsaxplayer02@gmail.com',
+		from: 'rtr_trend@morigasaki.sensor-net.link',
 		to: 'takenori_tanaka@niigata-sl.com',
 		subject: 'メタン濃度計測システムエラー通知',
 		text: '',
