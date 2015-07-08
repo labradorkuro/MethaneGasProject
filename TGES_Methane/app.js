@@ -26,7 +26,7 @@ var RTR_Trend = model.RTR_Trend;
 var error_info = require('./error_info');
 
 // エラー通知メール用 
-var transporter = nodemailer.createTransport("SMTP",{
+var transporter = nodemailer.createTransport(smtpTransport({
 	//service: 'Gmail',
 	host:"localhost",
 	port: 25,
@@ -38,7 +38,7 @@ var transporter = nodemailer.createTransport("SMTP",{
 //		      user: 'jazzsaxplayer02@gmail.com',
 //		      pass: 'seaf6219gm'
 	}
-});
+}));
 var home_url = 'http://morigasaki.sensor-net.link/';
 var mailOptions = {
 		from: 'rtr_trend@morigasaki.sensor-net.link',
@@ -121,6 +121,7 @@ function trendFileCheckStart() {
 
 // ディレクトリ内のXMLファイル検索
 function fileSearch() {
+	sendErrorMail("メール送信テスト");
 		if (rtr_file_check_count > 10) {
 			error_info.error_msg = "データファイルが転送されていません";
 			logger4.rtr_trend.error(error_info.error_msg);
