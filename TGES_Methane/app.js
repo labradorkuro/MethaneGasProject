@@ -31,13 +31,10 @@ var transporter = nodemailer.createTransport(smtpTransport({
 	host:"localhost",
 	port: 25,
 	ignoreTLS:"off",
+	authMethod:"PLAIN",
 	auth:{
-	      user: 'rtr_trend',
-	      pass: 'gas@15'
-//		      user: 'root',
-//		      pass: 'Dso#60a14'
-//		      user: 'jazzsaxplayer02@gmail.com',
-//		      pass: 'seaf6219gm'
+		      user: 'root',
+		      pass: 'Dso#60a14'
 	}
 }));
 var home_url = 'http://morigasaki.sensor-net.link/';
