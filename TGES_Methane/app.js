@@ -30,6 +30,7 @@ var transporter = nodemailer.createTransport(smtpTransport({
 	//service: 'Gmail',
 	host:"localhost",
 	port: 25,
+	ignoreTLS:"off",
 	auth:{
 	      user: 'rtr_trend',
 	      pass: 'gas@15'
