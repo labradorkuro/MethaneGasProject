@@ -119,7 +119,6 @@ function trendFileCheckStart() {
 
 // ディレクトリ内のXMLファイル検索
 function fileSearch() {
-	sendErrorMail("メール送信テスト");
 		if (rtr_file_check_count > 10) {
 			error_info.error_msg = "データファイルが転送されていません";
 			logger4.rtr_trend.error(error_info.error_msg);
