@@ -31,8 +31,8 @@ var transporter = nodemailer.createTransport(smtpTransport({
 	host:"localhost",
 	port: 25,
 	auth:{
-	      user: 'rtr_trend',
-	      pass: 'rtr_trend2015'
+	      user: 'tges_user',
+	      pass: 'gas@15'
 //		      user: 'jazzsaxplayer02@gmail.com',
 //		      pass: 'seaf6219gm'
 	}
