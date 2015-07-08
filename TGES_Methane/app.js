@@ -26,17 +26,17 @@ var RTR_Trend = model.RTR_Trend;
 var error_info = require('./error_info');
 
 // エラー通知メール用 
-var transporter = nodemailer.createTransport({
-	service: 'Gmail',
-	//host:"localhost.sensor-net.link",
-	//port: 25,
+var transporter = nodemailer.createTransport(smtpTransport({
+	//service: 'Gmail',
+	host:"localhost",
+	port: 465,
 	auth:{
-//	      user: 'tges_user@sensor-net.link',
-//	      pass: 'gas@15'
-		      user: 'jazzsaxplayer02@gmail.com',
-		      pass: 'seaf6219gm'
+	      user: 'info',
+	      pass: 'gas@15'
+//		      user: 'jazzsaxplayer02@gmail.com',
+//		      pass: 'seaf6219gm'
 	}
-});
+}));
 var home_url = 'http://morigasaki.sensor-net.link/';
 var mailOptions = {
 		from: 'jazzsaxplayer02@gmail.com',
@@ -185,13 +185,18 @@ function trendFileCheck(filepath) {
 		    			logger4.rtr_trend.error(err);
     					error_info.error_msg = "データファイル解析エラー\n" + err;
     					// 処理したファイルは削除する
-    					deleteFile(filename);
+    					deleteFile(filepath);
     					// エラー通知メール送信
     					sendErrorMail(error_info.error_msg);
-	    			return rc;
+    					return rc;
 		    		} else {
 		    	        // 解析結果を処理
-//		    			console.dir(JSON.stringify(result));
+		    			if (result.file == null) {
+		    				// 空のデータファイルが転送される事がある?
+		    				// 処理したファイルは削除する
+		    				deleteFile(filepath);
+		    				return rc;
+		    			}
 		    			if (result.file.group) {
 		    				// mongDBのmodelに合わせてjsonを作成し、データを格納する
 		    				// ファイル名から時間を取り出す
