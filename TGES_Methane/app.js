@@ -105,6 +105,7 @@ app.use(function (err, req, res, next) {
     });
 });
 
+sendErrorMail("メタン濃度計測システム　スタート");
 // 現在値ファイルのチェックスタート
 trendFileCheckStart();
 
