@@ -105,7 +105,7 @@ app.use(function (err, req, res, next) {
     });
 });
 
-sendErrorMail("メタン濃度計測システム　スタート");
+sendMail("メタン濃度計測システム","サーバ起動", "サーバ起動");
 // 現在値ファイルのチェックスタート
 trendFileCheckStart();
 
@@ -379,14 +379,23 @@ function copyFile(source, target, cb) {
 
 // メール送信
 function sendErrorMail(message) {
+	var subject =  'メタン濃度計測システムエラー通知';
+	var msg_text =  'メタン濃度計測システムでエラーが発生しました。\n\n' + message; 
+	var msg_html = 
+		'<span>メタン濃度計測システムでエラーが発生しました。</span><br/><br/>' 
+		+ '<span>エラー内容：' + message.replace("\n","<br/>") + '</span><br/><br/>';
+	sendMail(subject, msg_text, msg_html);
+}
+
+function sendMail(subject, msg_text, msg_html) {
 	fs.readFile('./mail_to.txt','utf-8',function(err, text){
 		if (err) {
 			text = 'takenori_tanaka@niigata-sl.com';
 		}
-		mailOptions.text =   'メタン濃度計測システムでエラーが発生しました。\n\n' + message + '\n\n' + home_url + '\n\n' + signature_text; 
+		mailOption.subject =  subject;
+		mailOptions.text =   msg_text + '\n\n' + home_url + '\n\n' + signature_text; 
 		mailOptions.html = 
-			'<span>メタン濃度計測システムでエラーが発生しました。</span><br/><br/>' 
-			+ '<span>エラー内容：' + message.replace("\n","<br/>") + '</span><br/><br/>' 
+			+ '<span>' + msg_html + '</span><br/><br/>' 
 			+ '<a href="' + home_url + '">メタン濃度計測システム</a><br/><br/>' 
 			+ '<p>' + signature_html + '</p>';
 		mailOptions.to = text;
