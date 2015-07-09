@@ -395,7 +395,7 @@ function sendMail(subject, msg_text, msg_html) {
 		mailOptions.subject =  subject;
 		mailOptions.text =   msg_text + '\n\n' + home_url + '\n\n' + signature_text; 
 		mailOptions.html = 
-			+ '<span>' + msg_html + '</span><br/><br/>' 
+			'<span>' + msg_html + '</span><br/><br/>' 
 			+ '<a href="' + home_url + '">メタン濃度計測システム</a><br/><br/>' 
 			+ '<p>' + signature_html + '</p>';
 		mailOptions.to = text;
