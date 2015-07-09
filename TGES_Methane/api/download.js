@@ -35,7 +35,7 @@ exports.download = function (req, res) {
 //							csv = "日付,時刻,メタン濃度,温度\n"
 							csv += data.date + "," + data.time + "," +  data.methane + "," + data.temp;
 						} else {
-							csv += "\n" + data.date + "," + data.time + ","  + data.methane "," + data.temp;
+							csv += "\n" + data.date + "," + data.time + ","  + data.methane + "," + data.temp;
 						}
 				}
 				res.send(csv);
