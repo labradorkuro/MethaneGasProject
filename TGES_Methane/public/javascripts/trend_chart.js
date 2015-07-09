@@ -22,7 +22,6 @@ $(function() {
 
 		// 期間表示画面用のボタンイベント登録
 		$("#priod_search_button").bind('click', trend_chart.searchPriodData);
-		$("#priod_clear_button").bind('click', trend_chart.clearPriodData);
 		// エラー表示用ダイアログの生成
 		trend_chart.createMessageDialog();
 });
@@ -252,12 +251,6 @@ trend_chart.searchPriodData = function() {
 		$("#priod_chart_methane_summary").text("メタン濃度【最小:" + data.summary.min[0] + " 最大:" + data.summary.max[0] + " 平均:" + data.summary.ave[0] + "】");
 		$("#priod_chart_temp_summary").text("温度【最小:" + data.summary.min[1] + " 最大:" + data.summary.max[1] + " 平均:" + data.summary.ave[1] + "】");
 	});
-}
-trend_chart.clearPriodData = function() {
-	$("#priod_start_date").val("");
-	$("#priod_end_date").val("");
-	$("#proid_clear_button").attr("disabled", true);
-	$("#priod_trend_chart").empty();
 }
 // csvファイルのダウンロードのためのデータ取得
 trend_chart.downloadFile = function() {
