@@ -392,7 +392,7 @@ function sendMail(subject, msg_text, msg_html) {
 		if (err) {
 			text = 'takenori_tanaka@niigata-sl.com';
 		}
-		mailOption.subject =  subject;
+		mailOptions.subject =  subject;
 		mailOptions.text =   msg_text + '\n\n' + home_url + '\n\n' + signature_text; 
 		mailOptions.html = 
 			+ '<span>' + msg_html + '</span><br/><br/>' 
