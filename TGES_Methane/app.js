@@ -267,11 +267,11 @@ function trendFileCheck(filepath) {
 		} catch(ex) {
 			// ログ出力
 			logger4.rtr_trend.error(ex);
-			error_info.error_msg = "子機データ処理エラー\n" + ex;
-			// 処理したファイルは削除する
-			deleteFile(filepath);
-			// エラー通知メール送信
-			sendErrorMail(error_info.error_msg);
+//			error_info.error_msg = "子機データ処理エラー\n" + ex;
+//			// 処理したファイルは削除する
+//			deleteFile(filepath);
+//			// エラー通知メール送信
+//			sendErrorMail(error_info.error_msg);
 			return rc;
 		}
 	});
