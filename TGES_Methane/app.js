@@ -184,11 +184,11 @@ function trendFileCheck(filepath) {
 		    		if (err) {
 		    			// ログ出力
 		    			logger4.rtr_trend.error(err);
-    					error_info.error_msg = "データファイル解析エラー\n" + err;
+    					//error_info.error_msg = "データファイル解析エラー\n" + err;
     					// 処理したファイルは削除する
-    					deleteFile(filepath);
+    					//deleteFile(filepath);
     					// エラー通知メール送信
-    					sendErrorMail(error_info.error_msg);
+    					//sendErrorMail(error_info.error_msg);
     					return rc;
 		    		} else {
 		    	        // 解析結果を処理
