@@ -42,11 +42,13 @@ exports.trend_get = function (req, res) {
 		var query = {date_str : {"$gte":req.query.startdate,"$lte":req.query.enddate}};
 		// mongoDBの検索
 		RTR_Trend.find(query, {}, {sort:{date_str:1,time_str:1}}, function(err, items) {
+				var interval = req.query.interval;
 				var count = items.length;
+				interval = Math.ceil(count / 144);
 				// ファイル名から日付、時間を取り出してラベルに追加する
 				var prev_date = "";
 				for(var i in items) {
-						if (i % req.query.interval ) continue;
+						if (i % interval ) continue;
 						var item = items[i];
 						if (prev_date === item.date_str) {
 							res_data.chart_data.labels.push( addTimeSeparator(item.time_str, ":") );

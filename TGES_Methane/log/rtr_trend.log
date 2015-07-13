@@ -2410,3 +2410,17 @@ TypeError: Cannot read property 'file' of null
 [2015-07-02 19:13:09.173] [ERROR] rtr_trend - データファイルが転送されていません
 [2015-07-02 19:27:15.629] [ERROR] rtr_trend - データファイルが転送されていません
 [2015-07-02 19:53:16.401] [ERROR] rtr_trend - データファイルが転送されていません
+[2015-07-13 14:54:29.935] [ERROR] rtr_trend - { [Error: connect ECONNREFUSED]
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect' }
+Error: connect ECONNREFUSED
+    at exports._errnoException (util.js:746:11)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:983:19)
+[2015-07-13 14:55:41.979] [ERROR] rtr_trend - { [Error: connect ECONNREFUSED]
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect' }
+Error: connect ECONNREFUSED
+    at exports._errnoException (util.js:746:11)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:983:19)
