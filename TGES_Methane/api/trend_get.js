@@ -18,17 +18,17 @@ exports.trend_get = function (req, res) {
 					labels: [],
 					datasets: [
 			              {
-		            	  	label: "メタン濃度",
-		            	  	fillColor:"rgba(255,255,0,0.2)", 
-		            	  	strokeColor: "rgba(255,255,0,1)",
-		            	  	pointColor: "rgba(255,255,0,1)",
+		            	  	label: "メタン濃度(METHANE)",
+		            	  	fillColor:"rgba(255,127,80,0.2)", 
+		            	  	strokeColor: "rgba(255,127,80,1)",
+		            	  	pointColor: "rgba(255,127,80,1)",
 		            	  	pointStrokeColor: "#fff",
 		            	  	pointHighlightFill: "#fff",
 		            		pointHighlightStroke: "rgba(255,255,0,1)",
 		            		data:[]
 		            	  },
 		            	  {
-						label: "温度",
+						label: "温度(TEMP.)",
 						fillColor: "rgba(0,0,255,0.2)",
 						strokeColor: "rgba(0,0,255,1)",
 						pointColor: "rgba(0,0,255,1)",
