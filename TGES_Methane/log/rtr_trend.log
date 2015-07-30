@@ -7772,3 +7772,90 @@ TypeError: Cannot read property 'file' of null
     at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:183:14
     at fs.js:336:14
     at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-07-30 19:51:20.591] [ERROR] rtr_trend - { [Error: connect ECONNREFUSED]
+  code: 'ECONNREFUSED',
+  errno: 'ECONNREFUSED',
+  syscall: 'connect' }
+Error: connect ECONNREFUSED
+    at exports._errnoException (util.js:746:11)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:983:19)
+[2015-07-30 19:51:20.597] [ERROR] rtr_trend - [TypeError: Cannot read property 'file' of null]
+TypeError: Cannot read property 'file' of null
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:195:20
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:468:14)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:183:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-07-30 19:51:20.598] [ERROR] rtr_trend - [TypeError: Cannot read property 'file' of null]
+TypeError: Cannot read property 'file' of null
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:195:20
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:468:14)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:183:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-07-30 19:51:20.598] [ERROR] rtr_trend - [TypeError: Cannot read property 'file' of null]
+TypeError: Cannot read property 'file' of null
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:195:20
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:468:14)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:183:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-07-30 19:51:20.599] [ERROR] rtr_trend - [TypeError: Cannot read property 'file' of null]
+TypeError: Cannot read property 'file' of null
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:195:20
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:468:14)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:183:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-07-30 19:52:20.562] [ERROR] rtr_trend - [TypeError: Cannot read property 'file' of null]
+TypeError: Cannot read property 'file' of null
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:195:20
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:468:14)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:183:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-07-30 19:52:20.562] [ERROR] rtr_trend - [TypeError: Cannot read property 'file' of null]
+TypeError: Cannot read property 'file' of null
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:195:20
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:468:14)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:183:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-07-30 19:52:20.563] [ERROR] rtr_trend - [TypeError: Cannot read property 'file' of null]
+TypeError: Cannot read property 'file' of null
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:195:20
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:468:14)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:183:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
+[2015-07-30 19:52:20.563] [ERROR] rtr_trend - [TypeError: Cannot read property 'file' of null]
+TypeError: Cannot read property 'file' of null
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:195:20
+    at Parser.<anonymous> (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:459:18)
+    at Parser.emit (events.js:107:17)
+    at Parser.exports.Parser.Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:468:14)
+    at Parser.parseString (/Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/node_modules/xml2js/lib/xml2js.js:6:59)
+    at /Users/takenori_tanaka/Documents/workspace/MethaneGasProject/TGES_Methane/app.js:183:14
+    at fs.js:336:14
+    at FSReqWrap.oncomplete (fs.js:99:15)
