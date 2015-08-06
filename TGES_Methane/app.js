@@ -253,7 +253,7 @@ function trendFileCheck(filepath) {
 		    					}
 		    				}
 	    					// メタン濃度の温度補正処理
-		    				trend.trends = methaneValueAdjustment(trend.trends);
+		    				//trend.trends = methaneValueAdjustment(trend.trends);
 		    				
 				    		// mongoDBへ追加する
 				    		rc = dbPost(trend, filepath);
