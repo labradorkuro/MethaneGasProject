@@ -1,5 +1,5 @@
-﻿var __data_dir = "../../TGES_Methane_data";
-var __backup_dir = "../../TGES_Methane_data_backup";
+﻿var __data_dir = "../../sensor_data";
+var __backup_dir = "../../sensor_data_backup";
 
 var express = require('express');
 var path = require('path');
@@ -37,16 +37,16 @@ var transporter = nodemailer.createTransport(smtpTransport({
 		      pass: 'Dso#60a14'
 	}
 }));
-var home_url = 'http://morigasaki.sensor-net.link/';
+var home_url = 'http://datalink.niigata-sl.com/';
 var mailOptions = {
-		from: 'rtr_trend@morigasaki.sensor-net.link',
+		from: 'sensor-info@niigata-sl.com',
 		to: '',
-		subject: 'メタン濃度計測システムエラー通知',
+		subject: 'センサー計測システムエラー通知',
 		text: '',
 		html: ''
 };
-var signature_text = '-\n メタン濃度計測システム\n' + ' ' + home_url;
-var signature_html = '-<br/> メタン濃度計測システム<br/>' + ' ' + home_url + '<br/>';
+var signature_text = '-\n センサー計測システム\n' + ' ' + home_url;
+var signature_html = '-<br/> センサー計測システム<br/>' + ' ' + home_url + '<br/>';
 
 var app = express();
 
@@ -105,7 +105,7 @@ app.use(function (err, req, res, next) {
     });
 });
 
-sendMail("メタン濃度計測システム","サーバ起動", "サーバ起動");
+sendMail("センサー計測システム","サーバ起動", "サーバ起動");
 // 現在値ファイルのチェックスタート
 trendFileCheckStart();
 
@@ -379,12 +379,15 @@ function copyFile(source, target, cb) {
 
 // メール送信
 function sendErrorMail(message) {
+	return;
+	/** あとで対応予定 
 	var subject =  'メタン濃度計測システムエラー通知';
 	var msg_text =  'メタン濃度計測システムでエラーが発生しました。\n\n' + message; 
 	var msg_html = 
 		'<span>メタン濃度計測システムでエラーが発生しました。</span><br/><br/>' 
 		+ '<span>エラー内容：' + message.replace("\n","<br/>") + '</span><br/><br/>';
 	sendMail(subject, msg_text, msg_html);
+	**/
 }
 
 function sendMail(subject, msg_text, msg_html) {
@@ -396,7 +399,7 @@ function sendMail(subject, msg_text, msg_html) {
 		mailOptions.text =   msg_text + '\n\n' + home_url + '\n\n' + signature_text; 
 		mailOptions.html = 
 			'<span>' + msg_html + '</span><br/><br/>' 
-			+ '<a href="' + home_url + '">メタン濃度計測システム</a><br/><br/>' 
+			+ '<a href="' + home_url + '">センサー計測システム</a><br/><br/>' 
 			+ '<p>' + signature_html + '</p>';
 		mailOptions.to = text;
 		transporter.sendMail(mailOptions, function(error, info) {
