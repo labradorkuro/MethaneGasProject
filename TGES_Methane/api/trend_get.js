@@ -18,7 +18,7 @@ exports.trend_get = function (req, res) {
 					labels: [],
 					datasets: [
 			              {
-		            	  	label: "メタン濃度(METHANE)",
+		            	  	label: "電流値(AMP.)",
 		            	  	fillColor:"rgba(255,127,80,0.2)", 
 		            	  	strokeColor: "rgba(255,127,80,1)",
 		            	  	pointColor: "rgba(255,127,80,1)",
